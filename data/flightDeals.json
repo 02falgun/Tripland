@@ -1,0 +1,47 @@
+[
+  {
+    "id": "flight-1",
+    "airline": "Fly Dubai",
+    "route": "KTM to DXB",
+    "type": "International",
+    "startingPrice": 48500,
+    "baggageAllowance": "30kg + 7kg cabin",
+    "isFeatured": true
+  },
+  {
+    "id": "flight-2",
+    "airline": "Qatar Airways",
+    "route": "KTM to LHR",
+    "type": "International",
+    "startingPrice": 92000,
+    "baggageAllowance": "25kg + 7kg cabin",
+    "isFeatured": true
+  },
+  {
+    "id": "flight-3",
+    "airline": "Nepal Airlines",
+    "route": "KTM to DEL",
+    "type": "International",
+    "startingPrice": 22500,
+    "baggageAllowance": "30kg + 7kg cabin",
+    "isFeatured": true
+  },
+  {
+    "id": "flight-4",
+    "airline": "Buddha Air",
+    "route": "KTM to PKR",
+    "type": "Domestic",
+    "startingPrice": 4200,
+    "baggageAllowance": "15kg + 5kg cabin",
+    "isFeatured": true
+  },
+  {
+    "id": "flight-5",
+    "airline": "Yeti Airlines",
+    "route": "KTM to BIR",
+    "type": "Domestic",
+    "startingPrice": 5100,
+    "baggageAllowance": "15kg + 5kg cabin",
+    "isFeatured": false
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "blog-1",
+    "title": "Chasing Cherry Blossoms: My Japan Heritage Tour",
+    "slug": "chasing-cherry-blossoms-japan",
+    "author": "Rajesh Shrestha",
+    "date": "May 14, 2026",
+    "coverImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1200&auto=format&fit=crop",
+    "excerpt": "A breathtaking account of traveling through Tokyo, Kyoto, and Nara during the absolute peak of the sakura cherry blossom season, supported by TripLand's ticketing desk.",
+    "fullContent": "Japan has always been a dream. When we decided to book our corporate group tour, we knew timing was everything—cherry blossom dates are notoriously hard to hit. TripLand Travels secured our flights and GDS wholesale bookings seamlessly, keeping us on schedule.\n\nFrom the neon-lit avenues of Tokyo's Shinjuku to the ancient, quiet wooden temples of Kyoto, every day felt like stepping into an editorial magazine. Nara's friendly sika deer roamed around, and eating fresh matcha dango under the falling pink cherry blossoms was a highlight we will never forget. Their local logistics were absolutely flawless, letting us focus entirely on capturing the perfect shots.",
+    "tags": ["Japan", "Sakura", "Group Travel", "Review"]
+  },
+  {
+    "id": "blog-2",
+    "title": "Vetting the Alps: A Flawless Schengen Visa Journey",
+    "slug": "vetting-alps-schengen-visa",
+    "author": "Dr. Smriti Pandey",
+    "date": "June 02, 2026",
+    "coverImage": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?q=80&w=1200&auto=format&fit=crop",
+    "excerpt": "Navigating Schengen visa requirements from Nepal can be a daunting experience. Here is how TripLand's documentation vetting got me into the Swiss Alps.",
+    "fullContent": "As a medical professional, my vacation time is highly constrained. Planning a trip to Europe is exciting, but preparing the paperwork for a Schengen visa is historically stressful. The sheer volume of documents required—six months of bank statements, employment certificates, cover letters, and medical insurance certificates—leaves room for minor errors that can lead to costly rejections.\n\nI handed my folder to the documentation experts at TripLand's Ratopul office. They vetted every photo parameter, formatted my cover letter, checked my flight vouchers, and secured a VFS biometric calendar slot quickly. Standing atop Mount Pilatus in the Swiss Alps weeks later, breathing the crisp mountain air, I realized how valuable it is to let professionals handle embassy logistics.",
+    "tags": ["Europe", "Schengen Visa", "Alpine Expedition", "Guide"]
+  },
+  {
+    "id": "blog-3",
+    "title": "Bridges and Beaches: A Family Retreat in Bali",
+    "slug": "bridges-beaches-family-bali",
+    "author": "Anil Thapa",
+    "date": "June 18, 2026",
+    "coverImage": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=1200&auto=format&fit=crop",
+    "excerpt": "Balancing luxury, child-friendly excursions, and local temples in Ubud. A detailed review of our custom family retreat in tropical Bali.",
+    "fullContent": "Traveling with a family means balancing active exploring with downtime. Our Bali itinerary, designed by TripLand, struck the perfect harmony. We spent three days in Ubud's lush jungles before checking into a beachside resort in Seminyak.\n\nIn Ubud, we walked the Campuhan Ridge Walk at sunrise, visited the Sacred Monkey Forest, and toured ancient water temples. The local drivers and guides provided by the agency were warm, professional, and knowledgeable about Bali's history. For my children, sliding down the waterslides of Waterbom Park was a hit, while my wife and I loved dining at beachside seafood grills in Jimbaran Bay. A seamless family adventure.",
+    "tags": ["Bali", "Family Vacation", "Ubud Temples", "Resort"]
+  }
+]

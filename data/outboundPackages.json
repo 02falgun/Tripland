@@ -1,0 +1,233 @@
+[
+  {
+    "id": "pkg-1",
+    "title": "Premium Japan Cherry Blossom & Heritage",
+    "slug": "japan-cherry-blossom-heritage",
+    "price": 220000,
+    "duration": "6 Nights / 7 Days",
+    "fixedDepartureDates": [
+      "2026-09-15",
+      "2026-10-10",
+      "2026-11-05"
+    ],
+    "highlights": [
+      "Hike around the base of majestic Mount Fuji & Lake Ashi cruise",
+      "Ride the legendary Shinkansen Bullet Train from Tokyo to Kyoto",
+      "Explore Tokyo's modern districts alongside historic Sensoji Temple",
+      "Visit Fushimi Inari Shrine and Arashiyama Bamboo Grove in Kyoto"
+    ],
+    "inclusions": [
+      "Roundtrip Flight Tickets (KTM-NRT-KTM)",
+      "Japan Tourist Visa Processing",
+      "4-Star Hotel Accommodation (Tokyo & Kyoto)",
+      "Daily Breakfast and Traditional Dinners",
+      "All Sightseeing Transfers & Entrance Permits"
+    ],
+    "isFeatured": true,
+    "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Tokyo & VIP Hotel Transfer",
+        "description": "Land at Narita International Airport. Meet your coordinator and transfer via private coach to your hotel in central Tokyo. Rest of the day at leisure."
+      },
+      {
+        "day": 2,
+        "title": "Tokyo Landmark City Tour",
+        "description": "Explore the historic Asakusa district and Sensoji Temple. Walk through Harajuku, visit Meiji Shrine, and cross the world-famous Shibuya Crossing."
+      },
+      {
+        "day": 3,
+        "title": "Mount Fuji & Hakone Lake Cruise",
+        "description": "Drive to Mt. Fuji 5th Station. Enjoy panoramic views of the peak. Board a scenic cruise on Lake Ashi and ride the Komagatake Ropeway."
+      },
+      {
+        "day": 4,
+        "title": "Kyoto Bullet Train Transition",
+        "description": "Board the high-speed Shinkansen Bullet Train to Kyoto. Upon arrival, visit the glittering Kinkakuji Temple (Golden Pavilion) and check into your hotel."
+      },
+      {
+        "day": 5,
+        "title": "Kyoto Shrines & Bamboo Grove Chronicle",
+        "description": "Walk through the thousand red torii gates at Fushimi Inari Shrine. In the afternoon, wander the towering Arashiyama Bamboo Grove."
+      },
+      {
+        "day": 6,
+        "title": "Return to Tokyo & Shinjuku Nightlife Tour",
+        "description": "Travel back to Tokyo. In the evening, take a guided walking tour of Shinjuku's neon alleyways, metropolitan building observation decks, and shopping hubs."
+      },
+      {
+        "day": 7,
+        "title": "Tokyo Departure to Kathmandu",
+        "description": "Enjoy final souvenir shopping in Ginza before your afternoon transfer to Narita Airport for your flight back to Kathmandu."
+      }
+    ]
+  },
+  {
+    "id": "pkg-2",
+    "title": "Imperial China & Great Wall Discovery",
+    "slug": "imperial-china-great-wall",
+    "price": 130500,
+    "duration": "5 Nights / 6 Days",
+    "fixedDepartureDates": [
+      "2026-09-20",
+      "2026-10-15",
+      "2026-11-20"
+    ],
+    "highlights": [
+      "Walk the historic Mutianyu section of the Great Wall of China",
+      "Visit the Forbidden City and Tiananmen Square in Beijing",
+      "Explore the beautiful imperial gardens of the Summer Palace",
+      "Experience shopping and street food in Beijing's Wangfujing"
+    ],
+    "inclusions": [
+      "Roundtrip Air Ticket (KTM-PEK-KTM)",
+      "China Tourist Group Visa Stamp",
+      "4-Star Luxury Hotel Stays",
+      "All Breakfasts, Lunches, and Dinners",
+      "Dedicated Professional English-speaking Guide"
+    ],
+    "isFeatured": true,
+    "heroImage": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Beijing & Welcome Dinner",
+        "description": "Welcome to Beijing. Private airport pickup and transfer to your luxury hotel. Enjoy a welcome dinner featuring traditional Peking Roast Duck."
+      },
+      {
+        "day": 2,
+        "title": "Tiananmen Square & Forbidden City",
+        "description": "Begin the day at the massive Tiananmen Square. Pass through the Meridian Gate to explore the imperial courtyards of the Forbidden City."
+      },
+      {
+        "day": 3,
+        "title": "The Great Wall Ascent",
+        "description": "Travel to the Mutianyu section of the Great Wall. Take a cable car to the battlements and walk the historic wall. Cable car or toboggan down."
+      },
+      {
+        "day": 4,
+        "title": "Summer Palace & Temple of Heaven",
+        "description": "Visit the majestic Summer Palace overlooking Kunming Lake. Continue to the Temple of Heaven where emperors prayed for bountiful harvests."
+      },
+      {
+        "day": 5,
+        "title": "Hutong Rickshaw Tour & Modern Beijing",
+        "description": "Take a rickshaw tour through Beijing's ancient narrow alleyways (Hutongs). Later, drive past the Olympic Bird's Nest stadium."
+      },
+      {
+        "day": 6,
+        "title": "Beijing Departure to Kathmandu",
+        "description": "Morning free for shopping at the Silk Market. Private transfer to Beijing Capital Airport for your return flight."
+      }
+    ]
+  },
+  {
+    "id": "pkg-3",
+    "title": "Tropical Bali Island Scenic Gateway",
+    "slug": "tropical-bali-scenic-gateway",
+    "price": 85000,
+    "duration": "4 Nights / 5 Days",
+    "fixedDepartureDates": [
+      "2026-09-10",
+      "2026-10-08",
+      "2026-11-12"
+    ],
+    "highlights": [
+      "Visit historic Ubud Monkey Forest and art galleries",
+      "Watch the stunning sunset over Uluwatu Temple cliffs",
+      "Cross to Tanah Lot Temple surrounded by ocean waves",
+      "Explore the white sand beaches of Kuta and Seminyak"
+    ],
+    "inclusions": [
+      "Roundtrip Flight Tickets via Kuala Lumpur",
+      "Bali Visa on Arrival Assistance",
+      "Boutique Beachfront Resort Accommodations",
+      "Daily Buffet Breakfasts",
+      "Private Vehicle Airport & Sightseeing Transfers"
+    ],
+    "isFeatured": false,
+    "heroImage": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Denpasar & Beachfront check-in",
+        "description": "Arrive in Denpasar, Bali. VIP welcome and private transfer to your beachfront resort in Kuta/Seminyak. Relax by the pool."
+      },
+      {
+        "day": 2,
+        "title": "Ubud Culture & Sacred Monkey Forest",
+        "description": "Drive to Ubud, the cultural heart of Bali. Visit the Sacred Monkey Forest, Tegalalang Rice Terraces, and the traditional Ubud Art Market."
+      },
+      {
+        "day": 3,
+        "title": "Kintamani Volcano & Holy Spring Water",
+        "description": "Enjoy spectacular views of Mt. Batur volcano and lake. Visit Tirta Empul holy spring water temple for a purification ritual experience."
+      },
+      {
+        "day": 4,
+        "title": "Tanah Lot & Uluwatu Temple Sunset Tour",
+        "description": "Visit the iconic offshore temple Tanah Lot. Later, head to Uluwatu Temple perched on a high cliff, and watch the traditional Kecak Fire Dance."
+      },
+      {
+        "day": 5,
+        "title": "Water Sports & Departure Transfer",
+        "description": "Spend the morning at Tanjung Benoa for water sports (parasailing/banana boat). In the afternoon, transfer to the airport for your flight back."
+      }
+    ]
+  },
+  {
+    "id": "pkg-4",
+    "title": "Vibrant Bangkok & Pattaya Explorer",
+    "slug": "bangkok-pattaya-explorer",
+    "price": 72000,
+    "duration": "4 Nights / 5 Days",
+    "fixedDepartureDates": [
+      "2026-09-08",
+      "2026-10-05",
+      "2026-11-10"
+    ],
+    "highlights": [
+      "Explore the golden temples Wat Pho and Wat Arun in Bangkok",
+      "Speed boat tour to Coral Island (Koh Larn) in Pattaya",
+      "Enjoy a scenic dinner cruise on the Chao Phraya River",
+      "Guided tour of Safari World & Marine Park"
+    ],
+    "inclusions": [
+      "Roundtrip Flight Tickets (KTM-BKK-KTM)",
+      "Thailand Tourist Visa processing support",
+      "4-Star Accommodations (Bangkok & Pattaya)",
+      "Daily Buffet Breakfasts & Coral Island Lunch",
+      "Coordinated Coach Sightseeing Transfers"
+    ],
+    "isFeatured": false,
+    "heroImage": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Bangkok & Pattaya Transfer",
+        "description": "Land in Bangkok (Suvarnabhumi Airport). Private transfer directly to the beachside town of Pattaya. Check into your hotel."
+      },
+      {
+        "day": 2,
+        "title": "Coral Island Speed Boat Excursion",
+        "description": "Board a speed boat to Coral Island (Koh Larn). Enjoy water sports (parasailing/undersea walk) and a delicious beachside lunch. Back to Pattaya."
+      },
+      {
+        "day": 3,
+        "title": "Nong Nooch Garden & Bangkok Return",
+        "description": "Visit Nong Nooch Botanical Garden to see orchid collections and cultural shows. Drive back to Bangkok. Take a evening dinner cruise."
+      },
+      {
+        "day": 4,
+        "title": "Bangkok Golden Temples & Safari World",
+        "description": "Visit Wat Pho (Temple of Reclining Buddha) and Wat Arun (Temple of Dawn). Spend the afternoon at Safari World & Marine Park."
+      },
+      {
+        "day": 5,
+        "title": "Market Shopping & Departure",
+        "description": "Free time for shopping at Platinum Mall or MBK Center. Transfer to Suvarnabhumi Airport for your return flight to Kathmandu."
+      }
+    ]
+  }
+]

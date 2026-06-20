@@ -1,0 +1,93 @@
+[
+  {
+    "id": "visa-1",
+    "country": "United Arab Emirates",
+    "slug": "dubai-uae-visa",
+    "visaTypes": [
+      "Tourist Visa 14 Days (Single Entry)",
+      "Tourist Visa 30 Days (Single Entry)",
+      "Tourist Visa 60 Days (Single Entry)"
+    ],
+    "processingTime": "3 - 5 Working Days",
+    "requiredDocuments": [
+      "Color scan of Passport bio-data page (minimum 6 months validity)",
+      "Passport size photograph with white background",
+      "Confirmed round-trip flight tickets",
+      "Hotel reservation proof"
+    ],
+    "features": [
+      "100% Online application submission",
+      "No physical embassy visit required",
+      "High visa approval success rate",
+      "Express 24-hour processing option available"
+    ]
+  },
+  {
+    "id": "visa-2",
+    "country": "Hong Kong",
+    "slug": "hong-kong-visa",
+    "visaTypes": [
+      "Pre-arrival Registration (PAR)",
+      "Tourist Entry Visa 30 Days"
+    ],
+    "processingTime": "4 - 6 Working Days",
+    "requiredDocuments": [
+      "Passport biographical page copy",
+      "Completed visa application form ID1003A",
+      "Financial proof (Bank statement with minimum Rs. 2,00,000 balance)",
+      "Employment certificate or company registration docs",
+      "Detailed travel itinerary"
+    ],
+    "features": [
+      "Professional application file compiling",
+      "Pre-check screening to reduce rejection risk",
+      "Coordinated submission to Hong Kong Immigration Department"
+    ]
+  },
+  {
+    "id": "visa-3",
+    "country": "Japan",
+    "slug": "japan-visa",
+    "visaTypes": [
+      "Short-Term Tourist Visa (Single Entry up to 90 days)",
+      "Business Visit Visa"
+    ],
+    "processingTime": "5 - 7 Working Days",
+    "requiredDocuments": [
+      "Original Passport with at least 2 blank pages",
+      "Visa application form with photo attached",
+      "Detailed daily travel program (Schedule of stay)",
+      "Tax clearance certificate",
+      "Bank statement of last 6 months",
+      "Hotel bookings & flight reservations"
+    ],
+    "features": [
+      "Complete document review and vetting",
+      "Itinerary compilation according to embassy guidelines",
+      "Interview prep briefing"
+    ]
+  },
+  {
+    "id": "visa-4",
+    "country": "Europe (Schengen)",
+    "slug": "schengen-europe-visa",
+    "visaTypes": [
+      "Short-Stay Schengen Visa (Tourist/Business up to 90 days)"
+    ],
+    "processingTime": "10 - 15 Working Days",
+    "requiredDocuments": [
+      "Original Passport valid for at least 3 months after departure",
+      "Schengen visa application form",
+      "Travel medical insurance (minimum coverage EUR 30,000)",
+      "Round-trip flight booking itinerary",
+      "Proof of accommodation (Hotel voucher)",
+      "Personal bank statements of last 6 months & salary slips",
+      "No Objection Certificate (NOC) from employer"
+    ],
+    "features": [
+      "Assistance in booking embassy VFS appointment slots",
+      "Vetting of documents and insurance matching",
+      "Customized cover letter writing support"
+    ]
+  }
+]
