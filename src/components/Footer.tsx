@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, MapPin, Send, ShieldCheck, X, FileText, CheckCircle } from "lucide-react";
 import { useTravelStore } from "@/store/travelStore";
 import { motion, AnimatePresence } from "framer-motion";
@@ -28,10 +29,15 @@ export default function Footer() {
         
         {/* Brand & Accreditations */}
         <div className="space-y-5">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="font-heading text-lg font-extrabold tracking-tight text-white uppercase">
-              Trip<span className="text-brand-red">Land</span>
-            </span>
+          <Link href="/" className="flex items-center group">
+            <div className="relative h-9 w-36 bg-white px-2 py-0.5 rounded-lg shadow-md border border-white/20 hover:scale-102 transition-transform duration-300">
+              <Image
+                src="/TriplandLogo.jpeg"
+                alt="Tripland Travels & Tours"
+                fill
+                className="object-contain p-0.5"
+              />
+            </div>
           </Link>
           <p className="text-xs leading-relaxed text-slate-400 font-light">
             TripLand Travels & Tours Pvt. Ltd. is an IATA Accredited travel agent in Nepal with 18 years of commitment, trust, and service excellence in air ticketing and visa documentation.

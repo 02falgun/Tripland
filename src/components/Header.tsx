@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, Plane, ShieldCheck, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -64,13 +65,16 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-8 flex items-center justify-between">
           
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-full bg-brand-blue text-white flex items-center justify-center shadow-lg shadow-brand-blue/30 group-hover:scale-105 group-hover:bg-brand-red transition-all duration-300">
-              <Plane className="w-4.5 h-4.5 -rotate-45" strokeWidth={2.5} />
+          <Link href="/" className="flex items-center group">
+            <div className="relative h-9 w-36 bg-white px-2 py-0.5 rounded-lg shadow-md border border-white/25 group-hover:scale-102 transition-transform duration-300">
+              <Image
+                src="/TriplandLogo.jpeg"
+                alt="Tripland Travels & Tours"
+                fill
+                priority
+                className="object-contain p-0.5"
+              />
             </div>
-            <span className="font-heading text-lg font-black tracking-tight text-white uppercase flex flex-col leading-none">
-              Trip<span className="text-brand-red text-[9px] font-bold tracking-widest mt-0.5">Land</span>
-            </span>
           </Link>
 
           {/* Center Links */}
