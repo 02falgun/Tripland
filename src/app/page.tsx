@@ -143,17 +143,16 @@ export default function Home() {
 
       {/* 100vh Full-Screen Cinematic Hero Section */}
       <section className="relative h-[95vh] min-h-[650px] w-full flex items-center justify-center overflow-hidden text-white bg-slate-950">
-        {/* Cinematic Loop Video Background */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-65 pointer-events-none"
-          poster="https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1920&auto=format&fit=crop"
-        >
-          <source src="/hero-bg.mp4" type="video/mp4" />
-        </video>
+        {/* Cinematic Loop YouTube Video Background */}
+        <div className="absolute inset-0 w-full h-full pointer-events-none overflow-hidden opacity-65">
+          <iframe
+            src="https://www.youtube.com/embed/F02_MVdAqCk?autoplay=1&mute=1&loop=1&playlist=F02_MVdAqCk&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&autohide=1&playsinline=1&enablejsapi=1"
+            className="absolute top-1/2 left-1/2 w-[300vw] h-[168.75vw] min-h-[300vh] min-w-[177.77vh] -translate-x-1/2 -translate-y-1/2 object-cover aspect-video"
+            allow="autoplay; encrypted-media"
+            frameBorder="0"
+            title="Cinematic Travel Background Video"
+          ></iframe>
+        </div>
         {/* Linear dark gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-slate-950/30 to-slate-950 pointer-events-none"></div>
 
