@@ -68,7 +68,7 @@ export default function Header() {
           <Link href="/" className="flex items-center group">
             <div className="relative h-9 w-36 bg-white px-2 py-0.5 rounded-lg shadow-md border border-white/25 group-hover:scale-102 transition-transform duration-300">
               <Image
-                src="/TriplandLogo.jpeg"
+                src="/TriplandLogo.png"
                 alt="Tripland Travels & Tours"
                 fill
                 priority
