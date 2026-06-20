@@ -24,8 +24,12 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-slate-950 text-slate-300 pt-16 pb-8 border-t-0 relative z-10 font-sans before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[2px] before:bg-gradient-to-r before:from-brand-blue before:via-brand-red before:to-brand-gold before:opacity-85 before:shadow-md before:shadow-brand-red/35">
-      <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+    <footer className="bg-[#071126] text-slate-300 pt-16 pb-8 border-t-0 relative z-10 font-sans overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[2.5px] before:bg-gradient-to-r before:from-brand-blue before:via-brand-red before:to-brand-gold before:opacity-100 before:shadow-md before:shadow-brand-blue/35">
+      {/* Brand thematic ambient glows */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-brand-blue/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-red/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+      <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
         
         {/* Brand & Accreditations */}
         <div className="space-y-5">
@@ -39,10 +43,10 @@ export default function Footer() {
               />
             </div>
           </Link>
-          <p className="text-xs leading-relaxed text-slate-400 font-light">
+          <p className="text-xs leading-relaxed text-slate-450 font-light">
             TripLand Travels & Tours Pvt. Ltd. is an IATA Accredited travel agent in Nepal with 18 years of commitment, trust, and service excellence in air ticketing and visa documentation.
           </p>
-          <div className="flex items-center gap-2 bg-slate-800/60 p-3 border border-slate-850 rounded">
+          <div className="flex items-center gap-2 bg-brand-blue/5 border border-brand-blue/15 p-3 rounded shadow-sm">
             <ShieldCheck className="w-5 h-5 text-brand-gold flex-shrink-0" strokeWidth={1.5} />
             <div className="leading-tight">
               <span className="text-[10px] font-bold text-white uppercase block">IATA Agent</span>
@@ -58,27 +62,27 @@ export default function Footer() {
           </h3>
           <ul className="space-y-3 text-[12px] font-medium">
             <li>
-              <Link href="/flights" className="hover:text-white transition-colors duration-250">
+              <Link href="/flights" className="hover:text-brand-gold hover:translate-x-1 inline-block transition-all duration-300">
                 Air Ticket Deals
               </Link>
             </li>
             <li>
-              <Link href="/packages" className="hover:text-white transition-colors duration-250">
+              <Link href="/packages" className="hover:text-brand-gold hover:translate-x-1 inline-block transition-all duration-300">
                 Outbound Tour Packages
               </Link>
             </li>
             <li>
-              <Link href="/visa-services" className="hover:text-white transition-colors duration-250">
+              <Link href="/visa-services" className="hover:text-brand-gold hover:translate-x-1 inline-block transition-all duration-300">
                 Visa Services Hub
               </Link>
             </li>
             <li>
-              <Link href="/visa-info" className="hover:text-white text-brand-gold transition-colors duration-250 font-semibold">
+              <Link href="/visa-info" className="text-brand-gold hover:text-white hover:translate-x-1 inline-block transition-all duration-300 font-semibold">
                 Plan Your Europe Visa
               </Link>
             </li>
             <li>
-              <Link href="/faq" className="hover:text-white transition-colors duration-250">
+              <Link href="/faq" className="hover:text-brand-gold hover:translate-x-1 inline-block transition-all duration-300">
                 Support FAQs
               </Link>
             </li>
@@ -92,22 +96,22 @@ export default function Footer() {
           </h3>
           <ul className="space-y-3 text-[12px] font-medium">
             <li>
-              <Link href="/package/japan-7n-8d" className="hover:text-white transition-colors">
+              <Link href="/package/japan-7n-8d" className="hover:text-brand-gold hover:translate-x-1 inline-block transition-all duration-300">
                 Japan Tour Package
               </Link>
             </li>
             <li>
-              <Link href="/package/beijing-shanghai-china-5n-6d" className="hover:text-white transition-colors">
+              <Link href="/package/beijing-shanghai-china-5n-6d" className="hover:text-brand-gold hover:translate-x-1 inline-block transition-all duration-300">
                 China Tour Package
               </Link>
             </li>
             <li>
-              <Link href="/package/danang-hanoi-vietnam-6d-5n" className="hover:text-white transition-colors">
+              <Link href="/package/danang-hanoi-vietnam-6d-5n" className="hover:text-brand-gold hover:translate-x-1 inline-block transition-all duration-300">
                 Vietnam Tour Package
               </Link>
             </li>
             <li>
-              <Link href="/package/netherlands-france-switzerland-8d" className="hover:text-white transition-colors">
+              <Link href="/package/netherlands-france-switzerland-8d" className="hover:text-brand-gold hover:translate-x-1 inline-block transition-all duration-300">
                 Europe Tour Package
               </Link>
             </li>
@@ -122,14 +126,14 @@ export default function Footer() {
           <p className="text-xs text-slate-400 font-light leading-relaxed">
             Subscribe to receive seasonal flight discounts, fixed departures guides, and visa advisory alerts.
           </p>
-          <div className="flex border-b border-slate-700 focus-within:border-brand-blue transition-colors py-1">
+          <div className="flex border-b border-brand-blue/30 focus-within:border-brand-blue transition-colors py-1">
             <input
               type="email"
               placeholder="Your email address"
               className="bg-transparent text-xs py-1 w-full focus:outline-none text-white placeholder-slate-500"
             />
             <button
-              className="text-slate-400 hover:text-white px-2 transition-colors cursor-pointer"
+              className="text-slate-400 hover:text-brand-gold px-2 transition-colors cursor-pointer"
               aria-label="Subscribe"
             >
               <Send className="w-3.5 h-3.5" strokeWidth={1.5} />
@@ -140,7 +144,7 @@ export default function Footer() {
       </div>
 
       {/* Corporate Info & Bottom Bar */}
-      <div className="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-slate-800 flex flex-col lg:flex-row gap-6 items-center justify-between">
+      <div className="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-brand-blue/20 flex flex-col lg:flex-row gap-6 items-center justify-between relative z-10">
         <div className="flex flex-col sm:flex-row gap-5 text-[11px] font-medium text-slate-400">
           <span className="flex items-center gap-1.5">
             <MapPin className="w-3.5 h-3.5 text-brand-gold flex-shrink-0" strokeWidth={1.5} />
@@ -152,13 +156,13 @@ export default function Footer() {
           </span>
           <button
             onClick={() => setIsTermsOpen(true)}
-            className="flex items-center gap-1.5 hover:text-white cursor-pointer transition-colors text-slate-400"
+            className="flex items-center gap-1.5 hover:text-brand-gold cursor-pointer transition-colors text-slate-400"
           >
             <FileText className="w-3.5 h-3.5 text-brand-gold flex-shrink-0" strokeWidth={1.5} />
             Universal Booking Terms
           </button>
         </div>
-        <div className="text-[11px] text-slate-400 lg:text-right font-medium">
+        <div className="text-[11px] text-slate-450 lg:text-right font-medium">
           &copy; {currentYear} Tripland Travels & Tours Pvt. Ltd. Accredited IATA Agent. All Rights Reserved.
         </div>
       </div>
