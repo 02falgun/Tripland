@@ -26,7 +26,7 @@ const placeholderDestinations = [
     title: "Macau Heritage Tour",
     country: "Macau",
     region: "Asia" as const,
-    heroImage: "https://images.unsplash.com/photo-1590424606775-f370e0f9c2d1?q=80&w=1200&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1563884392-540c7ff910c2?q=80&w=1200&auto=format&fit=crop",
     duration: "Duration on Request",
     highlights: ["Ruins of St. Paul's", "Macau Tower & Skyline", "Cotai Strip Resorts"],
     status: "Coming Soon"
