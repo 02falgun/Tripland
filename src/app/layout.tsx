@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsappButton from "@/components/WhatsappButton";
-import CustomCursor from "@/components/CustomCursor";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -42,7 +41,6 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col antialiased">
-        <CustomCursor />
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
