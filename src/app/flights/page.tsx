@@ -57,16 +57,24 @@ function FlightsContent() {
   return (
     <div className="pt-28 pb-20 bg-[#f8fafc] text-slate-800 font-sans">
       {/* Title Header */}
-      <div className="bg-slate-950 text-white py-12 px-8 text-center border-b border-white/10 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-blue/30 via-slate-900/50 to-brand-red/20 opacity-80"></div>
-        <div className="max-w-4xl mx-auto relative z-10">
-          <span className="text-xs font-bold tracking-widest uppercase text-brand-gold">
+      <div className="relative py-20 px-8 text-center text-white bg-slate-950 overflow-hidden border-b border-white/10">
+        <Image
+          src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1600&auto=format&fit=crop"
+          alt="Flight ticketing background"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-35 pointer-events-none"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-transparent to-slate-950 pointer-events-none"></div>
+        <div className="max-w-4xl mx-auto relative z-10 space-y-3">
+          <span className="text-[10px] font-extrabold tracking-widest uppercase text-brand-gold bg-slate-900 border border-slate-800 px-3.5 py-1.5 rounded-full inline-block">
             Accredited Ticketing Desk
           </span>
           <h1 className="font-heading text-3xl md:text-5xl font-black mt-2 mb-4 uppercase tracking-wide">
             Global Flight Ticketing
           </h1>
-          <p className="text-sm text-slate-350 max-w-md mx-auto font-light leading-relaxed">
+          <p className="text-xs text-slate-300 max-w-md mx-auto font-light leading-relaxed">
             Direct airline queues for the cheapest fares. Rescheduling support and group discounts.
           </p>
         </div>

@@ -811,19 +811,26 @@ export default function Home() {
       <TestimonialsSection />
 
       {/* Corporate Call to Action */}
-      <section className="bg-brand-blue text-white py-16 px-8 text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-slate-950/20"></div>
+      <section className="relative bg-slate-950 text-white py-20 px-8 text-center overflow-hidden border-t border-slate-900">
+        <Image
+          src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1600&auto=format&fit=crop"
+          alt="Scenic mountain lake travel backdrop"
+          fill
+          sizes="100vw"
+          className="object-cover opacity-25 pointer-events-none"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/50 via-transparent to-slate-950 pointer-events-none"></div>
         <div className="max-w-4xl mx-auto space-y-6 relative z-10">
           <h2 className="font-heading text-2xl md:text-4xl font-extrabold uppercase">
             Ready to book your flights or plan an escape?
           </h2>
-          <p className="text-sm text-slate-300 font-light max-w-lg mx-auto">
+          <p className="text-xs text-slate-300 font-light max-w-lg mx-auto leading-relaxed">
             Contact our accredited corporate ticketing specialists right now for the lowest airfares and custom outbound schedules.
           </p>
           <div className="flex justify-center gap-4 pt-4 flex-wrap">
             <Link
               href="tel:9801126300"
-              className="px-6 py-3 bg-white text-brand-blue font-bold uppercase text-xs tracking-wider rounded shadow-lg hover:bg-slate-100 transition-colors"
+              className="px-6 py-3 bg-white text-brand-blue font-bold uppercase text-[10px] tracking-wider rounded shadow-lg hover:bg-slate-100 transition-colors"
             >
               Call 9801126300
             </Link>
@@ -831,7 +838,7 @@ export default function Home() {
               href="https://wa.me/9779801126300?text=Hello!%20I%20need%20assistance%20with%20flight%20ticketing."
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 bg-brand-red text-white font-bold uppercase text-xs tracking-wider rounded shadow-lg hover:bg-brand-red/90 transition-colors"
+              className="px-6 py-3 bg-brand-red text-white font-bold uppercase text-[10px] tracking-wider rounded shadow-lg hover:bg-brand-red/90 transition-colors"
             >
               Consult via WhatsApp
             </Link>

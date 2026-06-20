@@ -145,9 +145,16 @@ export default function PackagesPage() {
     <div className="pt-28 pb-20 bg-[#f8fafc] text-slate-800 font-sans min-h-screen">
       
       {/* Page Header */}
-      <section className="bg-slate-950 text-white py-16 px-8 text-center border-b border-slate-900 relative overflow-hidden">
-        {/* Abstract background graphics */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-brand-blue/15 via-transparent to-transparent opacity-70 pointer-events-none"></div>
+      <section className="relative py-20 px-8 text-center text-white bg-slate-950 overflow-hidden border-b border-slate-900">
+        <Image
+          src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1600&auto=format&fit=crop"
+          alt="Scenic travel landscapes background"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-35 pointer-events-none"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-transparent to-slate-950 pointer-events-none"></div>
         <div className="max-w-4xl mx-auto relative z-10 space-y-3">
           <span className="text-[10px] font-extrabold tracking-widest uppercase text-brand-gold bg-slate-900 border border-slate-800 px-3.5 py-1.5 rounded-full inline-block">
             Tripland Escorted Outbound Portfolios
@@ -155,7 +162,7 @@ export default function PackagesPage() {
           <h1 className="font-heading text-3xl md:text-5xl font-black mt-2 mb-4 uppercase tracking-wide">
             International Packages
           </h1>
-          <p className="text-xs text-slate-350 max-w-xl mx-auto font-light leading-relaxed">
+          <p className="text-xs text-slate-300 max-w-xl mx-auto font-light leading-relaxed">
             All-inclusive escorted portfolios. Select dynamic flight itineraries, tourist visa clearances, 3 to 5-star hotel stays, and local guide transfers.
           </p>
         </div>

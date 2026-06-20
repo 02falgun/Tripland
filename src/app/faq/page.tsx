@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { ChevronDown, ChevronUp, HelpCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 const faqs = [
   {
     question: "What makes TripLand Travels unique for flight ticketing?",
-    answer: "TripLand Travels & Tours P. LTD is an IATA Accredited Agent with 18 years of service commitment in Nepal. We have direct, real-time integration with international and domestic airline booking GDS systems, enabling us to lock in the cheapest air fares and handle date changes, cancellations, and extra baggage allowances efficiently."
+    answer: "TripLand Travels & Tours Pvt. Ltd. is an IATA Accredited Agent with 18 years of service commitment in Nepal. We have direct, real-time integration with international and domestic airline booking GDS systems, enabling us to lock in the cheapest air fares and handle date changes, cancellations, and extra baggage allowances efficiently."
   },
   {
     question: "How do I request a custom flight quotation?",
@@ -23,7 +24,7 @@ const faqs = [
   },
   {
     question: "Where is the TripLand corporate office located?",
-    answer: "Our head office is located at Ratopul, Kathmandu, Nepal. You can visit us during business hours (9:30 AM to 6:00 PM, Sunday to Friday) to submit physical passport booklets or documents, or call our hotlines at 9801126300 / 01-4599802."
+    answer: "Our head office is located at Ratopul, Gaushala, Kathmandu, Nepal. You can visit us during business hours (9:30 AM to 6:00 PM, Sunday to Friday) to submit physical passport booklets or documents, or call our hotlines at 9801126300 / 01-4599802."
   }
 ];
 
@@ -38,15 +39,24 @@ export default function FAQPage() {
     <div className="pt-28 pb-20 bg-[#f8fafc] text-slate-800 min-h-screen font-sans">
       
       {/* Header Banner */}
-      <div className="bg-brand-blue text-white py-12 px-8 text-center border-b border-slate-200">
-        <div className="max-w-4xl mx-auto">
-          <span className="text-xs font-bold tracking-widest uppercase text-brand-gold">
+      <div className="relative py-20 px-8 text-center text-white bg-slate-950 overflow-hidden border-b border-slate-900">
+        <Image
+          src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=1600&auto=format&fit=crop"
+          alt="Support desk background"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-35 pointer-events-none"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-transparent to-slate-950 pointer-events-none"></div>
+        <div className="max-w-4xl mx-auto relative z-10 space-y-3">
+          <span className="text-[10px] font-extrabold tracking-widest uppercase text-brand-gold bg-slate-900 border border-slate-800 px-3.5 py-1.5 rounded-full inline-block">
             Support Desk
           </span>
           <h1 className="font-heading text-3xl md:text-5xl font-black mt-2 mb-4 uppercase tracking-wide">
             Frequently Asked Questions
           </h1>
-          <p className="text-sm text-slate-300 max-w-md mx-auto font-light leading-relaxed">
+          <p className="text-xs text-slate-355 max-w-md mx-auto font-light leading-relaxed">
             Essential information regarding air ticket reservations, visa processing times, payment methods, and package departures.
           </p>
         </div>
