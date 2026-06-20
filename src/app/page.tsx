@@ -143,17 +143,19 @@ export default function Home() {
 
       {/* 100vh Full-Screen Cinematic Hero Section */}
       <section className="relative h-[95vh] min-h-[650px] w-full flex items-center justify-center overflow-hidden text-white bg-slate-950">
-        {/* Full-bleed high-res background image */}
-        <Image
-          src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1920&auto=format&fit=crop"
-          alt="Majestic Mount Everest Peak"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover pointer-events-none opacity-80"
-        />
+        {/* Cinematic Loop Video Background */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-65 pointer-events-none"
+          poster="https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1920&auto=format&fit=crop"
+        >
+          <source src="/hero-bg.mp4" type="video/mp4" />
+        </video>
         {/* Linear dark gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-slate-950/20 to-slate-950 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-slate-950/30 to-slate-950 pointer-events-none"></div>
 
         <div className="max-w-7xl w-full mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10 pt-16">
           {/* Left Text */}
