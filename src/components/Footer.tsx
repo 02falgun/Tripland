@@ -164,7 +164,18 @@ export default function Footer() {
           </button>
         </div>
         <div className="text-[11px] text-slate-450 lg:text-right font-medium">
-          &copy; {currentYear} Tripland Travels & Tours Pvt. Ltd. Accredited IATA Agent. All Rights Reserved.
+          <span>&copy; {currentYear} Tripland Travels & Tours Pvt. Ltd. Accredited IATA Agent. All Rights Reserved.</span>
+          <span className="block lg:inline lg:ml-2 text-slate-500">
+            | Powered by{" "}
+            <a
+              href="https://kavyathakur.com.np/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-brand-gold hover:underline transition-all"
+            >
+              KavTech
+            </a>
+          </span>
         </div>
       </div>
 
