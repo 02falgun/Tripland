@@ -1,132 +1,9 @@
 [
   {
     "id": "pkg-1",
-    "title": "Premium Japan Cherry Blossom & Heritage",
-    "slug": "japan-cherry-blossom-heritage",
-    "price": 220000,
-    "duration": "6 Nights / 7 Days",
-    "fixedDepartureDates": [
-      "2026-09-15",
-      "2026-10-10",
-      "2026-11-05"
-    ],
-    "highlights": [
-      "Hike around the base of majestic Mount Fuji & Lake Ashi cruise",
-      "Ride the legendary Shinkansen Bullet Train from Tokyo to Kyoto",
-      "Explore Tokyo's modern districts alongside historic Sensoji Temple",
-      "Visit Fushimi Inari Shrine and Arashiyama Bamboo Grove in Kyoto"
-    ],
-    "inclusions": [
-      "Roundtrip Flight Tickets (KTM-NRT-KTM)",
-      "Japan Tourist Visa Processing",
-      "4-Star Hotel Accommodation (Tokyo & Kyoto)",
-      "Daily Breakfast and Traditional Dinners",
-      "All Sightseeing Transfers & Entrance Permits"
-    ],
-    "isFeatured": true,
-    "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1200&auto=format&fit=crop",
-    "itinerary": [
-      {
-        "day": 1,
-        "title": "Arrival in Tokyo & VIP Hotel Transfer",
-        "description": "Land at Narita International Airport. Meet your coordinator and transfer via private coach to your hotel in central Tokyo. Rest of the day at leisure."
-      },
-      {
-        "day": 2,
-        "title": "Tokyo Landmark City Tour",
-        "description": "Explore the historic Asakusa district and Sensoji Temple. Walk through Harajuku, visit Meiji Shrine, and cross the world-famous Shibuya Crossing."
-      },
-      {
-        "day": 3,
-        "title": "Mount Fuji & Hakone Lake Cruise",
-        "description": "Drive to Mt. Fuji 5th Station. Enjoy panoramic views of the peak. Board a scenic cruise on Lake Ashi and ride the Komagatake Ropeway."
-      },
-      {
-        "day": 4,
-        "title": "Kyoto Bullet Train Transition",
-        "description": "Board the high-speed Shinkansen Bullet Train to Kyoto. Upon arrival, visit the glittering Kinkakuji Temple (Golden Pavilion) and check into your hotel."
-      },
-      {
-        "day": 5,
-        "title": "Kyoto Shrines & Bamboo Grove Chronicle",
-        "description": "Walk through the thousand red torii gates at Fushimi Inari Shrine. In the afternoon, wander the towering Arashiyama Bamboo Grove."
-      },
-      {
-        "day": 6,
-        "title": "Return to Tokyo & Shinjuku Nightlife Tour",
-        "description": "Travel back to Tokyo. In the evening, take a guided walking tour of Shinjuku's neon alleyways, metropolitan building observation decks, and shopping hubs."
-      },
-      {
-        "day": 7,
-        "title": "Tokyo Departure to Kathmandu",
-        "description": "Enjoy final souvenir shopping in Ginza before your afternoon transfer to Narita Airport for your flight back to Kathmandu."
-      }
-    ]
-  },
-  {
-    "id": "pkg-2",
-    "title": "Imperial China & Great Wall Discovery",
-    "slug": "imperial-china-great-wall",
-    "price": 130500,
-    "duration": "5 Nights / 6 Days",
-    "fixedDepartureDates": [
-      "2026-09-20",
-      "2026-10-15",
-      "2026-11-20"
-    ],
-    "highlights": [
-      "Walk the historic Mutianyu section of the Great Wall of China",
-      "Visit the Forbidden City and Tiananmen Square in Beijing",
-      "Explore the beautiful imperial gardens of the Summer Palace",
-      "Experience shopping and street food in Beijing's Wangfujing"
-    ],
-    "inclusions": [
-      "Roundtrip Air Ticket (KTM-PEK-KTM)",
-      "China Tourist Group Visa Stamp",
-      "4-Star Luxury Hotel Stays",
-      "All Breakfasts, Lunches, and Dinners",
-      "Dedicated Professional English-speaking Guide"
-    ],
-    "isFeatured": true,
-    "heroImage": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?q=80&w=1200&auto=format&fit=crop",
-    "itinerary": [
-      {
-        "day": 1,
-        "title": "Arrival in Beijing & Welcome Dinner",
-        "description": "Welcome to Beijing. Private airport pickup and transfer to your luxury hotel. Enjoy a welcome dinner featuring traditional Peking Roast Duck."
-      },
-      {
-        "day": 2,
-        "title": "Tiananmen Square & Forbidden City",
-        "description": "Begin the day at the massive Tiananmen Square. Pass through the Meridian Gate to explore the imperial courtyards of the Forbidden City."
-      },
-      {
-        "day": 3,
-        "title": "The Great Wall Ascent",
-        "description": "Travel to the Mutianyu section of the Great Wall. Take a cable car to the battlements and walk the historic wall. Cable car or toboggan down."
-      },
-      {
-        "day": 4,
-        "title": "Summer Palace & Temple of Heaven",
-        "description": "Visit the majestic Summer Palace overlooking Kunming Lake. Continue to the Temple of Heaven where emperors prayed for bountiful harvests."
-      },
-      {
-        "day": 5,
-        "title": "Hutong Rickshaw Tour & Modern Beijing",
-        "description": "Take a rickshaw tour through Beijing's ancient narrow alleyways (Hutongs). Later, drive past the Olympic Bird's Nest stadium."
-      },
-      {
-        "day": 6,
-        "title": "Beijing Departure to Kathmandu",
-        "description": "Morning free for shopping at the Silk Market. Private transfer to Beijing Capital Airport for your return flight."
-      }
-    ]
-  },
-  {
-    "id": "pkg-3",
-    "title": "Tropical Bali Island Scenic Gateway",
-    "slug": "tropical-bali-scenic-gateway",
-    "price": 85000,
+    "title": "Bali, Indonesia — 4 Nights 5 Days (5-Star)",
+    "slug": "bali-indonesia-4n-5d-5star",
+    "price": 0,
     "duration": "4 Nights / 5 Days",
     "fixedDepartureDates": [
       "2026-09-10",
@@ -134,100 +11,1441 @@
       "2026-11-12"
     ],
     "highlights": [
-      "Visit historic Ubud Monkey Forest and art galleries",
-      "Watch the stunning sunset over Uluwatu Temple cliffs",
-      "Cross to Tanah Lot Temple surrounded by ocean waves",
-      "Explore the white sand beaches of Kuta and Seminyak"
+      "Watersports package at Tanjung Benoa (parasailing, banana boat, jet ski)",
+      "Explore cliff-top Uluwatu Temple with Kecak and Fire dance performance",
+      "Sunset dinner cruise aboard the Bounty Cruise with live music & buffet",
+      "Ubud cultural tour including Ubud Palace and Ubud Market"
     ],
     "inclusions": [
-      "Roundtrip Flight Tickets via Kuala Lumpur",
-      "Bali Visa on Arrival Assistance",
-      "Boutique Beachfront Resort Accommodations",
-      "Daily Buffet Breakfasts",
-      "Private Vehicle Airport & Sightseeing Transfers"
+      "4 Nights accommodation at a 5-Star Hotel",
+      "Daily breakfast (B) and Sunset Dinner Cruise (D)",
+      "All transfers on private basis",
+      "English-speaking guide assistance",
+      "Tanjung Benoa watersport package",
+      "Indonesia e-visa guidance for Nepal/Bangladesh passport holders"
     ],
-    "isFeatured": false,
+    "exclusions": [
+      "5% luxury tax (excluded separately)",
+      "Singapore visa (on arrival, no fee)",
+      "Personal expenses, optional tours, travel insurance, tips"
+    ],
+    "visaChecklist": [
+      "Copy of passport valid for at least 6 months",
+      "Passport size photograph with white background (no cap/makeup)",
+      "Last 3 months' bank statement with minimum balance of USD 2000 / NPR 300,000 (name must match passport)",
+      "Marriage certificate (if spouse accompanies)",
+      "Visa processing takes 7–8 working days"
+    ],
+    "termsAndConditions": [
+      "50% advance payment required at time of booking",
+      "Price calculated per person on twin-sharing basis",
+      "Surcharge may apply for client-requested changes to the itinerary",
+      "Based on minimum 20 pax traveling together — price may change if pax count is not met",
+      "Full amount non-refundable after confirmation",
+      "Standard hotel check-in: 14:00/15:00; check-out: 11:00/12:00"
+    ],
+    "isFeatured": true,
     "heroImage": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=1200&auto=format&fit=crop",
     "itinerary": [
       {
         "day": 1,
-        "title": "Arrival in Denpasar & Beachfront check-in",
-        "description": "Arrive in Denpasar, Bali. VIP welcome and private transfer to your beachfront resort in Kuta/Seminyak. Relax by the pool."
+        "title": "Arrival in Bali",
+        "description": "Arrive at Ngurah Rai Airport, Denpasar. Clear immigration & customs. Meet & greet with guide and transfer to your 5-star hotel. Rest of the day at leisure. Overnight in Bali."
       },
       {
         "day": 2,
-        "title": "Ubud Culture & Sacred Monkey Forest",
-        "description": "Drive to Ubud, the cultural heart of Bali. Visit the Sacred Monkey Forest, Tegalalang Rice Terraces, and the traditional Ubud Art Market."
+        "title": "Tanjung Benoa Watersports & Uluwatu Temple Cliff Sunset (B)",
+        "description": "Breakfast at hotel. Proceed to Tanjung Benoa for an exciting watersport package (includes parasailing/donut boat, banana boat, jet ski. Optional extras: snorkeling, sea walker, fly fish). In the afternoon, visit the dramatic Uluwatu Temple perched on a cliff-top and watch the sunset Kecak and Fire dance performance."
       },
       {
         "day": 3,
-        "title": "Kintamani Volcano & Holy Spring Water",
-        "description": "Enjoy spectacular views of Mt. Batur volcano and lake. Visit Tirta Empul holy spring water temple for a purification ritual experience."
+        "title": "Tanah Lot Temple & Sunset Dinner Cruise (B, D)",
+        "description": "Breakfast at hotel. Visit the 17th-century Tanah Lot Temple, built on a large offshore rock and surrounded by sea waves. Evening transfer to Benoa Harbour for a Sunset Dinner Cruise aboard the Bounty Cruise. Enjoy live music, a buffet dinner, and a cabaret dance show."
       },
       {
         "day": 4,
-        "title": "Tanah Lot & Uluwatu Temple Sunset Tour",
-        "description": "Visit the iconic offshore temple Tanah Lot. Later, head to Uluwatu Temple perched on a high cliff, and watch the traditional Kecak Fire Dance."
+        "title": "Denpasar City & Ubud Cultural Tour (B)",
+        "description": "Breakfast at hotel. Take a photo stop at the Bajra Sandi Monument, then visit Tohpati (famous Batik village), Batuan Temple, and Ubud Center (includes Ubud Palace & Ubud Market). Overnight in Bali."
       },
       {
         "day": 5,
-        "title": "Water Sports & Departure Transfer",
-        "description": "Spend the morning at Tanjung Benoa for water sports (parasailing/banana boat). In the afternoon, transfer to the airport for your flight back."
+        "title": "Departure from Bali (B)",
+        "description": "Breakfast at hotel. Free time until check-out (12:00). Private transfer to Ngurah Rai Airport for your return flight."
       }
-    ]
+    ],
+    "region": "Asia",
+    "hotelCategory": "5 Star",
+    "airline": "Singapore Airlines"
+  },
+  {
+    "id": "pkg-2",
+    "title": "Bali, Indonesia — Standard Package (3-Star)",
+    "slug": "bali-indonesia-standard-3star",
+    "price": 0,
+    "duration": "4 Nights / 5 Days",
+    "fixedDepartureDates": [
+      "2026-09-15",
+      "2026-10-10",
+      "2026-11-15"
+    ],
+    "highlights": [
+      "Round-trip air ticket included in the package",
+      "Water sports at Tanjung Benoa beach",
+      "Visit Ubud traditional crafts center & Goa Gajah cave",
+      "Tanah Lot Temple & Jimbaran Bay BBQ seafood dinner"
+    ],
+    "inclusions": [
+      "Round-trip air ticket",
+      "4 Nights' accommodation at a 3-Star Hotel",
+      "Daily breakfast (B) and Jimbaran BBQ Dinner (D)",
+      "Meals & sightseeing per itinerary",
+      "All airport and hotel transfers",
+      "All entrance fees to listed sites",
+      "Standard e-visa processing"
+    ],
+    "exclusions": [
+      "Personal expenses (phone, laundry, mini-bar, drinks)",
+      "Optional tours not listed in the itinerary",
+      "Travel insurance & tips/gratuities for driver/guides"
+    ],
+    "visaChecklist": [
+      "Standard Indonesian e-visa is processed by the agency",
+      "Copy of passport biographical page (minimum 6 months validity)",
+      "Digital passport photograph"
+    ],
+    "termsAndConditions": [
+      "50% payment required at time of booking to hold seats",
+      "Prices are calculated per person on a twin/double-sharing basis",
+      "Standard hotel check-in: 14:00/15:00; check-out: 11:00/12:00",
+      "Flights are subject to availability and airline policies"
+    ],
+    "isFeatured": false,
+    "heroImage": "https://images.unsplash.com/photo-1573790387438-4da905039392?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival & Transfer to Hotel",
+        "description": "Airport clearance and immigration. Meet & greet with local coordinator and transfer to your 3-star hotel. Rest of the day at leisure. Overnight in Bali."
+      },
+      {
+        "day": 2,
+        "title": "Water Sports & Ubud Cultural Exploration (B)",
+        "description": "Breakfast at hotel. Visit Tanjung Benoa for water sports (includes jet ski). Afterwards, transfer to Ubud — Bali's center for traditional crafts and dance. Visit terraced rice paddies, Goa Gajah ('Elephant Cave') archaeological site, and Gunung Kawi rock-cut shrines."
+      },
+      {
+        "day": 3,
+        "title": "Tanah Lot Tour & Jimbaran Bay BBQ Seafood Dinner (B, D)",
+        "description": "Breakfast at hotel. Morning at leisure. In the afternoon, visit the famous Tanah Lot Temple. Transfer to Jimbaran Bay in the evening for a romantic BBQ seafood dinner on the beach. Return to hotel."
+      },
+      {
+        "day": 4,
+        "title": "Phinisi Sailor Cruise Excursion (B)",
+        "description": "Breakfast at hotel. Enjoy a full-day sailing trip aboard a traditional Phinisi sailor cruise. Experience ocean views, relaxation, and tropical island vibes."
+      },
+      {
+        "day": 5,
+        "title": "Departure from Bali (B)",
+        "description": "Breakfast at hotel. Check out of the hotel and transfer to the airport for your return flight."
+      }
+    ],
+    "region": "Asia",
+    "hotelCategory": "3 Star",
+    "airline": "Round-trip Air Ticket Included"
+  },
+  {
+    "id": "pkg-3",
+    "title": "Singapore – Malaysia — 6 Nights 7 Days (Version A)",
+    "slug": "singapore-malaysia-6n-7d-a",
+    "price": 0,
+    "duration": "6 Nights / 7 Days",
+    "fixedDepartureDates": [
+      "2026-09-12",
+      "25 October 2026"
+    ],
+    "highlights": [
+      "Explore Singapore's Merlion, Chinatown, and Orchard Road",
+      "Sentosa Island Tour with one-way cable car and Wings of Time show",
+      "Genting Highlands day trip with Batu Caves photo stop",
+      "Kuala Lumpur City Tour featuring Petronas Twin Towers photo stop"
+    ],
+    "inclusions": [
+      "2 Nights in Singapore (3-Star Hotel)",
+      "3 Nights in Kuala Lumpur (3-Star Hotel)",
+      "Daily breakfast (B)",
+      "Comfortable Singapore to Kuala Lumpur coach transfer ticket",
+      "Singapore and Kuala Lumpur city tours",
+      "Sentosa Island Tour (1-way cable car + Wings of Time tickets)",
+      "Genting Highland Tour with Batu Caves stop",
+      "All airport/hotel transfers",
+      "Round-trip airfare",
+      "Malaysia e-visa fee"
+    ],
+    "exclusions": [
+      "5% tourism tax",
+      "Personal expenses (laundry, calls, minibar, drinks)",
+      "Optional tours & activities not mentioned in inclusions",
+      "Travel insurance",
+      "Tips for guide and driver",
+      "Extra meals or unscheduled transfers"
+    ],
+    "visaChecklist": [
+      "MRP Passport valid for at least 6 months with minimum 2 blank pages",
+      "2 recent passport-size photos with white background (no glasses/cap)",
+      "Individual bank statement showing last 4 months' transactions, closing balance minimum NPR 100,000 per person"
+    ],
+    "termsAndConditions": [
+      "50% payment required at time of booking",
+      "Price per person on twin-sharing basis",
+      "Surcharge applies for itinerary modifications",
+      "Full amount non-refundable after confirmation",
+      "Standard hotel check-in: 14:00/15:00, check-out: 11:00/12:00"
+    ],
+    "isFeatured": true,
+    "heroImage": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Singapore & Landmarks City Tour",
+        "description": "Arrive in Singapore. Meet your representative and transfer to your hotel. Afternoon Singapore city tour covering Suntec City (Fountain of Wealth), Padang area, Merlion, Chocolate Gallery, Chinatown, Jewellery City (Alexandra Rd), Little India, and Orchard Road. Overnight in Singapore."
+      },
+      {
+        "day": 2,
+        "title": "Sentosa Island Afternoon Excursion (B)",
+        "description": "Breakfast at hotel. Morning free for leisure. In the afternoon, proceed for a Sentosa Island tour including a scenic 1-way cable car ride and the Wings of Time multi-sensory water and light spectacular show. Overnight in Singapore."
+      },
+      {
+        "day": 3,
+        "title": "Coach Transfer to Kuala Lumpur (B)",
+        "description": "Breakfast at hotel. Check out and board the air-conditioned express coach transfer from Singapore to Kuala Lumpur. Meet our driver on arrival and check into your hotel. Overnight in Kuala Lumpur."
+      },
+      {
+        "day": 4,
+        "title": "Genting Highland Tour & Batu Caves Stop (B)",
+        "description": "Breakfast at hotel. Embark on a full-day Genting Highland tour. En route, make a photo stop at the famous Batu Caves. Ascend to Genting via a scenic cable car ride. Enjoy free time to explore theme parks and the casino. Lunch included. Return to Kuala Lumpur for overnight."
+      },
+      {
+        "day": 5,
+        "title": "Kuala Lumpur City Highlights Tour (B)",
+        "description": "Breakfast at hotel. Half-day city tour visiting King's Palace, National Monument, Masjid India, Beryl's Chocolate Factory, and a photo stop at the Petronas Twin Towers. (Optional KL Tower observation deck entrance not included). Rest of the day free for shopping. Overnight in Kuala Lumpur."
+      },
+      {
+        "day": 6,
+        "title": "Departure from Kuala Lumpur (B)",
+        "description": "Breakfast at hotel. Free time until your scheduled airport transfer for your return flight back to Kathmandu."
+      }
+    ],
+    "region": "Asia",
+    "hotelCategory": "3 Star",
+    "airline": "Round-trip Flights Included"
   },
   {
     "id": "pkg-4",
-    "title": "Vibrant Bangkok & Pattaya Explorer",
-    "slug": "bangkok-pattaya-explorer",
-    "price": 72000,
+    "title": "Singapore – Malaysia — 6 Nights 7 Days (Version B)",
+    "slug": "singapore-malaysia-6n-7d-b",
+    "price": 0,
+    "duration": "6 Nights / 7 Days",
+    "fixedDepartureDates": [
+      "April 9 - 15"
+    ],
+    "highlights": [
+      "Marina Bay Sands and Merlion Park photo spots in Singapore",
+      "Sentosa Island cable car and sights",
+      "Genting Highlands mountain resort day trip",
+      "Kuala Lumpur Twin Towers and City Landmarks"
+    ],
+    "inclusions": [
+      "Round-trip air ticket",
+      "Malaysia visa fees & coordination",
+      "2 Nights in Singapore (3-Star Hotel)",
+      "4 Nights in Kuala Lumpur (3-Star Hotel)",
+      "Daily breakfast (B)",
+      "Singapore city tour & Sentosa Island tour",
+      "Kuala Lumpur city tour & Genting Highlands tour",
+      "Singapore to Kuala Lumpur coach ticket",
+      "Airport & hotel transfers",
+      "All local taxes and sightseeing entrance fees"
+    ],
+    "exclusions": [
+      "Personal expenses, drinks, laundry, telephone calls",
+      "Tips for local guides and drivers",
+      "Travel insurance",
+      "Anything not specifically detailed in inclusions"
+    ],
+    "visaChecklist": [
+      "Scanned passport copy valid for at least 6 months",
+      "Latest 3 months' bank statement with a minimum closing balance of NPR 100,000",
+      "Digital passport-size photo"
+    ],
+    "termsAndConditions": [
+      "50% payment required at time of booking to secure flights and rooms",
+      "Price calculated on twin-sharing basis",
+      "Itinerary dates are fixed (Sample schedule April 9–15)",
+      "Flights are non-refundable after confirmation"
+    ],
+    "isFeatured": false,
+    "heroImage": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Singapore & City Landmarks Tour",
+        "description": "Arrival at Singapore Changi Airport. Meet local transfer driver and transfer to your hotel. In the afternoon, explore Marina Bay Sands, Merlion Park, Chinatown, and Little India. Overnight in Singapore."
+      },
+      {
+        "day": 2,
+        "title": "Sentosa Island Scenic Tour",
+        "description": "Breakfast at hotel. Set out for an afternoon tour of Sentosa Island, experiencing cable car rides and island attractions. Overnight in Singapore."
+      },
+      {
+        "day": 3,
+        "title": "Singapore to Kuala Lumpur Coach Journey",
+        "description": "Breakfast at hotel. Check out and board the coach transfer linking Singapore to Kuala Lumpur. On arrival, transfer to your hotel. Overnight in Kuala Lumpur."
+      },
+      {
+        "day": 4,
+        "title": "Genting Highland Day Excursion",
+        "description": "Breakfast at hotel. Travel to the cool Genting Highlands, riding the cable car to the peak. Return to Kuala Lumpur in the evening for overnight."
+      },
+      {
+        "day": 5,
+        "title": "Kuala Lumpur City Highlights",
+        "description": "Breakfast at hotel. Discover Kuala Lumpur's landmark historical sites and enjoy shopping districts. Overnight in Kuala Lumpur."
+      },
+      {
+        "day": 6,
+        "title": "Free & Leisure Day",
+        "description": "Breakfast at hotel. A fully free day to shop at Bukit Bintang malls or explore KL on your own. Overnight in Kuala Lumpur."
+      },
+      {
+        "day": 7,
+        "title": "Departure from Kuala Lumpur",
+        "description": "Breakfast at hotel. Check out of the hotel and transfer to Kuala Lumpur International Airport for your flight back home."
+      }
+    ],
+    "region": "Asia",
+    "hotelCategory": "3 Star",
+    "airline": "Round-trip Air Ticket Included"
+  },
+  {
+    "id": "pkg-5",
+    "title": "Beijing – Shanghai, China — 5 Nights 6 Days",
+    "slug": "beijing-shanghai-china-5n-6d",
+    "price": 0,
+    "duration": "5 Nights / 6 Days",
+    "fixedDepartureDates": [
+      "2026-09-20",
+      "2026-10-15",
+      "2026-11-20"
+    ],
+    "highlights": [
+      "Forbidden City outside view and historic Temple of Heaven",
+      "Ascend the Great Wall of China at Juyong Pass",
+      "Travel via high-speed second-class bullet train from Beijing to Shanghai",
+      "Shanghai city sights including The Bund and Nanjing Road"
+    ],
+    "inclusions": [
+      "3 Nights accommodation in Beijing",
+      "2 Nights accommodation in Shanghai",
+      "Daily breakfast (B)",
+      "2nd-class high-speed bullet train ticket from Beijing to Shanghai",
+      "All tours & transfers per itinerary",
+      "English-speaking guide",
+      "Listed entrance fees to tourist attractions"
+    ],
+    "exclusions": [
+      "International flights",
+      "Personal expenses (phone, laundry, minibar, drinks)",
+      "Guide and driver tips (Compulsory: USD 4 per person per day)",
+      "Optional tours or extra sightseeing",
+      "Unlisted meals and hotel surcharges"
+    ],
+    "visaChecklist": [
+      "China group tourist visa stamp processed by the agency",
+      "Original passport valid for 6+ months",
+      "Required digital visa photograph"
+    ],
+    "termsAndConditions": [
+      "50% payment required at time of confirmation",
+      "Based on twin-sharing standard room allocations",
+      "Hotel grades are subject to availability",
+      "GDS flight tickets booked separately by guest or handled via custom quote"
+    ],
+    "isFeatured": false,
+    "heroImage": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Beijing",
+        "description": "Arrive in Beijing. Meet your local driver at the airport and transfer to your hotel. Enjoy free time to rest. Overnight in Beijing."
+      },
+      {
+        "day": 2,
+        "title": "Beijing City Tour & Imperial Palaces (B)",
+        "description": "Breakfast at hotel. Set off on a city tour visiting the outside of the Forbidden City (the massive 15th-century imperial palace complex). Move on to the Temple of Heaven, containing the Echo Wall and Triple-sound stones. Overnight in Beijing."
+      },
+      {
+        "day": 3,
+        "title": "Great Wall of China & Olympic Park (B)",
+        "description": "Breakfast at hotel. Visit the ancient Great Wall at Juyong Pass, a key historical defense system covering over 60 hectares. Take an outside photo stop of the Olympic Bird's Nest stadium and go shopping at local markets. Overnight in Beijing."
+      },
+      {
+        "day": 4,
+        "title": "Bullet Train Beijing to Shanghai (B)",
+        "description": "Breakfast at hotel. Check out. Transfer to the railway station for your 2nd-class high-speed bullet train journey to Shanghai. Met by local driver in Shanghai and transfer to your hotel. Overnight in Shanghai."
+      },
+      {
+        "day": 5,
+        "title": "Shanghai City Sights Tour (B)",
+        "description": "Breakfast at hotel. Visit the serene Jade Buddha Temple, Yu Yuan Market, Xin Tian Di area, the historic Bund waterfront, and Nanjing Road shopping avenue. Overnight in Shanghai."
+      },
+      {
+        "day": 6,
+        "title": "Departure from Shanghai (B)",
+        "description": "Breakfast at hotel. Check out from the hotel. Transfer to the airport for your final departure flight."
+      }
+    ],
+    "region": "Asia",
+    "hotelCategory": "4 Star",
+    "airline": "Not Included"
+  },
+  {
+    "id": "pkg-6",
+    "title": "Beijing – Shanghai, China — 6 Nights 7 Days",
+    "slug": "beijing-shanghai-china-6n-7d",
+    "price": 0,
+    "duration": "6 Nights / 7 Days",
+    "fixedDepartureDates": [
+      "2026-09-25",
+      "2026-10-20"
+    ],
+    "highlights": [
+      "Includes all Beijing & Shanghai sights of the 6-day package",
+      "Evening Huangpu River Cruise dinner experience in Shanghai",
+      "Bullet train high-speed transition between cities"
+    ],
+    "inclusions": [
+      "3 Nights accommodation in Beijing",
+      "3 Nights accommodation in Shanghai",
+      "Daily breakfast (B)",
+      "2nd-class high-speed bullet train Beijing to Shanghai",
+      "Tours, transfers, and English-speaking guide",
+      "Listed site entrance fees",
+      "Huangpu River Cruise dinner package"
+    ],
+    "exclusions": [
+      "International flight tickets",
+      "Personal expenses (phone, laundry, minibar, drinks)",
+      "Guide and driver tips (Compulsory: USD 4 per person per day)",
+      "Optional tours or extra meals"
+    ],
+    "visaChecklist": [
+      "China group visa processed by the agency",
+      "Passport biographical page copy and photograph"
+    ],
+    "termsAndConditions": [
+      "50% payment required at booking",
+      "Rates based on minimum 2 pax traveling together",
+      "Check-in 14:00/15:00, check-out 11:00/12:00"
+    ],
+    "isFeatured": false,
+    "heroImage": "https://images.unsplash.com/photo-1547984609-44d9777cb62e?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Beijing",
+        "description": "Arrive in Beijing, transfer to hotel, free time. Overnight in Beijing."
+      },
+      {
+        "day": 2,
+        "title": "Beijing Landmarks City Tour (B)",
+        "description": "Breakfast at hotel. View the historic Forbidden City exterior and Temple of Heaven (featuring the Echo Wall). Overnight in Beijing."
+      },
+      {
+        "day": 3,
+        "title": "Great Wall (Juyong Pass) & Olympic Stadiums (B)",
+        "description": "Breakfast at hotel. Tour the Great Wall of China at Juyong Pass, view the Bird's Nest stadium exterior, and shop at local markets. Overnight in Beijing."
+      },
+      {
+        "day": 4,
+        "title": "Bullet Train Beijing to Shanghai (B)",
+        "description": "Breakfast at hotel. Board the 2nd-class bullet train to Shanghai. Arrive and transfer to your hotel. Overnight in Shanghai."
+      },
+      {
+        "day": 5,
+        "title": "Shanghai City Sights Tour (B)",
+        "description": "Breakfast at hotel. Visit Jade Buddha Temple, Yu Yuan Market, Xin Tian Di, Nanjing Road, and walk along The Bund. Overnight in Shanghai."
+      },
+      {
+        "day": 6,
+        "title": "Huangpu River Cruise Dinner (B, D)",
+        "description": "Breakfast at hotel. Spend the morning at leisure. In the evening, enjoy a romantic Huangpu River Cruise with dinner, experiencing Shanghai's skyline lit up. Overnight in Shanghai."
+      },
+      {
+        "day": 7,
+        "title": "Departure from Shanghai (B)",
+        "description": "Breakfast at hotel. Transfer to the airport for your final departure."
+      }
+    ],
+    "region": "Asia",
+    "hotelCategory": "4 Star",
+    "airline": "Not Included"
+  },
+  {
+    "id": "pkg-7",
+    "title": "Danang – Hanoi, Vietnam — 6 Days 5 Nights",
+    "slug": "danang-hanoi-vietnam-6d-5n",
+    "price": 126000,
+    "duration": "5 Nights / 6 Days",
+    "fixedDepartureDates": [
+      "22 June 2026",
+      "2026-09-18",
+      "2026-10-12"
+    ],
+    "highlights": [
+      "Ba Na Hills cable car & Golden Bridge walk in Danang",
+      "Overnight train cabin experience Danang to Hanoi",
+      "Explore Hanoi Old Quarter ('The 36 Streets')",
+      "Full-day Halong Bay cruise with lunch and cave visits"
+    ],
+    "inclusions": [
+      "4 Nights' hotel accommodation (double/twin sharing)",
+      "1 Night overnight train accommodation (double/twin cabin)",
+      "Daily breakfast (B), 1 Lunch on cruise (L), and 1 Buffet Lunch at Ba Na Hills",
+      "All sightseeing entry tickets & boat cruises",
+      "Private airport transfers and sightseeing transfers via SIC A/C coach",
+      "Drinking water on transfers (2x 500ml per person per day)",
+      "Vietnam e-visa processing support"
+    ],
+    "exclusions": [
+      "5% tourism tax",
+      "International flights and excess baggage",
+      "Meals & drinks not specified in the itinerary",
+      "Guide and driver tips (Compulsory: USD 3 per person per day)",
+      "Hotel, restaurant, or boat staff gratuities"
+    ],
+    "visaChecklist": [
+      "Vietnam e-visa is processed by the agency and included",
+      "Clear scanned copy of passport bio page",
+      "Digital passport photograph"
+    ],
+    "termsAndConditions": [
+      "50% payment required at confirmation, remaining 50% due 10 days before departure",
+      "100% payment required if booking is made within 12 days of departure",
+      "Most airline tickets are non-refundable",
+      "Once visa is applied for, visa fee and package are non-refundable",
+      "Post-visa cancellations subject to up to 100% charge depending on airline/hotel policies",
+      "Guests manage their own immigration. Agency provides coordination letters only"
+    ],
+    "isFeatured": true,
+    "heroImage": "https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Danang & City Tour",
+        "description": "Land in Danang. Meet our local guide and transfer to your hotel. Afternoon city orientation tour. Overnight in Danang."
+      },
+      {
+        "day": 2,
+        "title": "Ba Na Hills Scenic Peak & Golden Bridge (B, L)",
+        "description": "Breakfast at hotel. Take the record-breaking cable car to Ba Na Hills. Walk the iconic Golden Bridge held by massive stone hands. Visit Linh Ung Pagoda (housing a 27m Buddha statue), Loc Uyen Garden, and enjoy rides at Fantasy Park. Enjoy a buffet lunch. Visit Ba Chua Thuong Ngan Temple at the 1,487m peak before descending. Overnight in Danang."
+      },
+      {
+        "day": 3,
+        "title": "Danang Leisure & Overnight Train to Hanoi (B)",
+        "description": "Breakfast at hotel. Spend the day free for shopping and beach time. In the evening, transfer to the railway station for your overnight sleeper train journey to Hanoi. Overnight in train cabin."
+      },
+      {
+        "day": 4,
+        "title": "Hanoi Arrival & City Highlights Tour",
+        "description": "Arrive in Hanoi. Explore the capital's historical landmarks: Ba Dinh Square, Ho Chi Minh Mausoleum (outside), Temple of Literature (Vietnam's first university, built 1070), Hoan Kiem Lake, and the busy Old Quarter ('The 36 Streets'). Overnight in Hanoi."
+      },
+      {
+        "day": 5,
+        "title": "Hanoi – Halong Bay Scenic Day Cruise (B, L)",
+        "description": "Breakfast at hotel. Take a 3.5–4 hour drive through the Red River Delta to Halong Bay. Board a traditional wooden junk cruise past famous karst rock formations (Stone Dog, Incense Burner, Fighting Cock). Enjoy lunch on board. Visit the spectacular Thien Cung and Dau Go caves. Return to Hanoi for overnight."
+      },
+      {
+        "day": 6,
+        "title": "Departure from Hanoi (B)",
+        "description": "Breakfast at hotel. Leisure time until check-out (12:00) and transfer to Hanoi Airport for your departure flight."
+      }
+    ],
+    "region": "Asia",
+    "hotelCategory": "Standard Double/Twin",
+    "airline": "Not Included"
+  },
+  {
+    "id": "pkg-8",
+    "title": "Japan — 7 Nights 8 Days",
+    "slug": "japan-7n-8d",
+    "price": 0,
+    "duration": "7 Nights / 8 Days",
+    "fixedDepartureDates": [
+      "2026-09-15",
+      "2026-10-10"
+    ],
+    "highlights": [
+      "Tokyo landmarks: Sensoji Temple and Skytree 350m observation deck",
+      "Day trip to Mount Fuji 5th Station and Gotemba Outlets",
+      "Shinkansen bullet train to Kyoto, Hiroshima, and Osaka",
+      "Hiroshima Atomic Bomb Dome and Itsukushima floating shrine"
+    ],
+    "inclusions": [
+      "Please contact our ticketing desk for live quotes and custom pricing packages. Full listings are provided upon inquiry."
+    ],
+    "exclusions": [
+      "International flights, travel insurance, personal expenses, and tips are not pre-packaged."
+    ],
+    "visaChecklist": [
+      "Original passport valid for 6+ months",
+      "Visa application form with photo attached",
+      "Detailed daily travel program",
+      "Last 6 months' bank statement and tax clearance certificate"
+    ],
+    "termsAndConditions": [
+      "Contact our team for customized departure options and group pricing.",
+      "Flights and accommodations are booked strictly upon confirmation."
+    ],
+    "isFeatured": true,
+    "heroImage": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Tokyo & VIP Hotel Transfer",
+        "description": "Arrive at Narita or Haneda Airport. Meet your guide and take a private transfer (1–1.5 hours) to your hotel. Welcome dinner included."
+      },
+      {
+        "day": 2,
+        "title": "Tokyo Sights: Asakusa & Skytree",
+        "description": "Visit the Imperial Palace exterior for photos. Explore Asakusa Sensoji Temple and the Nakamise shopping street. Ascend the Tokyo Skytree 350m observation deck (tickets included). Drive to Odaiba to view the Gundam Statue and Liberty Statue replica."
+      },
+      {
+        "day": 3,
+        "title": "Mount Fuji & Gotemba Outlets Day Trip",
+        "description": "Proceed to Mt. Fuji 5th Station (weather permitting). Explore Oshino Hakkai (UNESCO site featuring spring-fed ponds and a traditional village). Shop and dine at the Gotemba Premium Outlets. Return to Tokyo."
+      },
+      {
+        "day": 4,
+        "title": "Shinkansen to Kyoto & Arashiyama Bamboo",
+        "description": "Board the Shinkansen Bullet Train to Kyoto. Walk through the Arashiyama Bamboo Forest, Higashiyama District (Ninenzaka & Sanenzaka), Gion geisha district, and the red torii gates of Fushimi Inari Shrine. Check in to Kyoto hotel."
+      },
+      {
+        "day": 5,
+        "title": "Kyoto to Hiroshima & Peace Memorial Park",
+        "description": "Board the bullet train to Hiroshima. Visit the historic Atomic Bomb Dome and the Peace Memorial Park. Check in to your Hiroshima hotel."
+      },
+      {
+        "day": 6,
+        "title": "Miyajima Floating Torii & Shinkansen to Osaka",
+        "description": "Take the ferry to Miyajima Island. Visit the famous Itsukushima Shrine with its floating torii gate. Board the bullet train to Osaka. Climb the Umeda Sky Building for panoramic city views. Check in to Osaka hotel."
+      },
+      {
+        "day": 7,
+        "title": "Osaka Castle, Nara Deer Park & Dotonbori",
+        "description": "Take photos at Osaka Castle. Drive to Nara to visit Nara Deer Park and Todai-ji Temple (Great Buddha, tickets included). Evening shopping and street food tour at Shinsaibashi & Dotonbori. Overnight in Osaka."
+      },
+      {
+        "day": 8,
+        "title": "Osaka Departure",
+        "description": "Check out and take your transfer to Kansai International Airport for your departure flight."
+      }
+    ],
+    "region": "Asia",
+    "hotelCategory": "Standard Category",
+    "airline": "Not Included"
+  },
+  {
+    "id": "pkg-9",
+    "title": "Kazakhstan (Almaty) — 4 Nights 5 Days",
+    "slug": "kazakhstan-almaty-4n-5d",
+    "price": 0,
     "duration": "4 Nights / 5 Days",
     "fixedDepartureDates": [
       "2026-09-08",
-      "2026-10-05",
-      "2026-11-10"
+      "2026-10-05"
     ],
     "highlights": [
-      "Explore the golden temples Wat Pho and Wat Arun in Bangkok",
-      "Speed boat tour to Coral Island (Koh Larn) in Pattaya",
-      "Enjoy a scenic dinner cruise on the Chao Phraya River",
-      "Guided tour of Safari World & Marine Park"
+      "Ascend to Shymbulak Ski Resort via 3-tier scenic gondola",
+      "Walk the promenade at Panfilov & Arbat pedestrian streets",
+      "Visit the famous Zenkov Cathedral, built entirely without nails",
+      "Take the cable car to Kok Tobe Hill for city views"
     ],
     "inclusions": [
-      "Roundtrip Flight Tickets (KTM-BKK-KTM)",
-      "Thailand Tourist Visa processing support",
-      "4-Star Accommodations (Bangkok & Pattaya)",
-      "Daily Buffet Breakfasts & Coral Island Lunch",
-      "Coordinated Coach Sightseeing Transfers"
+      "4 Nights' accommodation at a 3-Star Hotel",
+      "Daily breakfast (B) and meals per program",
+      "All airport–hotel–airport transfers",
+      "Tours to Shymbulak Ski Resort and Almaty City Sights",
+      "Kazakhstan e-visa fee"
+    ],
+    "exclusions": [
+      "International flight tickets",
+      "Personal expenses (phone, laundry, minibar, drinks)",
+      "Tips for local guide and driver",
+      "Optional activities at Shymbulak (zip-lining, horse riding)"
+    ],
+    "visaChecklist": [
+      "Kazakhstan e-visa is processed by the agency and included",
+      "Scan of passport biographical page (6+ months validity)"
+    ],
+    "termsAndConditions": [
+      "50% advance payment required for booking confirmation",
+      "Full payment required before arrival",
+      "Hotel grades are subject to availability",
+      "Fares and hotel surcharges are subject to change without notice"
     ],
     "isFeatured": false,
+    "heroImage": "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Welcome to Almaty",
+        "description": "Arrival in Almaty. Clear customs and immigration. Meet & greet with your English-speaking guide at the airport and transfer to your 3-star hotel. Overnight in Almaty."
+      },
+      {
+        "day": 2,
+        "title": "Shymbulak Ski Resort & Arbat Walking Promenade",
+        "description": "Breakfast at hotel. Board the 3-tier gondola cable car to Shymbulak Ski Resort (3,200m). Enjoy a coffee at the highest bar in the CIS and panoramic mountain views. Optional activities include zip-lining, horse riding, or paragliding. In the evening, take a walking tour along Panfilov and Arbat streets, passing the Kazakh Opera & Ballet Theatre."
+      },
+      {
+        "day": 3,
+        "title": "Almaty City Sightseeing & Kok Tobe Hill (B)",
+        "description": "Breakfast at hotel. Visit First President Park, Republic Square, State Opera & Ballet Theatre, Panfilov Park, and the spectacular Zenkov Cathedral (a 56m tall wooden cathedral built without nails). Ride the cable car to Kok Tobe Hill to see the 372m TV Tower and view the city skyline."
+      },
+      {
+        "day": 4,
+        "title": "Free Day for Shopping & Leisure (B)",
+        "description": "Breakfast at hotel. Enjoy a full day at leisure to explore local bazaars, shop for souvenirs, and try local Kazakh cuisine."
+      },
+      {
+        "day": 5,
+        "title": "Departure from Almaty (B)",
+        "description": "Receive a packed breakfast. Check out of the hotel and transfer to Almaty Airport for your return flight."
+      }
+    ],
+    "region": "Asia",
+    "hotelCategory": "3 Star",
+    "airline": "Not Included"
+  },
+  {
+    "id": "pkg-10",
+    "title": "Jordan — 5 Days 4 Nights (2 Pax)",
+    "slug": "jordan-5d-4n-4star",
+    "price": 0,
+    "duration": "4 Nights / 5 Days",
+    "fixedDepartureDates": [
+      "Upon Custom Request"
+    ],
+    "highlights": [
+      "Explore Jerash, the ancient Roman colonnaded city",
+      "Visit the Nabataean rock-carved city of Petra",
+      "2-Hour 4x4 desert safari and camp stay in Wadi Rum",
+      "Float in the mineral-rich waters of the Dead Sea"
+    ],
+    "inclusions": [
+      "Meet & assist after visa formalities at airport",
+      "2 Nights accommodation in Amman (BB - Olive Tree or similar)",
+      "1 Night accommodation in Wadi Rum (HB - Rum Oasis Camp or similar)",
+      "1 Night accommodation in Dead Sea (BB - Grand East or similar)",
+      "Private transfers in modern A/C vehicle with professional driver",
+      "Entrance fees to all mentioned historical sites (including Petra ticket)",
+      "Short horse ride in Petra",
+      "Mineral water in vehicle throughout the tour",
+      "English-speaking local guide at Jerash & Petra",
+      "2-Hour 4x4 desert ride in Wadi Rum"
+    ],
+    "exclusions": [
+      "International flights and airport visa fees",
+      "Personal expenses (laundry, calls, drinks, minibar)",
+      "Lunches and dinners (except dinner at Wadi Rum camp)",
+      "Bank transfer fees",
+      "Tips for guides, driver, horse boy, and hotel staff",
+      "Unspecified optional tours"
+    ],
+    "visaChecklist": [
+      "Passport valid for at least 6 months",
+      "Jordan visa on arrival coordinates provided by agency"
+    ],
+    "termsAndConditions": [
+      "Prices are calculated per person based on a private tour for 2 Pax",
+      "50% payment required at confirmation, balance due before arrival",
+      "Hotels are subject to availability — similar 4-star options provided if fully booked",
+      "Bank transfer fee is borne by the guest"
+    ],
+    "isFeatured": false,
+    "heroImage": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Queen Alia Airport Arrival – Amman",
+        "description": "Meet and assist at Queen Alia Airport after visa formalities. Private transfer to your hotel in Amman. Check in and overnight. (Olive Tree Hotel or similar)"
+      },
+      {
+        "day": 2,
+        "title": "Amman City Landmarks & Roman Jerash (B)",
+        "description": "Breakfast at hotel. Explore downtown Amman's souks, the Roman Theatre, and the Citadel ('Citadel of Rabbath Ammon'). Drive north to Jerash, the best-preserved Greco-Roman city in the Middle East. Walk colonnaded streets, temples, and amphitheaters. Return to Amman for overnight."
+      },
+      {
+        "day": 3,
+        "title": "Amman – Petra Nabataean City – Wadi Rum Desert (B, D)",
+        "description": "Breakfast at hotel. Drive to Petra, the rose-red Nabataean city carved into sandstone cliffs. Walk through the narrow Siq gorge to see the Treasury, Street of Facades, and Royal Tombs. Continue to Wadi Rum. Board a 4x4 vehicle for a 2-hour desert ride. Check into your desert camp, enjoy a traditional dinner under the stars, and overnight. (Rum Oasis Camp or similar)"
+      },
+      {
+        "day": 4,
+        "title": "Wadi Rum – Dead Sea Relax (B)",
+        "description": "Breakfast at camp. Transfer to the Dead Sea, the lowest point on earth. Check into your resort. Spend the day floating in the salty, mineral-rich waters. Overnight at the Dead Sea. (Grand East Resort or similar)"
+      },
+      {
+        "day": 5,
+        "title": "Dead Sea – Queen Alia Airport Departure (B)",
+        "description": "Breakfast at hotel. Check out. Private transfer to Queen Alia Airport for your departure flight."
+      }
+    ],
+    "region": "Asia",
+    "hotelCategory": "4 Star",
+    "airline": "Not Included"
+  },
+  {
+    "id": "pkg-11",
+    "title": "Jagannath Puri (Bhubaneswar – Puri – Chilika), India",
+    "slug": "jagannath-puri-india-5d",
+    "price": 0,
+    "duration": "4 Nights / 5 Days",
+    "fixedDepartureDates": [
+      "Custom Departures"
+    ],
+    "highlights": [
+      "Explore 11th-century Lingaraj Temple and temples of Bhubaneswar",
+      "Visit Dhauli Peace Pagoda and Konark Sun Temple (UNESCO Site)",
+      "Relax at Puri Golden Beach and visit Jagannath Temple",
+      "Boat ride at Chilika Lake (Satapada) to spot Irrawaddy Dolphins"
+    ],
+    "inclusions": [
+      "Flight coordinates: Indigo 6E flights (IXB-CCU-BBI and BBI-IXB)",
+      "Standard transfer vehicles provided for sightseeing routes.",
+      "Check with our inquiry form for package pricing details."
+    ],
+    "exclusions": [
+      "Meals, personal expenses, temple offerings, and guide tips are not pre-packaged."
+    ],
+    "visaChecklist": [
+      "No visa required for Nepalese citizens traveling to India (must carry valid citizenship certificate or passport)"
+    ],
+    "termsAndConditions": [
+      "Flight ticket cost is subject to seat availability at booking.",
+      "Non-Hindus are not permitted inside the inner sanctum of the Jagannath Temple."
+    ],
+    "isFeatured": false,
+    "heroImage": "https://images.unsplash.com/photo-1600100397608-f010e42ecb9c?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Bhubaneswar & Temple Tour",
+        "description": "Arrive in Bhubaneswar. Meet our representative and transfer to your hotel. Visit the 11th-century Lingaraj Temple, Mukteshwar Temple (representing Kalinga architecture), Rajarani Temple, and Brahmeswar Temple. Evening shopping at Ekamra Haat craft market. Overnight in Bhubaneswar."
+      },
+      {
+        "day": 2,
+        "title": "Bhubaneswar – Dhauli – Konark – Puri",
+        "description": "Drive to Puri. En route, visit Dhauli Peace Pagoda (site of the Kalinga War) and Pipli (applique handicraft village). Continue to the Konark Sun Temple (UNESCO Site) and Chandrabhaga Beach. Relax at Golden Beach, Puri. Overnight in Puri."
+      },
+      {
+        "day": 3,
+        "title": "Jagannath Temple & Chilika Lake (Satapada)",
+        "description": "Visit the sacred Jagannath Temple (Note: non-Hindus are not permitted inside). Browse local Puri markets. In the afternoon, drive to Satapada on Chilika Lake. Enjoy a boat ride to spot Irrawaddy Dolphins and watch the sunset. Overnight in Puri."
+      },
+      {
+        "day": 4,
+        "title": "Puri – Raghurajpur Artists Village – Bhubaneswar",
+        "description": "Drive back to Bhubaneswar. En route, visit Raghurajpur Heritage Village (famous for Pattachitra painters). Visit the Odisha State Tribal Museum and Khandagiri & Udayagiri Caves (ancient Jain rock-cut caves). Optional shopping at Esplanade Mall. Overnight in Bhubaneswar."
+      },
+      {
+        "day": 5,
+        "title": "Departure from Bhubaneswar",
+        "description": "Optional visit to Nandankanan Zoological Park. Transfer to Bhubaneswar Airport or railway station for your departure flight."
+      }
+    ],
+    "region": "Asia",
+    "hotelCategory": "Standard Category",
+    "airline": "IndiGo Flights Vetted"
+  },
+  {
+    "id": "pkg-12",
+    "title": "Maldives — 4 Days (5-Star, Sea Plane Resort)",
+    "slug": "maldives-5star-seaplane",
+    "price": 240000,
+    "duration": "3 Nights / 4 Days",
+    "fixedDepartureDates": [
+      "Custom Departures"
+    ],
+    "highlights": [
+      "Stay at Madifushi Private Island Maldives luxury resort",
+      "Overnight in a spectacular Over-Water Villa",
+      "Romantic floating breakfast in the pool",
+      "Relaxing 30-Min Balinese Massage at Mandara Spa"
+    ],
+    "inclusions": [
+      "2 Nights in a Beach Villa + 1 Night in an Over-Water Villa",
+      "Daily buffet breakfast and buffet dinner at BlueFin restaurant",
+      "Daily set BBQ menu option at Mojito",
+      "One floating breakfast and one minibar setup on arrival",
+      "One guided snorkeling trip",
+      "One 30-min Balinese massage at Mandara Spa per person",
+      "USD 100 net dining credit per room per stay (dine-in only, excludes room service)",
+      "Return seaplane transfers from Malé Airport"
+    ],
+    "exclusions": [
+      "5% luxury tax (collected separately)",
+      "Round-trip international flight tickets KTM–MLE–KTM",
+      "Personal expenses (phone, laundry, drinks, minibar)",
+      "Travel insurance & tips/gratuities"
+    ],
+    "visaChecklist": [
+      "Maldives tourist visa on arrival is free for Nepalese passport holders",
+      "Must carry passport valid for 6+ months and confirmed hotel booking"
+    ],
+    "termsAndConditions": [
+      "50% payment required at booking confirmation",
+      "Price calculated per person on twin-sharing basis",
+      "Surcharge may apply for itinerary alterations",
+      "Rooms and seaplane slots are subject to availability"
+    ],
+    "isFeatured": true,
+    "heroImage": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Malé & Seaplane Transfer to Resort",
+        "description": "Arrive at Velana International Airport, Malé. Board your luxury seaplane transfer to Madifushi Private Island. Check in to your Beach Villa. Enjoy dinner at BlueFin restaurant. Overnight at resort."
+      },
+      {
+        "day": 2,
+        "title": "Resort Leisure & Guided Snorkeling Trip (B, D)",
+        "description": "Breakfast at BlueFin. Enjoy your guided snorkeling trip at the resort's house reef. Spend the day relaxing on the white sand beaches. Dinner at BlueFin. Overnight in Beach Villa."
+      },
+      {
+        "day": 3,
+        "title": "Over-Water Villa Transition & Floating Breakfast (B, D)",
+        "description": "Experience a luxurious floating breakfast served in your private pool. Transfer and check into your Over-Water Villa. Enjoy your 30-min Balinese massage at Mandara Spa. Dinner at BlueFin or set BBQ menu at Mojito. Overnight in Over-Water Villa."
+      },
+      {
+        "day": 4,
+        "title": "Seaplane Transfer & Departure (B)",
+        "description": "Breakfast at BlueFin. Free time until check-out. Board the return seaplane transfer to Malé Airport for your international departure flight."
+      }
+    ],
+    "region": "Asia",
+    "hotelCategory": "5 Star",
+    "airline": "Seaplane Transfer Included"
+  },
+  {
+    "id": "pkg-13",
+    "title": "Maldives — 4 Days Standard Tour",
+    "slug": "maldives-standard-4d",
+    "price": 0,
+    "duration": "3 Nights / 4 Days",
+    "fixedDepartureDates": [
+      "Custom Departures"
+    ],
+    "highlights": [
+      "Experience both Beach Villa and Over-Water Villa accommodations",
+      "Round-trip shared speedboat transfers from Malé Airport",
+      "Leisure time for beach relaxing and optional diving"
+    ],
+    "inclusions": [
+      "2 Nights' accommodation in a Beach Villa",
+      "1 Night's accommodation in an Over-Water Villa",
+      "Half-board meal plan (Daily breakfast and dinner)",
+      "Shared return speedboat airport transfers",
+      "All local taxes and green fees"
+    ],
+    "exclusions": [
+      "Round-trip international flight tickets",
+      "Personal expenses (phone, laundry, drinks, minibar)",
+      "Optional water sports (scuba diving, undersea walk)",
+      "Travel insurance & tips/gratuities"
+    ],
+    "visaChecklist": [
+      "Maldives tourist visa is issued on arrival free of charge for Nepalese citizens",
+      "Passport valid for at least 6 months and valid return tickets required"
+    ],
+    "termsAndConditions": [
+      "50% payment required at booking to secure resort reservations",
+      "Price based on twin/double-sharing basis",
+      "Speedboat transfers operate on fixed schedules"
+    ],
+    "isFeatured": false,
+    "heroImage": "https://images.unsplash.com/photo-1540206395-68808572332f?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival & Speedboat Transfer",
+        "description": "Arrive at Malé Airport. Clear immigration, meet the resort coordinator, and take a shared speedboat transfer to the island. Check in to your Beach Villa. Overnight in Maldives."
+      },
+      {
+        "day": 2,
+        "title": "Beach Villa Leisure Day (B)",
+        "description": "Breakfast at the resort. Enjoy a free day to relax on the beach or try optional water sports (scuba diving, underwater sea walk). Overnight in Beach Villa."
+      },
+      {
+        "day": 3,
+        "title": "Water Villa Transition & Relax (B)",
+        "description": "Breakfast at the resort. Check out of Beach Villa and transfer to your luxury Over-Water Villa. Spend the day enjoying the lagoon views. Overnight in Over-Water Villa."
+      },
+      {
+        "day": 4,
+        "title": "Departure from Maldives (B)",
+        "description": "Breakfast at the resort. Check out and take the speedboat transfer back to Malé Airport for your international return flight."
+      }
+    ],
+    "region": "Asia",
+    "hotelCategory": "3 Star / 4 Star",
+    "airline": "Not Included"
+  },
+  {
+    "id": "pkg-14",
+    "title": "Thailand – Singapore – Malaysia — 9 Nights 10 Days",
+    "slug": "thailand-singapore-malaysia-10d",
+    "price": 0,
+    "duration": "9 Nights / 10 Days",
+    "fixedDepartureDates": [
+      "Seasonal Departures"
+    ],
+    "highlights": [
+      "Speedboat tour to Coral Island (Koh Larn) with lunch in Pattaya",
+      "Guided city & temple tours in Bangkok, Singapore, and Kuala Lumpur",
+      "Sentosa Island cable car & Wings of Time ticket in Singapore",
+      "Genting Highlands cable car and Lord Murugan statue at Batu Caves"
+    ],
+    "inclusions": [
+      "Airfare: KTM–Bangkok, Bangkok–Singapore, and Kuala Lumpur–KTM",
+      "Private airport pickup and drop-off (other sightseeing transfers SIC basis)",
+      "3-Star Hotel accommodations with daily breakfast",
+      "1 Complimentary lunch on Coral Island tour",
+      "City & temple tours in Bangkok, Singapore, and Kuala Lumpur",
+      "Sentosa Island tickets (1-way cable car + Wings of Time show)",
+      "Genting Highland 1-way cable car ticket and Batu Caves visit",
+      "Single-entry visa fees for Thailand and Malaysia",
+      "Singapore to Kuala Lumpur express coach ticket"
+    ],
+    "exclusions": [
+      "Malaysia hotel tourism tax (10 MYR per room per night, paid locally at check-in)",
+      "Personal expenses (phone, laundry, drinks, minibar)",
+      "Travel insurance",
+      "Tips for guides, drivers, and hotel staff"
+    ],
+    "visaChecklist": [
+      "Passport valid for at least 6 months",
+      "Last 4 months' bank statements with a minimum closing balance of NPR 100,000",
+      "1 recent passport-size photo (white background)",
+      "Clear scan of citizenship certificate (front & back)",
+      "Visa fees are non-refundable once applied. Refusal is at embassy discretion"
+    ],
+    "termsAndConditions": [
+      "Cancellation Policy: 15+ days before departure — standard cancellation fee; 14–4 days before departure — 60% of package cost; within 3 days — 100% of package cost (non-refundable)",
+      "Price calculated per person on twin-sharing basis",
+      "GDS flights are subject to seat availability at booking"
+    ],
+    "isFeatured": true,
     "heroImage": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?q=80&w=1200&auto=format&fit=crop",
     "itinerary": [
       {
         "day": 1,
         "title": "Arrival in Bangkok & Pattaya Transfer",
-        "description": "Land in Bangkok (Suvarnabhumi Airport). Private transfer directly to the beachside town of Pattaya. Check into your hotel."
+        "description": "Meet and greet at Bangkok airport. Private transfer to Pattaya. Check into your hotel and overnight."
       },
       {
         "day": 2,
-        "title": "Coral Island Speed Boat Excursion",
-        "description": "Board a speed boat to Coral Island (Koh Larn). Enjoy water sports (parasailing/undersea walk) and a delicious beachside lunch. Back to Pattaya."
+        "title": "Coral Island Speedboat Tour (L)",
+        "description": "Board a speedboat to Coral Island (Koh Larn) through the Gulf of Thailand. Swim, snorkel, or relax on the white sands. Enjoy a delicious Indian lunch. Afternoon free for leisure. Overnight in Pattaya."
       },
       {
         "day": 3,
-        "title": "Nong Nooch Garden & Bangkok Return",
-        "description": "Visit Nong Nooch Botanical Garden to see orchid collections and cultural shows. Drive back to Bangkok. Take a evening dinner cruise."
+        "title": "Pattaya to Bangkok Transit",
+        "description": "Transfer to Bangkok. Check into your hotel. Explore the city's sights and temples on a guided tour. Overnight in Bangkok."
       },
       {
         "day": 4,
-        "title": "Bangkok Golden Temples & Safari World",
-        "description": "Visit Wat Pho (Temple of Reclining Buddha) and Wat Arun (Temple of Dawn). Spend the afternoon at Safari World & Marine Park."
+        "title": "Bangkok to Singapore Flight",
+        "description": "Check out. Transfer to Bangkok Airport for your flight to Singapore. Arrive and transfer to your Singapore hotel. Overnight in Singapore."
       },
       {
         "day": 5,
-        "title": "Market Shopping & Departure",
-        "description": "Free time for shopping at Platinum Mall or MBK Center. Transfer to Suvarnabhumi Airport for your return flight to Kathmandu."
+        "title": "Singapore City & Sentosa Island Tour",
+        "description": "Enjoy a half-day Singapore city tour. In the afternoon, proceed to Sentosa Island via cable car and watch the Wings of Time show. Overnight in Singapore."
+      },
+      {
+        "day": 6,
+        "title": "Singapore to Kuala Lumpur Coach",
+        "description": "Board the express coach from Singapore to Kuala Lumpur. Arrive and transfer to your hotel. Overnight in Kuala Lumpur."
+      },
+      {
+        "day": 7,
+        "title": "Kuala Lumpur Leisure Day",
+        "description": "Spend the day shopping or exploring the landmarks of Kuala Lumpur. Overnight in Kuala Lumpur."
+      },
+      {
+        "day": 8,
+        "title": "Kuala Lumpur Landmarks City Tour",
+        "description": "Explore the city's highlights: National Monument, a photo stop at the King's Palace gate, Jamek Mosque, and House of Parliament. Overnight in Kuala Lumpur."
+      },
+      {
+        "day": 9,
+        "title": "Genting Highland Excursion & Batu Caves",
+        "description": "Ride the Skyway cable car (1-way ticket included) up to Genting Highlands (2,000m) containing Malaysia's only casino and theme parks. En route, visit the 400-million-year-old Hindu cave temple at Batu Caves and view the 42.7m Lord Murugan statue. Overnight in Kuala Lumpur."
+      },
+      {
+        "day": 10,
+        "title": "Departure from Kuala Lumpur",
+        "description": "Breakfast at hotel. Check out. Private transfer to Kuala Lumpur Airport for your return flight."
       }
-    ]
+    ],
+    "region": "Asia",
+    "hotelCategory": "3 Star",
+    "airline": "Flights Included (KTM-BKK, BKK-SIN, KUL-KTM)"
+  },
+  {
+    "id": "pkg-15",
+    "title": "Sri Lanka & Maldives Combined Tour — 7 Days",
+    "slug": "srilanka-maldives-combined-7d",
+    "price": 0,
+    "duration": "6 Nights / 7 Days",
+    "fixedDepartureDates": [
+      "Custom Departures"
+    ],
+    "highlights": [
+      "Climb Sigiriya Lion Rock ('Fortress in the Sky' UNESCO site)",
+      "Visit Kandy Temple of the Sacred Tooth Relic",
+      "Stay in Beach & Over-water Villas at Sun Siyam Olhuveli Maldives"
+    ],
+    "inclusions": [
+      "3 Nights accommodation in Sri Lanka (Camelia Dambulla, Club Bentota, Best Western Colombo)",
+      "2 Nights Beach Villa + 1 Night Over-Water Villa at Sun Siyam Olhuveli Maldives",
+      "Daily breakfast (B) and dinner (D) in Sri Lanka; Half-board plan in Maldives",
+      "A/C private vehicle transport in Sri Lanka with English-speaking chauffeur guide",
+      "VAT and airport meet & assist services",
+      "Entrance tickets included: Sigiriya, Dambulla Cave Temple, Peradeniya Botanical Garden, Kandy Temple, Turtle Hatchery, Madu River Boat Ride, Gangaramaya Temple",
+      "One water sports activity in Bentota (choice of jet ski, banana boat, or tube ride)"
+    ],
+    "exclusions": [
+      "Lunches on tour during the Sri Lanka portion",
+      "Tips for guide, driver, and hotel staff",
+      "Personal expenses (laundry, calls, minibar, drinks)",
+      "International flights"
+    ],
+    "visaChecklist": [
+      "Sri Lanka ETA visa fee and Maldives visa on arrival is required",
+      "Passport valid for at least 6 months and visa application files coordinated by agency"
+    ],
+    "termsAndConditions": [
+      "50% payment required at time of confirmation",
+      "Rates based on per person twin-sharing basis",
+      "No services blocked until booking is finalized"
+    ],
+    "isFeatured": false,
+    "heroImage": "https://images.unsplash.com/photo-1546708973-b339540b5162?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Colombo – Dambulla (D)",
+        "description": "Meet & greet at Colombo Airport. Transfer to your resort in Dambulla. Enjoy dinner. Overnight in Dambulla. (Camelia Resort & Spa or similar)"
+      },
+      {
+        "day": 2,
+        "title": "Sigiriya Rock – Kandy Lake – Bentota Beach (B, D)",
+        "description": "Breakfast at hotel. Climb the 5th-century Sigiriya Lion Rock. Drive to Kandy city. Visit the Temple of the Sacred Tooth Relic and view Kandy Lake ('Sea of Milk'). Drive to the beach resort town of Bentota. Dinner and overnight. (Club Bentota or similar)"
+      },
+      {
+        "day": 3,
+        "title": "Bentota Water Sports – Colombo Sights (B, D)",
+        "description": "Breakfast at hotel. Enjoy one water sports activity (jet ski or tube ride). Drive to Colombo. Visit Gangaramaya Temple, Independence Memorial Hall, Galle Face Green, and Pettah Floating Market. Dinner and overnight. (Best Western or similar)"
+      },
+      {
+        "day": 4,
+        "title": "Flight to Malé & Beach Villa Check-in (B, D)",
+        "description": "Breakfast at hotel. Transfer to Colombo Airport for your flight to Malé, Maldives. Board speedboat transfer to Sun Siyam Olhuveli resort. Check into your Beach Villa. Overnight at resort."
+      },
+      {
+        "day": 5,
+        "title": "Maldives Island Leisure Day (B, L, D)",
+        "description": "Enjoy a free day at the resort. Swim, snorkel, or sunbathe on the beach. All meals included (Half-Board). Overnight in Beach Villa."
+      },
+      {
+        "day": 6,
+        "title": "Over-Water Villa Relaxation (B, L, D)",
+        "description": "Transfer and check into your luxury Over-Water Villa. Relax over the lagoon and enjoy resort amenities. Overnight in Over-Water Villa."
+      },
+      {
+        "day": 7,
+        "title": "Departure from Maldives (B)",
+        "description": "Breakfast at resort. Speedboat transfer to Malé Airport for your departure flight."
+      }
+    ],
+    "region": "Asia",
+    "hotelCategory": "3-Star / 4-Star & Resort",
+    "airline": "Not Included"
+  },
+  {
+    "id": "pkg-16",
+    "title": "Turkey — 5 Nights 6 Days (Istanbul + Cappadocia)",
+    "slug": "turkey-istanbul-cappadocia-6d",
+    "price": 60000,
+    "duration": "5 Nights / 6 Days",
+    "fixedDepartureDates": [
+      "Custom Departures"
+    ],
+    "highlights": [
+      "Old City Tour including Blue Mosque, Hagia Sophia & Topkapi",
+      "Princes' Island Büyükada cruise with optional bicycle tour",
+      "Cappadocia North Tour exploring Göreme and fairy chimneys",
+      "Stay in Konak Taksim and Dedeli Konak Cave Hotels"
+    ],
+    "inclusions": [
+      "3 Nights in Istanbul (Konak Taksim Hotel - BB)",
+      "2 Nights in Cappadocia (Dedeli Konak Cave Hotel - BB)",
+      "Daily breakfast (B) and lunches on tours per program",
+      "Shared regular SIC tours per itinerary",
+      "Private airport transfers (IST/SAW to hotel)",
+      "English-speaking licensed guide",
+      "All entry fees to listed sites and museums",
+      "Air-conditioned non-smoking sanitized coach transport",
+      "Local taxes & VAT"
+    ],
+    "exclusions": [
+      "International and domestic flights (KTM-IST-KTM and Istanbul-Nevsehir)",
+      "SAW airport transfer incurs +10 EUR surcharge one-way",
+      "Personal expenses (laundry, drinks, minibar)",
+      "Compulsory driver/guide tips",
+      "Turkey visa and travel insurance"
+    ],
+    "visaChecklist": [
+      "Passport valid for at least 6 months",
+      "Turkey tourist visa application coordinated by agency"
+    ],
+    "termsAndConditions": [
+      "Price calculated per person in double room occupancy",
+      "Tours run on SIC (shared) basis, while airport transfers are private",
+      "Grand Bazaar closed Sundays, Topkapi Palace closed Tuesdays",
+      "Standard check-in from 14:00, check-out until 12:00"
+    ],
+    "isFeatured": false,
+    "heroImage": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Istanbul Arrival",
+        "description": "Arrive at Istanbul (IST or SAW) Airport. Private transfer to your hotel. Check in and overnight in Istanbul. (Konak Taksim Hotel)"
+      },
+      {
+        "day": 2,
+        "title": "Panoramic Istanbul Old City Tour (B, L)",
+        "description": "Breakfast at hotel. Old City tour (no entrance fees) visiting Blue Mosque (Sultan Ahmed), the Hippodrome of Constantinople, Hagia Sophia (outside), and Topkapi Palace (outside). Explore the Grand Bazaar (~4,000 shops) and enjoy lunch at a local restaurant. Overnight in Istanbul."
+      },
+      {
+        "day": 3,
+        "title": "Princes' Islands Excursion (B, L)",
+        "description": "Breakfast at hotel. Board a ferry to Büyükada, the largest of the Princes' Islands. Enjoy lunch and free time (optional bicycle rentals, visiting Aya Yorgi Church, or beach relaxing). Return ferry to Istanbul for overnight."
+      },
+      {
+        "day": 4,
+        "title": "Fly to Cappadocia (B)",
+        "description": "Breakfast at hotel. Check out. Private transfer to Istanbul Airport for your domestic flight to Kayseri or Nevşehir. Transfer to your cave hotel in Cappadocia. Overnight in Cappadocia. (Dedeli Konak Cave Hotel)"
+      },
+      {
+        "day": 5,
+        "title": "Cappadocia North Landscapes Tour (B, L)",
+        "description": "Breakfast at hotel. Visit Göreme Esentepe viewpoint, Göreme Valley panorama, and Paşabağ (Monks Valley) fairy chimneys. Explore Zelve Open Air Museum and the lunar landscape of Devrent Valley. View Üçhisar Castle exterior and visit Avanos pottery workshop. Overnight in Cappadocia."
+      },
+      {
+        "day": 6,
+        "title": "Cappadocia Departure (B)",
+        "description": "Breakfast at hotel. Check out (12:00) and take your private transfer to Kayseri or Nevşehir airport."
+      }
+    ],
+    "region": "Europe",
+    "hotelCategory": "3 Star & Cave Hotel",
+    "airline": "Not Included"
+  },
+  {
+    "id": "pkg-17",
+    "title": "Turkey — 6 Nights 7 Days (Istanbul + Cappadocia + Pamukkale)",
+    "slug": "turkey-istanbul-cappadocia-pamukkale-7d",
+    "price": 0,
+    "duration": "6 Nights / 7 Days",
+    "fixedDepartureDates": [
+      "Custom Departures"
+    ],
+    "highlights": [
+      "Sunrise hot air balloon flight (45–60 mins) in Cappadocia",
+      "Walk the white travertine hot springs terraces at Pamukkale",
+      "Princes' Island cruise passing local islets",
+      "Cave Hotel stay in Nevşehir and boutique stay in Aydın"
+    ],
+    "inclusions": [
+      "Private return airport transfers; shared SIC tours",
+      "3 Nights in Istanbul (Dora/Taksim Express 4-Star - BB)",
+      "1 Night in Cappadocia (Abras/Romantic Cave 4-Star - BB)",
+      "1 Night in Aydın/Kuşadası (Efe Boutique 4-Star - BB)",
+      "Daily breakfast (B) and lunches on tours per program",
+      "Air-conditioned luxury coach transport with English guide",
+      "All entrance fees per itinerary",
+      "Sunrise Hot Air Balloon flight in Cappadocia (includes flight certificate)"
+    ],
+    "exclusions": [
+      "Domestic & international flight tickets",
+      "Porterage at airports and hotels",
+      "Tips for guides and drivers",
+      "Personal expenses",
+      "Turkey visa and travel insurance"
+    ],
+    "visaChecklist": [
+      "Passport valid for at least 6 months",
+      "Turkey tourist visa required"
+    ],
+    "termsAndConditions": [
+      "Cancellation Policy: <15 days before arrival = 50% of booking value; <7 days = 100% of booking value",
+      "Full payment due by arrival day. Flight tickets are subject to availability",
+      "Credit card payments subject to 3% transaction fee; bank transfers subject to EUR 50 fee",
+      "Grand Bazaar closed Sundays, Topkapi Palace closed Tuesdays"
+    ],
+    "isFeatured": true,
+    "heroImage": "https://images.unsplash.com/photo-1530745342582-0795f23ec976?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Istanbul Airport Arrival",
+        "description": "Meet your guide at the airport and transfer (~1.5 hours) to your 4-star hotel in Istanbul. Check in and overnight."
+      },
+      {
+        "day": 2,
+        "title": "Old City Highlights Tour (B)",
+        "description": "Breakfast at hotel. Tour Hagia Sophia (outside), Topkapi Palace (outside), Hippodrome, Blue Mosque, and the Grand Bazaar. Overnight in Istanbul."
+      },
+      {
+        "day": 3,
+        "title": "Fly to Cappadocia & Panorama Tour (B, L)",
+        "description": "Check out. Transfer to Istanbul airport, fly to Kayseri, and transfer to Cappadocia (~1.5 hours). Visit Göreme Valley panorama, Üçhisar Castle panorama, Pigeon Valley, and check into your cave hotel. Lunch included. Overnight in Cappadocia."
+      },
+      {
+        "day": 4,
+        "title": "Cappadocia Sunrise Balloon & Fly to Izmir (B, L)",
+        "description": "Early morning sunrise hot air balloon flight (45 mins–1 hour, weather permitting). Return to hotel for breakfast. Tour Özkonak Underground City, a pottery workshop, Zelve Open Air Museum, Paşabağ, and Love Valley. Transfer to Kayseri airport, fly to Izmir, and transfer to your Aydın hotel. Overnight in Aydın."
+      },
+      {
+        "day": 5,
+        "title": "Pamukkale Cotton Castle Hot Springs (B, L)",
+        "description": "Breakfast at hotel. Visit Pamukkale ('Cotton Castle') white travertine terraces and hot springs (35°C). Lunch included. Check out and transfer to Denizli Airport. Fly to Istanbul and check into your hotel. Overnight in Istanbul."
+      },
+      {
+        "day": 6,
+        "title": "Princes' Island Cruise (B, L)",
+        "description": "Breakfast at hotel. Sail to Büyükada passing Kınalıada, Burgazada, and Heybeliada. Enjoy lunch at a local restaurant on the island and free time. Return ferry to Istanbul for overnight."
+      },
+      {
+        "day": 7,
+        "title": "Departure from Istanbul (B)",
+        "description": "Breakfast at hotel. Check out. Transfer to Istanbul airport for your final departure."
+      }
+    ],
+    "region": "Europe",
+    "hotelCategory": "4 Star & Cave Hotel",
+    "airline": "Not Included"
+  },
+  {
+    "id": "pkg-18",
+    "title": "Netherlands – France – Switzerland — 7 Nights 8 Days",
+    "slug": "netherlands-france-switzerland-8d",
+    "price": 335000,
+    "duration": "7 Nights / 8 Days",
+    "fixedDepartureDates": [
+      "29/30 September"
+    ],
+    "highlights": [
+      "Zaanse Schans windmills and Marken Lake cruise in Holland",
+      "Explore Bruges ('Venice of the North') in Belgium",
+      "Paris Eiffel Tower 2nd floor & Seine River cruise tickets",
+      "Scenic bus journey to Switzerland and Lucerne city tour"
+    ],
+    "inclusions": [
+      "7 Nights accommodation at 3-Star Hotels",
+      "Daily breakfast (B)",
+      "Rembrandtplein (Amsterdam) and city tours in Amsterdam & Paris",
+      "Montmartre district cable car + Versailles Palace visit (entrance not included)",
+      "IJsselmeer Lake cruise (Volendam–Marken)",
+      "Seine River cruise tickets (75-minute)",
+      "Diamond Cutting Workshop demonstration in Amsterdam",
+      "Eiffel Tower 2nd floor access tickets",
+      "Paris to Zurich long-distance coach ticket",
+      "Lucerne city tour and Swiss mountain transfers",
+      "Hotel–station/airport transfers",
+      "International round-trip flights"
+    ],
+    "exclusions": [
+      "Personal expenses, drinks, and unscheduled meals",
+      "Versailles Palace entrance fee",
+      "Schengen visa fees & insurance",
+      "Local hotel city taxes",
+      "5% tourism tax",
+      "Tips & gratuities for driver/guides"
+    ],
+    "visaChecklist": [
+      "Original passport valid for 6+ months from travel date with min. 2 blank pages",
+      "2 recent photos (3.5x4.5cm, white background)",
+      "Company registration/VAT/PAN documents (self-employed)",
+      "No Objection Certificate (NOC) and pay slips (employed)",
+      "Last 6 months' bank statements in Euro (min. closing balance 10 Lakhs)",
+      "Property valuation reports, relationship certificate, covering letter"
+    ],
+    "termsAndConditions": [
+      "50% payment required at booking/confirmation to hold flights & hotel slots",
+      "Price per person on twin-sharing basis",
+      "Surcharge may apply if client requests changes to package",
+      "Full amount non-refundable after confirmation",
+      "No rooms/services blocked until confirmation"
+    ],
+    "isFeatured": true,
+    "heroImage": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?q=80&w=1200&auto=format&fit=crop",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Amsterdam Arrival",
+        "description": "Arrive in Amsterdam. Transfer to your hotel. Rest of the day at leisure. Check hotel reception for tour start details. Overnight in Amsterdam."
+      },
+      {
+        "day": 2,
+        "title": "Zaanse Schans Windmills, Volendam & Amsterdam (B)",
+        "description": "Breakfast at hotel. Visit Zaanse Schans to view traditional canals and windmills. Head to Volendam fishing village. Take the boat to Marken to see stilt houses. Afternoon city tour of Amsterdam including canals, official buildings, and parks. Visit a diamond-cutting workshop. Overnight in Amsterdam."
+      },
+      {
+        "day": 3,
+        "title": "Amsterdam – Bruges (Belgium) – Paris (France) (B)",
+        "description": "Breakfast at hotel. Travel to Bruges, the 'Venice of the North'. Walk its cobblestone streets and sample Belgian chocolate. Continue on to Paris. Overnight in Paris."
+      },
+      {
+        "day": 4,
+        "title": "Versailles Palace & Paris Landmarks City Tour (B)",
+        "description": "Breakfast at hotel. Visit the Palace of Versailles and its gardens (entrance fee excluded). Climb up to Montmartre via the included cable car. Enjoy a panoramic guided city tour of Paris. Overnight in Paris."
+      },
+      {
+        "day": 5,
+        "title": "Eiffel Tower & Seine River Cruise (B)",
+        "description": "Breakfast at hotel. Access the Eiffel Tower 2nd floor (tickets included). Board a 75-minute Seine river boat cruise. Afternoon at leisure. (Note: Eiffel Tower visit may be rescheduled if queues are excessive). Overnight in Paris."
+      },
+      {
+        "day": 6,
+        "title": "Paris to Zurich (Switzerland) Scenic Transfer (B)",
+        "description": "Breakfast at hotel. Board a comfortable transfer bus from Paris to Zurich, enjoying scenic views of valleys and alpine ranges. Check in to your hotel. Overnight in Zurich."
+      },
+      {
+        "day": 7,
+        "title": "Lucerne Day Trip (B)",
+        "description": "Breakfast at hotel. Take a day trip to the lakeside town of Lucerne. Tour the town, walk the Chapel Bridge, and enjoy lake views. Return to Zurich for overnight."
+      },
+      {
+        "day": 8,
+        "title": "Departure from Zurich (B)",
+        "description": "Breakfast at hotel. Tour ends. Transfer to Zurich Airport for your international return flight."
+      }
+    ],
+    "region": "Europe",
+    "hotelCategory": "3 Star",
+    "airline": "International Flights Included"
   }
 ]

@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { getStaticOutboundPackages, getStaticSettings } from "@/lib/db";
-import { Clock, Calendar, Check, ShieldAlert, ArrowLeft, PhoneCall, Gift, CheckCircle } from "lucide-react";
+import { Calendar, ArrowLeft, ShieldAlert } from "lucide-react";
 import InquiryForm from "@/components/InquiryForm";
 import PackageTabs from "@/components/PackageTabs";
 import { Metadata } from "next";
@@ -24,9 +24,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const pkg = packages.find((p) => p.slug === slug);
   if (!pkg) return {};
 
+  const pricingStr = pkg.price !== 0 ? `Rs. ${pkg.price.toLocaleString()}` : "Price on Request";
+
   return {
     title: `${pkg.title} Outbound Package | TripLand Travels`,
-    description: `Book your seat for the ${pkg.title} tour from Kathmandu. Price: Rs. ${pkg.price.toLocaleString()}. Duration: ${pkg.duration}.`,
+    description: `Book your seat for the ${pkg.title} tour from Kathmandu. Price: ${pricingStr}. Duration: ${pkg.duration}.`,
   };
 }
 
@@ -40,10 +42,12 @@ export default async function PackagePage({ params }: PageProps) {
     notFound();
   }
 
+  const hasPrice = pkg.price !== 0;
+
   return (
     <div className="bg-[#f8fafc] text-slate-800 font-sans min-h-screen relative pb-20">
       {/* Immersive Destination Hero */}
-      <section className="relative h-[60vh] w-full bg-slate-950 overflow-hidden">
+      <section className="relative h-[55vh] min-h-[400px] w-full bg-slate-950 overflow-hidden">
         <Image
           src={pkg.heroImage}
           alt={pkg.title}
@@ -55,19 +59,19 @@ export default async function PackagePage({ params }: PageProps) {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-slate-950"></div>
         
         {/* Back nav & title overlay */}
-        <div className="absolute inset-x-0 bottom-28 max-w-7xl mx-auto px-8 text-white space-y-3">
+        <div className="absolute inset-x-0 bottom-24 max-w-7xl mx-auto px-8 text-white space-y-3">
           <Link
             href="/packages"
-            className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-slate-300 hover:text-white transition-colors"
+            className="inline-flex items-center gap-1.5 text-[10px] font-extrabold uppercase tracking-widest text-slate-300 hover:text-white transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Tour Packages
+            Back to Tour Catalog
           </Link>
-          <div className="space-y-1">
-            <span className="bg-brand-gold text-slate-900 text-[10px] font-extrabold uppercase tracking-widest px-2.5 py-1 rounded inline-block">
+          <div className="space-y-2 text-left">
+            <span className="bg-brand-gold text-slate-900 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-md inline-block">
               {pkg.duration}
             </span>
-            <h1 className="font-heading text-3xl md:text-5xl font-black uppercase tracking-wide drop-shadow-lg leading-tight">
+            <h1 className="font-heading text-2xl md:text-4xl lg:text-5xl font-black uppercase tracking-wide drop-shadow-lg leading-tight max-w-4xl">
               {pkg.title}
             </h1>
           </div>
@@ -85,43 +89,59 @@ export default async function PackagePage({ params }: PageProps) {
 
           {/* Right Column (Sticky Pricing Card & Leads form) */}
           <div className="lg:col-span-4 space-y-8 lg:sticky lg:top-24">
-            <div className="bg-white/90 backdrop-blur-md border border-slate-200/80 rounded-2xl p-6 sm:p-8 shadow-xl space-y-6">
-              <div>
+            <div className="bg-white/95 backdrop-blur-md border border-slate-200/80 rounded-2xl p-6 sm:p-8 shadow-xl space-y-6">
+              <div className="text-left">
                 <span className="text-[10px] uppercase font-bold tracking-widest text-slate-400 block mb-1">
                   Private / Group Rate
                 </span>
-                <div className="flex items-baseline gap-1">
-                  <span className="text-3xl font-extrabold text-brand-red font-heading">
-                    Rs. {pkg.price.toLocaleString()}
+                {hasPrice ? (
+                  <div className="flex items-baseline gap-1">
+                    <span className="text-3xl font-extrabold text-brand-red font-heading">
+                      Rs. {pkg.price.toLocaleString()}
+                    </span>
+                    <span className="text-[10px] font-bold text-slate-450 tracking-wider uppercase font-mono">
+                      NPR / Person
+                    </span>
+                  </div>
+                ) : (
+                  <span className="text-2xl font-black text-slate-800 uppercase tracking-tight font-heading">
+                    Price on Request
                   </span>
-                  <span className="text-[10px] font-bold text-slate-400 tracking-wider uppercase font-mono">
-                    NPR / Person
-                  </span>
-                </div>
+                )}
               </div>
 
               {/* Fixed Departure Dates list */}
-              <div className="border-t border-b border-slate-100 py-4.5 space-y-3">
-                <span className="text-[10px] font-bold text-slate-450 uppercase tracking-wider block">
-                  Fixed Departure Dates
+              <div className="border-t border-b border-slate-100 py-5 space-y-3">
+                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block text-left">
+                  Departure Schedules
                 </span>
                 <div className="space-y-2">
-                  {pkg.fixedDepartureDates.map((dateStr, i) => (
-                    <div key={i} className="flex items-center gap-2 text-xs font-bold text-slate-700 bg-slate-50 border border-slate-200 px-3 py-2.5 rounded-lg">
-                      <Calendar className="w-4 h-4 text-brand-blue flex-shrink-0" strokeWidth={2} />
-                      <span>{dateStr}</span>
-                      <span className="text-[9px] font-bold uppercase bg-brand-gold/20 text-brand-gold px-1.5 py-0.5 rounded ml-auto">
-                        Booking Open
-                      </span>
+                  {pkg.fixedDepartureDates && pkg.fixedDepartureDates.length > 0 && 
+                  pkg.fixedDepartureDates[0] !== "Custom Departures" && 
+                  pkg.fixedDepartureDates[0] !== "Upon Custom Request" && 
+                  pkg.fixedDepartureDates[0] !== "Seasonal Departures" && 
+                  pkg.fixedDepartureDates[0] !== "Custom Departure Tour" ? (
+                    pkg.fixedDepartureDates.map((dateStr, i) => (
+                      <div key={i} className="flex items-center gap-2 text-xs font-bold text-slate-700 bg-slate-50 border border-slate-200 p-3 rounded-xl">
+                        <Calendar className="w-4 h-4 text-brand-blue flex-shrink-0" strokeWidth={2} />
+                        <span>{dateStr}</span>
+                        <span className="text-[9px] font-extrabold uppercase bg-brand-gold/20 text-brand-gold px-2 py-0.5 rounded-md ml-auto">
+                          Booking Open
+                        </span>
+                      </div>
+                    ))
+                  ) : (
+                    <div className="text-xs text-slate-500 font-semibold bg-slate-50 border border-slate-150 p-4 rounded-xl leading-relaxed text-left">
+                      Custom private departures available daily. Select your target date in the reservation form below.
                     </div>
-                  ))}
+                  )}
                 </div>
               </div>
 
-              <div className="flex items-start gap-2.5 bg-slate-50 border border-slate-150 p-4 rounded-xl text-xs text-slate-500 leading-relaxed font-light">
+              <div className="flex items-start gap-2.5 bg-slate-50 border border-slate-150 p-4 rounded-xl text-xs text-slate-500 leading-relaxed font-light text-left">
                 <ShieldAlert className="w-5 h-5 text-brand-red flex-shrink-0 mt-0.5" strokeWidth={2} />
                 <p>
-                  Prices are all-inclusive of flight ticketing and visa coordination support files.
+                  Ticketing and tourist visa coordination services are managed directly via IATA accredited channels.
                 </p>
               </div>
 
@@ -135,10 +155,10 @@ export default async function PackagePage({ params }: PageProps) {
 
             {/* Lead capture form */}
             <div id="inquiry-box" className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xl scroll-mt-28">
-              <h3 className="font-heading text-sm font-black text-slate-900 uppercase mb-1">
+              <h3 className="font-heading text-xs font-bold text-slate-900 uppercase mb-1 text-left">
                 Booking Reservation
               </h3>
-              <p className="text-xs text-slate-500 mb-6 font-light">
+              <p className="text-[10px] text-slate-400 mb-6 font-light text-left">
                 Provide your passenger parameters. We will direct you to WhatsApp to finalize ticket details.
               </p>
               <InquiryForm targetPackage={pkg.title} />

@@ -23,9 +23,15 @@ export interface OutboundPackage {
   fixedDepartureDates: string[];
   highlights: string[];
   inclusions: string[];
+  exclusions?: string[];
+  visaChecklist?: string[];
+  termsAndConditions?: string[];
   isFeatured: boolean;
   heroImage: string;
   itinerary: PackageItineraryItem[];
+  region: "Asia" | "Europe";
+  hotelCategory?: string;
+  airline?: string;
 }
 
 export interface VisaService {

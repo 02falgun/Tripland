@@ -25,7 +25,10 @@ import {
   Quote,
   Camera,
   BookOpen,
-  Clock
+  Clock,
+  Building,
+  Compass,
+  FileText
 } from "lucide-react";
 
 const visaImages: Record<string, string> = {
@@ -329,6 +332,87 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Core Services Section */}
+      <section className="py-20 px-8 max-w-7xl mx-auto border-b border-slate-200/50">
+        <div className="text-center max-w-xl mx-auto mb-16 relative">
+          <span className="text-[11px] font-extrabold tracking-widest text-brand-blue uppercase block mb-1">
+            TRAVEL SOLUTIONS
+          </span>
+          <h2 className="font-heading text-2xl md:text-3xl font-black text-slate-900 uppercase">
+            OUR CORE PORTFOLIOS
+          </h2>
+          <div className="w-12 h-1 bg-brand-red mx-auto my-4"></div>
+          <p className="text-xs text-slate-500 leading-relaxed font-light">
+            We leverage accredited GDS systems and GDS queue direct-access lines to guarantee seamless retail travel booking solutions.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+          {[
+            {
+              title: "Flight Booking",
+              description: "Accredited GDS wholesale ticketing queues for domestic & international flights.",
+              icon: Plane,
+              link: "/flights",
+            },
+            {
+              title: "Hotel Booking",
+              description: "Vetted international resort vouchers & accommodation reservation options.",
+              icon: Building,
+              link: "/packages",
+            },
+            {
+              title: "Tour Package",
+              description: "All-inclusive group departures & customized private outbound itineraries.",
+              icon: Compass,
+              link: "/packages",
+            },
+            {
+              title: "Travel Insurance",
+              description: "Consolidated multi-risk travel safety coverage for absolute peace of mind.",
+              icon: ShieldCheck,
+              link: "/faq",
+            },
+            {
+              title: "Visa Services",
+              description: "Embassy file compiling, VFS booking slot check, and compliance reviews.",
+              icon: FileText,
+              link: "/visa-services",
+            },
+          ].map((srv, idx) => {
+            const Icon = srv.icon;
+            return (
+              <motion.div
+                key={idx}
+                whileHover={{ y: -6 }}
+                className="bg-white border border-slate-200/85 p-6 rounded-2xl shadow-sm hover:shadow-lg hover:border-brand-blue/20 transition-all duration-300 flex flex-col justify-between text-left group"
+              >
+                <div className="space-y-4">
+                  <div className="w-12 h-12 rounded-xl bg-brand-blue/5 border border-brand-blue/15 text-brand-blue flex items-center justify-center group-hover:bg-brand-blue group-hover:text-white transition-all duration-300">
+                    <Icon className="w-6 h-6" strokeWidth={1.5} />
+                  </div>
+                  <div className="space-y-2">
+                    <h3 className="font-heading text-xs font-black uppercase text-slate-900 tracking-wider">
+                      {srv.title}
+                    </h3>
+                    <p className="text-[11px] text-slate-500 font-light leading-relaxed">
+                      {srv.description}
+                    </p>
+                  </div>
+                </div>
+                <Link
+                  href={srv.link}
+                  className="inline-flex items-center gap-1 text-[9px] font-extrabold text-brand-blue uppercase tracking-widest pt-4 group-hover:text-brand-red transition-colors"
+                >
+                  Configure
+                  <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+                </Link>
+              </motion.div>
+            );
+          })}
+        </div>
+      </section>
+
       {/* Flight Ticket Deals Section */}
       <section className="py-20 px-8 max-w-7xl mx-auto">
         <div className="text-center max-w-xl mx-auto mb-12">
@@ -449,7 +533,11 @@ export default function Home() {
                   <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
                     <div className="text-left">
                       <span className="text-[9px] uppercase font-bold text-slate-400 block mb-0.5">Package Price</span>
-                      <span className="text-sm font-black text-brand-red">Rs. {pkg.price.toLocaleString()}</span>
+                      {pkg.price !== 0 ? (
+                        <span className="text-sm font-black text-brand-red">Rs. {pkg.price.toLocaleString()}</span>
+                      ) : (
+                        <span className="text-xs font-bold text-slate-550 uppercase tracking-wide">Price on Request</span>
+                      )}
                     </div>
                     <Link
                       href={`/package/${pkg.slug}`}

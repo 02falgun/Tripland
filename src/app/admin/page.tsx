@@ -203,6 +203,7 @@ export default function AdminPage() {
       const inclusions = inclusionsInput.split(",").map(i => i.trim()).filter(Boolean);
       const fixedDepartureDates = fixedDeparturesInput.split(",").map(d => d.trim()).filter(Boolean);
       
+      const existingPkg = outboundPackages.find(p => p.id === selectedId);
       const pkg: OutboundPackage = {
         id: editMode === "edit" ? selectedId : `pkg-${Date.now()}`,
         title: pkgTitle,
@@ -214,7 +215,13 @@ export default function AdminPage() {
         inclusions,
         isFeatured: true,
         heroImage,
-        itinerary
+        itinerary,
+        region: existingPkg?.region || "Asia",
+        exclusions: existingPkg?.exclusions || [],
+        visaChecklist: existingPkg?.visaChecklist || [],
+        termsAndConditions: existingPkg?.termsAndConditions || [],
+        hotelCategory: existingPkg?.hotelCategory || "3 Star",
+        airline: existingPkg?.airline || "Not Included"
       };
       
       if (editMode === "edit") {
