@@ -34,12 +34,13 @@ export default function Footer() {
         {/* Brand & Accreditations */}
         <div className="space-y-5">
           <Link href="/" className="flex items-center group">
-            <div className="relative h-9 w-36 bg-white px-2 py-0.5 rounded-lg shadow-md border border-white/20 hover:scale-102 transition-transform duration-300">
+            <div className="relative h-9 w-36 hover:scale-[1.02] transition-transform duration-300">
               <Image
-                src="/TriplandLogo.png"
+                src="/TriplandLogo - Edited.png"
                 alt="Tripland Travels & Tours"
                 fill
-                className="object-contain p-0.5"
+                sizes="144px"
+                className="object-contain"
               />
             </div>
           </Link>

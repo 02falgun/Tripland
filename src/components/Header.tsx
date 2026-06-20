@@ -66,13 +66,14 @@ export default function Header() {
           
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <div className="relative h-9 w-36 bg-white px-2 py-0.5 rounded-lg shadow-md border border-white/25 group-hover:scale-102 transition-transform duration-300">
+            <div className="relative h-9 w-36 group-hover:scale-[1.02] transition-transform duration-300">
               <Image
-                src="/TriplandLogo.png"
+                src="/TriplandLogo - Edited.png"
                 alt="Tripland Travels & Tours"
                 fill
                 priority
-                className="object-contain p-0.5"
+                sizes="144px"
+                className="object-contain"
               />
             </div>
           </Link>
