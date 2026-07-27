@@ -1,0 +1,43 @@
+[
+  {
+    "id": "hotel-yak-yeti",
+    "name": "Hotel Yak & Yeti",
+    "location": "Kathmandu, Nepal",
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop",
+    "rating": 5,
+    "description": "Iconic 5-star heritage hotel in the heart of Kathmandu, blending traditional Nepali architecture with modern luxury."
+  },
+  {
+    "id": "radisson-ktm",
+    "name": "Hotel Radisson",
+    "location": "Kathmandu, Nepal",
+    "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=1200&auto=format&fit=crop",
+    "rating": 5,
+    "description": "Modern business hotel with full amenities, rooftop pool, and panoramic views of the Himalayas."
+  },
+  {
+    "id": "hyatt-regency",
+    "name": "Hyatt Regency Kathmandu",
+    "location": "Kathmandu, Nepal",
+    "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1200&auto=format&fit=crop",
+    "rating": 5,
+    "description": "Luxurious resort-style hotel with sprawling gardens, a casino, and world-class dining options."
+  },
+  {
+    "id": "shangri-la",
+    "name": "Shangri-La Hotel",
+    "location": "Kathmandu, Nepal",
+    "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1200&auto=format&fit=crop",
+    "rating": 5,
+    "description": "Elegant 5-star hotel offering a serene oasis with traditional hospitality and exceptional service."
+  },
+  {
+    "id": "pokhara-grand",
+    "name": "Pokhara Grand Hotel",
+    "location": "Pokhara, Nepal",
+    "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1200&auto=format&fit=crop",
+    "rating": 4,
+    "description": "Premium lakeside hotel with stunning views of Phewa Lake and the Annapurna mountain range."
+  }
+]
+

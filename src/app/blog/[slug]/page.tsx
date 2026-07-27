@@ -36,7 +36,7 @@ export default async function BlogDetailPage({ params }: PageProps) {
   if (!article) {
     notFound();
   }
-
+  
   return (
     <div className="pt-28 pb-24 bg-[#FAF9F5] text-slate-800 font-sans min-h-screen">
       {/* Back nav */}

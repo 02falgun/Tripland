@@ -29,6 +29,8 @@ export default function Header() {
 
   const navLinks = [
     { name: "Flights", href: "/flights" },
+    { name: "Hotels", href: "/hotels" },
+    { name: "Holidays", href: "/holidays" },
     { name: "Packages", href: "/packages" },
     { name: "Visas", href: "/visa-services" },
     { name: "FAQs", href: "/faq" },

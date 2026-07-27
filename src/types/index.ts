@@ -58,6 +58,35 @@ export interface GalleryItem {
   spanType: string;
 }
 
+export interface Hotel {
+  id: string;
+  name: string;
+  location: string;
+  image: string;
+  rating: number;
+  description: string;
+}
+
+export interface HolidayPackage {
+  id: string;
+  title: string;
+  duration: string;
+  location: string;
+  image: string;
+  price: string;
+}
+
+export interface HolidayPackages {
+  inbound: HolidayPackage[];
+  outbound: HolidayPackage[];
+}
+
+export interface AffiliateAirline {
+  id: string;
+  name: string;
+  logo: string;
+}
+
 export interface BlogArticle {
   id: string;
   title: string;
