@@ -1,0 +1,103 @@
+{
+  "inbound": [
+    {
+      "id": "pokhara-3n4d",
+      "title": "Pokhara Getaway",
+      "duration": "3 Nights / 4 Days",
+      "location": "Pokhara, Nepal",
+      "image": "https://images.unsplash.com/photo-1559531743-e089a20b0509?q=80&w=1200&auto=format&fit=crop",
+      "price": "NPR 12,999"
+    },
+    {
+      "id": "chitwan-2n3d",
+      "title": "Chitwan Safari Experience",
+      "duration": "2 Nights / 3 Days",
+      "location": "Chitwan, Nepal",
+      "image": "https://images.unsplash.com/photo-1574484284002-952d92456975?q=80&w=1200&auto=format&fit=crop",
+      "price": "NPR 9,500"
+    },
+    {
+      "id": "lumbini-1n2d",
+      "title": "Lumbini Pilgrimage Tour",
+      "duration": "1 Night / 2 Days",
+      "location": "Lumbini, Nepal",
+      "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1200&auto=format&fit=crop",
+      "price": "NPR 5,999"
+    },
+    {
+      "id": "muktinath-4n5d",
+      "title": "Muktinath Yatra",
+      "duration": "4 Nights / 5 Days",
+      "location": "Mustang, Nepal",
+      "image": "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?q=80&w=1200&auto=format&fit=crop",
+      "price": "NPR 18,500"
+    },
+    {
+      "id": "everest-region-7n8d",
+      "title": "Everest Panorama Trek",
+      "duration": "7 Nights / 8 Days",
+      "location": "Khumbu, Nepal",
+      "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1200&auto=format&fit=crop",
+      "price": "NPR 35,000"
+    },
+    {
+      "id": "nagarkot-1n2d",
+      "title": "Nagarkot Sunrise Retreat",
+      "duration": "1 Night / 2 Days",
+      "location": "Nagarkot, Nepal",
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop",
+      "price": "NPR 4,500"
+    }
+  ],
+  "outbound": [
+    {
+      "id": "dubai-4n5d",
+      "title": "Dubai City Escape",
+      "duration": "4 Nights / 5 Days",
+      "location": "Dubai, UAE",
+      "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop",
+      "price": "USD 499"
+    },
+    {
+      "id": "thailand-5n6d",
+      "title": "Thailand Beach & Temple Tour",
+      "duration": "5 Nights / 6 Days",
+      "location": "Bangkok & Pattaya, Thailand",
+      "image": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=1200&auto=format&fit=crop",
+      "price": "USD 599"
+    },
+    {
+      "id": "japan-7n8d",
+      "title": "Japan Cultural Discovery",
+      "duration": "7 Nights / 8 Days",
+      "location": "Tokyo, Kyoto & Osaka, Japan",
+      "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1200&auto=format&fit=crop",
+      "price": "USD 1,899"
+    },
+    {
+      "id": "europe-7n8d",
+      "title": "Classic Europe Highlights",
+      "duration": "7 Nights / 8 Days",
+      "location": "Netherlands, France & Switzerland",
+      "image": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?q=80&w=1200&auto=format&fit=crop",
+      "price": "USD 1,499"
+    },
+    {
+      "id": "maldives-3n4d",
+      "title": "Maldives Island Paradise",
+      "duration": "3 Nights / 4 Days",
+      "location": "Maldives",
+      "image": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=1200&auto=format&fit=crop",
+      "price": "USD 849"
+    },
+    {
+      "id": "srilanka-4n5d",
+      "title": "Sri Lanka Heritage & Nature",
+      "duration": "4 Nights / 5 Days",
+      "location": "Colombo, Kandy & Bentota, Sri Lanka",
+      "image": "https://images.unsplash.com/photo-1546708973-b339540b5162?q=80&w=1200&auto=format&fit=crop",
+      "price": "USD 399"
+    }
+  ]
+}
+

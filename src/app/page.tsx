@@ -3,18 +3,12 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
 import { useTravelStore } from "@/store/travelStore";
 import { getStaticGallery, getStaticBlogs } from "@/lib/db";
 import { motion, Variants, AnimatePresence } from "framer-motion";
 import { 
   Star, 
   Plane, 
-  Calendar, 
-  Users, 
-  Briefcase, 
   PhoneCall, 
   Award, 
   ShieldCheck, 
@@ -30,6 +24,8 @@ import {
   Compass,
   FileText
 } from "lucide-react";
+import HeroSearchWidget from "@/components/HeroSearchWidget";
+import AffiliateFlights from "@/components/AffiliateFlights";
 
 const visaImages: Record<string, string> = {
   "dubai-uae-visa": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop",
@@ -37,16 +33,6 @@ const visaImages: Record<string, string> = {
   "japan-visa": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1200&auto=format&fit=crop",
   "schengen-europe-visa": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?q=80&w=1200&auto=format&fit=crop",
 };
-
-// Form validation schema
-const flightSchema = z.object({
-  from: z.string().min(2, "Origin required"),
-  to: z.string().min(2, "Destination required"),
-  departDate: z.string().min(1, "Departure date required"),
-  returnDate: z.string().optional(),
-  pax: z.coerce.number().min(1).max(9),
-  class: z.string(),
-});
 
 // Headline motion letters helper
 function BouncingText({ text }: { text: string }) {
@@ -102,7 +88,6 @@ function BouncingText({ text }: { text: string }) {
 
 export default function Home() {
   const { flightDeals, outboundPackages, visaServices, siteSettings } = useTravelStore();
-  const [tripType, setTripType] = useState<"oneway" | "roundtrip">("roundtrip");
   
   // State for dynamic Visa morphing
   const [hoveredVisaId, setHoveredVisaId] = useState<string>("");
@@ -117,26 +102,6 @@ export default function Home() {
       setHoveredVisaId(visaServices[0].id);
     }
   }, [visaServices, hoveredVisaId]);
-
-  const { register, handleSubmit, formState: { errors } } = useForm({
-    resolver: zodResolver(flightSchema),
-    defaultValues: {
-      from: "Kathmandu (KTM)",
-      to: "",
-      departDate: "",
-      returnDate: "",
-      pax: 1,
-      class: "Economy",
-    }
-  });
-
-  const onSubmitFlight = (data: any) => {
-    const greeting = `*TRIPLAND FLIGHT TICKET INQUIRY*\n`;
-    const details = `*Trip Type:* ${tripType === "oneway" ? "One Way" : "Round Trip"}\n*From:* ${data.from}\n*To:* ${data.to}\n*Departure Date:* ${data.departDate}\n${tripType === "roundtrip" ? `*Return Date:* ${data.returnDate}\n` : ""}*Passengers:* ${data.pax} Person(s)\n*Class:* ${data.class}`;
-    const text = encodeURIComponent(`${greeting}${details}`);
-    const cleanedNumber = siteSettings.whatsappNumber.replace(/[+\s\-()]/g, "");
-    window.open(`https://wa.me/${cleanedNumber}?text=${text}`, "_blank");
-  };
 
   return (
     <div className="w-full bg-[#f8fafc] text-slate-800 font-sans">
@@ -176,130 +141,9 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right Widget (Expedia Style search box with glassmorphism) */}
-          <div className="lg:col-span-7 bg-white/10 backdrop-blur-xl border border-white/20 text-white p-6 sm:p-8 rounded-xl shadow-2xl relative group/widget">
-            {/* Handwritten Floating Alert */}
-            <div className="absolute -top-12 right-6 rotate-[4deg] font-handwritten text-2xl text-brand-gold hidden lg:flex items-center gap-1 select-none pointer-events-none drop-shadow">
-              ✈️ Cheap ticketing agent!
-            </div>
-            <div className="flex items-center gap-3 mb-6 border-b border-white/10 pb-3">
-              <button
-                type="button"
-                onClick={() => setTripType("roundtrip")}
-                className={`text-xs font-bold uppercase tracking-wider pb-3 border-b-2 transition-colors cursor-pointer ${tripType === "roundtrip" ? "border-brand-red text-brand-red" : "border-transparent text-white/50 hover:text-white"
-                  }`}
-              >
-                Round Trip
-              </button>
-              <button
-                type="button"
-                onClick={() => setTripType("oneway")}
-                className={`text-xs font-bold uppercase tracking-wider pb-3 border-b-2 transition-colors cursor-pointer ${tripType === "oneway" ? "border-brand-red text-brand-red" : "border-transparent text-white/50 hover:text-white"
-                  }`}
-              >
-                One Way
-              </button>
-            </div>
-
-            <form onSubmit={handleSubmit(onSubmitFlight)} className="grid grid-cols-1 sm:grid-cols-2 gap-5 text-xs text-left">
-              {/* Origin */}
-              <div>
-                <label className="text-[10px] font-bold text-white/60 uppercase block mb-1">Flying From</label>
-                <div className="relative">
-                  <Plane className="w-4 h-4 text-white/40 absolute left-3 top-1/2 -translate-y-1/2" />
-                  <input
-                    type="text"
-                    {...register("from")}
-                    className="w-full pl-9 pr-3 py-3 bg-white/5 border border-white/10 rounded focus:outline-none focus:border-white focus:bg-white/10 font-medium text-white placeholder-white/30"
-                  />
-                </div>
-                {errors.from && <span className="text-[10px] text-brand-red font-semibold">{errors.from.message}</span>}
-              </div>
-
-              {/* Destination */}
-              <div>
-                <label className="text-[10px] font-bold text-white/60 uppercase block mb-1">Flying To</label>
-                <div className="relative">
-                  <Plane className="w-4 h-4 text-white/40 absolute left-3 top-1/2 -translate-y-1/2 -rotate-45" />
-                  <input
-                    type="text"
-                    required
-                    placeholder="E.g. Dubai, Tokyo, Bangkok"
-                    {...register("to")}
-                    className="w-full pl-9 pr-3 py-3 bg-white/5 border border-white/10 rounded focus:outline-none focus:border-white focus:bg-white/10 font-medium text-white placeholder-white/30"
-                  />
-                </div>
-                {errors.to && <span className="text-[10px] text-brand-red font-semibold">{errors.to.message}</span>}
-              </div>
-
-              {/* Dates */}
-              <div>
-                <label className="text-[10px] font-bold text-white/60 uppercase block mb-1">Departure Date</label>
-                <div className="relative">
-                  <Calendar className="w-4 h-4 text-white/40 absolute left-3 top-1/2 -translate-y-1/2" />
-                  <input
-                    type="date"
-                    required
-                    {...register("departDate")}
-                    className="w-full pl-9 pr-3 py-3 bg-white/5 border border-white/10 rounded focus:outline-none focus:border-white focus:bg-white/10 font-semibold uppercase text-white placeholder-white/30"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="text-[10px] font-bold text-white/60 uppercase block mb-1">
-                  Return Date {tripType === "oneway" && "(Disabled)"}
-                </label>
-                <div className="relative">
-                  <Calendar className="w-4 h-4 text-white/40 absolute left-3 top-1/2 -translate-y-1/2" />
-                  <input
-                    type="date"
-                    disabled={tripType === "oneway"}
-                    {...register("returnDate")}
-                    className="w-full pl-9 pr-3 py-3 bg-white/5 border border-white/10 rounded focus:outline-none focus:border-white focus:bg-white/10 font-semibold uppercase text-white disabled:opacity-40 disabled:bg-transparent placeholder-white/30"
-                  />
-                </div>
-              </div>
-
-              {/* Pax & Class */}
-              <div>
-                <label className="text-[10px] font-bold text-white/60 uppercase block mb-1">Passengers</label>
-                <div className="relative">
-                  <Users className="w-4 h-4 text-white/40 absolute left-3 top-1/2 -translate-y-1/2" />
-                  <input
-                    type="number"
-                    min={1}
-                    max={9}
-                    {...register("pax")}
-                    className="w-full pl-9 pr-3 py-3 bg-white/5 border border-white/10 rounded focus:outline-none focus:border-white focus:bg-white/10 font-semibold text-white placeholder-white/30"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="text-[10px] font-bold text-white/60 uppercase block mb-1">Class</label>
-                <div className="relative">
-                  <Briefcase className="w-4 h-4 text-white/40 absolute left-3 top-1/2 -translate-y-1/2" />
-                  <select
-                    {...register("class")}
-                    className="w-full pl-9 pr-3 py-3 bg-slate-900 border border-white/10 rounded focus:outline-none focus:border-white font-semibold appearance-none text-white"
-                  >
-                    <option value="Economy" className="bg-slate-900 text-white">Economy Class</option>
-                    <option value="Business" className="bg-slate-900 text-white">Business Class</option>
-                    <option value="First" className="bg-slate-900 text-white">First Class</option>
-                  </select>
-                </div>
-              </div>
-
-              {/* Submit */}
-              <button
-                type="submit"
-                className="col-span-2 py-4 bg-brand-red hover:bg-brand-red/90 text-white rounded text-xs font-bold tracking-widest uppercase shadow-lg shadow-brand-red/20 hover:shadow-brand-red/40 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 mt-2"
-              >
-                <PhoneCall className="w-4 h-4" />
-                Find Cheap Tickets & Get Quote (WhatsApp)
-              </button>
-            </form>
+          {/* Right Widget (Tabbed Hero Search Widget) */}
+          <div className="lg:col-span-7">
+            <HeroSearchWidget />
           </div>
         </div>
       </section>
@@ -464,6 +308,9 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* Affiliate Flights Section */}
+      <AffiliateFlights />
 
       {/* Outbound Fixed Departures Section */}
       <section className="py-20 px-8 bg-slate-50 border-t border-b border-slate-200/50">
@@ -1025,3 +872,4 @@ function TestimonialsSection() {
     </section>
   );
 }
+

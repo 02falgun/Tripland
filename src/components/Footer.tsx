@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, MapPin, Send, ShieldCheck, X, FileText, CheckCircle } from "lucide-react";
+import { Mail, MapPin, Send, ShieldCheck, X, FileText, CheckCircle, Landmark } from "lucide-react";
 import { useTravelStore } from "@/store/travelStore";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -143,6 +143,86 @@ export default function Footer() {
         </div>
 
       </div>
+
+      {/* Associated With Section */}
+      <div className="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-brand-blue/20 text-center">
+        <h3 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-5">
+          Associated With
+        </h3>
+        <div className="relative h-16 w-full max-w-2xl mx-auto overflow-hidden rounded-lg border border-white/5 bg-slate-800/30">
+          <Image
+            src="/images/footer/associated-with.svg"
+            alt="Associated partners and affiliations"
+            fill
+            sizes="(max-width: 768px) 100vw, 600px"
+            className="object-contain p-2 grayscale hover:grayscale-0 transition-all duration-500"
+          />
+        </div>
+      </div>
+
+      {/* We Accept - Payment Methods Strip */}
+      <div className="max-w-7xl mx-auto px-8 mt-8 pt-6 border-t border-brand-blue/20 text-center">
+        <h3 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-5">
+          We Accept
+        </h3>
+        <div className="flex items-center justify-center gap-8 flex-wrap">
+          {/* Visa */}
+          <div className="relative h-10 w-16 group cursor-pointer">
+            <Image
+              src="/images/payments/visa.svg"
+              alt="Visa"
+              fill
+              sizes="64px"
+              className="object-contain grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-110"
+            />
+          </div>
+          {/* eSewa */}
+          <div className="relative h-10 w-16 group cursor-pointer">
+            <Image
+              src="/images/payments/esewa.svg"
+              alt="eSewa"
+              fill
+              sizes="64px"
+              className="object-contain grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-110"
+            />
+          </div>
+          {/* Connect IPS */}
+          <div className="relative h-10 w-16 group cursor-pointer">
+            <Image
+              src="/images/payments/connectips.svg"
+              alt="Connect IPS"
+              fill
+              sizes="64px"
+              className="object-contain grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-110"
+            />
+          </div>
+          {/* Khalti */}
+          <div className="relative h-10 w-16 group cursor-pointer">
+            <Image
+              src="/images/payments/khalti.svg"
+              alt="Khalti"
+              fill
+              sizes="64px"
+              className="object-contain grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-110"
+            />
+          </div>
+          {/* Banking */}
+          <div className="relative h-10 w-16 group cursor-pointer">
+            <Image
+              src="/images/payments/bank.svg"
+              alt="Bank Transfer"
+              fill
+              sizes="64px"
+              className="object-contain grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-110"
+            />
+          </div>
+          <span className="flex items-center gap-2 text-[11px] text-slate-400 font-light">
+            <Landmark className="w-4 h-4 text-brand-gold" strokeWidth={1.5} />
+            Direct Bank Transfer
+          </span>
+        </div>
+      </div>
+      
 
       {/* Corporate Info & Bottom Bar */}
       <div className="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-brand-blue/20 flex flex-col lg:flex-row gap-6 items-center justify-between relative z-10">

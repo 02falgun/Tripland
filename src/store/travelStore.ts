@@ -1,16 +1,22 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import { FlightDeal, OutboundPackage, VisaService, SiteSettings } from "@/types";
+import { FlightDeal, OutboundPackage, VisaService, SiteSettings, Hotel, HolidayPackages, AffiliateAirline } from "@/types";
 import initialFlights from "../../data/flightDeals.json";
 import initialPackages from "../../data/outboundPackages.json";
 import initialVisas from "../../data/visaServices.json";
 import initialSettings from "../../data/siteSettings.json";
+import initialHotels from "../../data/hotels.json";
+import initialHolidayPackages from "../../data/holidayPackages.json";
+import initialAffiliateAirlines from "../../data/affiliateAirlines.json";
 
 interface TravelState {
   flightDeals: FlightDeal[];
   outboundPackages: OutboundPackage[];
   visaServices: VisaService[];
   siteSettings: SiteSettings;
+  hotels: Hotel[];
+  holidayPackages: HolidayPackages;
+  affiliateAirlines: AffiliateAirline[];
   
   // Flights Mutations
   addFlightDeal: (deal: FlightDeal) => void;
@@ -40,6 +46,9 @@ export const useTravelStore = create<TravelState>()(
       outboundPackages: initialPackages as OutboundPackage[],
       visaServices: initialVisas as VisaService[],
       siteSettings: initialSettings as SiteSettings,
+      hotels: initialHotels as Hotel[],
+      holidayPackages: initialHolidayPackages as HolidayPackages,
+      affiliateAirlines: initialAffiliateAirlines as AffiliateAirline[],
       
       // Flights CRUD
       addFlightDeal: (deal) =>
@@ -93,6 +102,9 @@ export const useTravelStore = create<TravelState>()(
           outboundPackages: initialPackages as OutboundPackage[],
           visaServices: initialVisas as VisaService[],
           siteSettings: initialSettings as SiteSettings,
+          hotels: initialHotels as Hotel[],
+          holidayPackages: initialHolidayPackages as HolidayPackages,
+          affiliateAirlines: initialAffiliateAirlines as AffiliateAirline[],
         }),
     }),
     {
