@@ -1,11 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
 export default function CustomCursor() {
   const [isVisible, setIsVisible] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const hasCheckedTouch = useRef(false);
 
   // Motion values for smooth tracking
   const cursorX = useMotionValue(-100);
@@ -17,11 +18,16 @@ export default function CustomCursor() {
   const cursorYSpring = useSpring(cursorY, springConfig);
 
   useEffect(() => {
-    // Disable on mobile/touch screens
-    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-    if (isTouchDevice) return;
-
-    setIsVisible(true);
+    // Disable on mobile/touch screens — check once
+    if (!hasCheckedTouch.current) {
+      hasCheckedTouch.current = true;
+      const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+      if (isTouchDevice) {
+        setIsVisible(false);
+        return;
+      }
+      setIsVisible(true);
+    }
 
     const moveCursor = (e: MouseEvent) => {
       cursorX.set(e.clientX);
@@ -60,7 +66,7 @@ export default function CustomCursor() {
     <>
       {/* Inner Dot */}
       <motion.div
-        className="fixed top-0 left-0 w-2 h-2 bg-brand-red rounded-full pointer-events-none z-[9999] -translate-x-1/2 -translate-y-1/2"
+        className="fixed top-0 left-0 w-2 h-2 bg-brand-red rounded-full pointer-events-none z-9999 -translate-x-1/2 -translate-y-1/2"
         style={{
           x: cursorX,
           y: cursorY,
@@ -72,7 +78,7 @@ export default function CustomCursor() {
       />
       {/* Outer Lagging Ring */}
       <motion.div
-        className="fixed top-0 left-0 w-8 h-8 border-2 border-brand-blue/30 rounded-full pointer-events-none z-[9998] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
+        className="fixed top-0 left-0 w-8 h-8 border-2 border-brand-blue/30 rounded-full pointer-events-none z-9998 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
         style={{
           x: cursorXSpring,
           y: cursorYSpring,

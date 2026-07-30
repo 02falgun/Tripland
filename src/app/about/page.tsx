@@ -44,7 +44,7 @@ export default function AboutPage() {
             </p>
             <div className="grid grid-cols-2 gap-6 pt-4 text-xs font-semibold text-slate-700">
               <div className="flex items-start gap-2.5">
-                <ShieldCheck className="w-5 h-5 text-brand-blue flex-shrink-0 mt-0.5" strokeWidth={1.8} />
+                <ShieldCheck className="w-5 h-5 text-brand-blue shrink-0 mt-0.5" strokeWidth={1.8} />
                 <div>
                   <h4 className="font-heading text-xs font-bold uppercase tracking-wider text-slate-900">
                     IATA Accredited
@@ -55,7 +55,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="flex items-start gap-2.5">
-                <Award className="w-5 h-5 text-brand-blue flex-shrink-0 mt-0.5" strokeWidth={1.8} />
+                <Award className="w-5 h-5 text-brand-blue shrink-0 mt-0.5" strokeWidth={1.8} />
                 <div>
                   <h4 className="font-heading text-xs font-bold uppercase tracking-wider text-slate-900">
                     18-Year Legacy
@@ -69,7 +69,7 @@ export default function AboutPage() {
           </div>
 
           {/* Visual */}
-          <div className="relative h-[400px] rounded overflow-hidden border border-slate-200 shadow-sm">
+          <div className="relative h-100 rounded overflow-hidden border border-slate-200 shadow-sm">
             <Image
               src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1200&auto=format&fit=crop"
               alt="Himalayan range peaks flight view"

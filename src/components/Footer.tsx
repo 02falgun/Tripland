@@ -24,7 +24,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#071126] text-slate-300 pt-16 pb-8 border-t-0 relative z-10 font-sans overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[2.5px] before:bg-gradient-to-r before:from-brand-blue before:via-brand-red before:to-brand-gold before:opacity-100 before:shadow-md before:shadow-brand-blue/35">
+    <footer className="bg-[#071126] text-slate-300 pt-16 pb-8 border-t-0 relative z-10 font-sans overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[2.5px] before:bg-linear-to-r before:from-brand-blue before:via-brand-red before:to-brand-gold before:opacity-100 before:shadow-md before:shadow-brand-blue/35">
       {/* Brand thematic ambient glows */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-brand-blue/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-red/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
@@ -48,7 +48,7 @@ export default function Footer() {
             TripLand Travels & Tours Pvt. Ltd. is an IATA Accredited travel agent in Nepal with 18 years of commitment, trust, and service excellence in air ticketing and visa documentation.
           </p>
           <div className="flex items-center gap-2 bg-brand-blue/5 border border-brand-blue/15 p-3 rounded shadow-sm">
-            <ShieldCheck className="w-5 h-5 text-brand-gold flex-shrink-0" strokeWidth={1.5} />
+            <ShieldCheck className="w-5 h-5 text-brand-gold shrink-0" strokeWidth={1.5} />
             <div className="leading-tight">
               <span className="text-[10px] font-bold text-white uppercase block">IATA Agent</span>
               <span className="text-[9px] text-slate-400 font-light">Accredited ticketing coordinator</span>
@@ -151,7 +151,7 @@ export default function Footer() {
         </h3>
         <div className="relative h-16 w-full max-w-2xl mx-auto overflow-hidden rounded-lg border border-white/5 bg-slate-800/30">
           <Image
-            src="/images/footer/associated-with.svg"
+            src="/images/footer/associated-with-iata.jpeg"
             alt="Associated partners and affiliations"
             fill
             sizes="(max-width: 768px) 100vw, 600px"
@@ -166,21 +166,11 @@ export default function Footer() {
           We Accept
         </h3>
         <div className="flex items-center justify-center gap-8 flex-wrap">
-          {/* Visa */}
+          {/* Visa + eSewa + Khalti Combined */}
           <div className="relative h-10 w-16 group cursor-pointer">
             <Image
-              src="/images/payments/visa.svg"
-              alt="Visa"
-              fill
-              sizes="64px"
-              className="object-contain grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-110"
-            />
-          </div>
-          {/* eSewa */}
-          <div className="relative h-10 w-16 group cursor-pointer">
-            <Image
-              src="/images/payments/esewa.svg"
-              alt="eSewa"
+              src="/images/payments/visa-esewa-khalti.jpg"
+              alt="Visa, eSewa &amp; Khalti"
               fill
               sizes="64px"
               className="object-contain grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-110"
@@ -189,18 +179,18 @@ export default function Footer() {
           {/* Connect IPS */}
           <div className="relative h-10 w-16 group cursor-pointer">
             <Image
-              src="/images/payments/connectips.svg"
+              src="/images/payments/connectips.png"
               alt="Connect IPS"
               fill
               sizes="64px"
               className="object-contain grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-110"
             />
           </div>
-          {/* Khalti */}
+          {/* Mastercard */}
           <div className="relative h-10 w-16 group cursor-pointer">
             <Image
-              src="/images/payments/khalti.svg"
-              alt="Khalti"
+              src="/images/payments/mastercard.jpg"
+              alt="Mastercard"
               fill
               sizes="64px"
               className="object-contain grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-110"
@@ -228,18 +218,18 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-brand-blue/20 flex flex-col lg:flex-row gap-6 items-center justify-between relative z-10">
         <div className="flex flex-col sm:flex-row gap-5 text-[11px] font-medium text-slate-400">
           <span className="flex items-center gap-1.5">
-            <MapPin className="w-3.5 h-3.5 text-brand-gold flex-shrink-0" strokeWidth={1.5} />
+            <MapPin className="w-3.5 h-3.5 text-brand-gold shrink-0" strokeWidth={1.5} />
             {siteSettings.address}
           </span>
           <span className="flex items-center gap-1.5">
-            <Mail className="w-3.5 h-3.5 text-brand-gold flex-shrink-0" strokeWidth={1.5} />
+            <Mail className="w-3.5 h-3.5 text-brand-gold shrink-0" strokeWidth={1.5} />
             {siteSettings.contactEmail}
           </span>
           <button
             onClick={() => setIsTermsOpen(true)}
             className="flex items-center gap-1.5 hover:text-brand-gold cursor-pointer transition-colors text-slate-400"
           >
-            <FileText className="w-3.5 h-3.5 text-brand-gold flex-shrink-0" strokeWidth={1.5} />
+            <FileText className="w-3.5 h-3.5 text-brand-gold shrink-0" strokeWidth={1.5} />
             Universal Booking Terms
           </button>
         </div>
@@ -294,7 +284,7 @@ export default function Footer() {
               <ul className="space-y-4 text-xs font-semibold text-slate-650">
                 {bookingTerms.map((term, i) => (
                   <li key={i} className="flex gap-3 items-start leading-relaxed">
-                    <CheckCircle className="w-4.5 h-4.5 text-brand-blue flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                    <CheckCircle className="w-4.5 h-4.5 text-brand-blue shrink-0 mt-0.5" strokeWidth={2.5} />
                     <span>{term}</span>
                   </li>
                 ))}

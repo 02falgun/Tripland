@@ -34,7 +34,7 @@ export default function HolidaysPage() {
           sizes="100vw"
           className="object-cover opacity-35 pointer-events-none"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-transparent to-slate-950 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-black/55 via-transparent to-slate-950 pointer-events-none"></div>
         <div className="max-w-4xl mx-auto relative z-10 space-y-3">
           <span className="text-[10px] font-extrabold tracking-widest uppercase text-brand-gold bg-slate-900 border border-slate-800 px-3.5 py-1.5 rounded-full inline-block">
             Curated Holiday Experiences
@@ -111,7 +111,7 @@ export default function HolidaysPage() {
                         className="object-cover group-hover:scale-105 transition-transform duration-700 pointer-events-none"
                         loading="lazy"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none"></div>
+                      <div className="absolute inset-0 bg-linear-to-t from-black/30 to-transparent pointer-events-none"></div>
                       <div className="absolute top-3 left-3 bg-slate-950/60 backdrop-blur-md text-white text-[9px] font-extrabold uppercase tracking-widest px-2.5 py-1 rounded-lg border border-white/10 flex items-center gap-1">
                         <Clock className="w-3 h-3" strokeWidth={2} />
                         {pkg.duration}
@@ -119,7 +119,7 @@ export default function HolidaysPage() {
                     </div>
 
                     {/* Body */}
-                    <div className="p-6 flex flex-col flex-grow justify-between text-left">
+                    <div className="p-6 flex flex-col grow justify-between text-left">
                       <div className="space-y-3">
                         {/* Location */}
                         <span className="flex items-center gap-1 text-[10px] font-semibold text-slate-400">

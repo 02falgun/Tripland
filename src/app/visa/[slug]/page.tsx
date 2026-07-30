@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { getStaticVisaServices, getStaticSettings } from "@/lib/db";
+import { getStaticVisaServices } from "@/lib/db";
 import { FileText, Clock, ArrowLeft, ShieldAlert, BadgeCheck } from "lucide-react";
 import { Metadata } from "next";
 import InquiryForm from "@/components/InquiryForm";
@@ -80,7 +80,7 @@ export default async function VisaPage({ params }: PageProps) {
           </div>
 
           {/* Cinematic Image Panel */}
-          <div className="relative h-64 sm:h-[320px] w-full rounded-2xl overflow-hidden border border-slate-200 shadow-md group">
+          <div className="relative h-64 sm:h-80 w-full rounded-2xl overflow-hidden border border-slate-200 shadow-md group">
             <Image
               src={coverImage}
               alt={`Visa documentation cover representing ${visa.country}`}
@@ -89,13 +89,13 @@ export default async function VisaPage({ params }: PageProps) {
               priority
               className="object-cover group-hover:scale-[1.02] transition-transform duration-700 pointer-events-none"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent pointer-events-none"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-slate-950/40 to-transparent pointer-events-none"></div>
           </div>
 
           {/* Technical Info Tabs */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-white border border-slate-200/80 p-4 rounded-xl flex items-start gap-3 shadow-sm">
-              <Clock className="w-5 h-5 text-brand-blue mt-0.5 flex-shrink-0" strokeWidth={1.5} />
+              <Clock className="w-5 h-5 text-brand-blue mt-0.5 shrink-0" strokeWidth={1.5} />
               <div>
                 <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-0.5">
                   Embassy Processing Time
@@ -104,7 +104,7 @@ export default async function VisaPage({ params }: PageProps) {
               </div>
             </div>
             <div className="bg-white border border-slate-200/80 p-4 rounded-xl flex items-start gap-3 shadow-sm">
-              <FileText className="w-5 h-5 text-brand-blue mt-0.5 flex-shrink-0" strokeWidth={1.5} />
+              <FileText className="w-5 h-5 text-brand-blue mt-0.5 shrink-0" strokeWidth={1.5} />
               <div>
                 <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block mb-0.5">
                   Available Portfolios
@@ -124,7 +124,7 @@ export default async function VisaPage({ params }: PageProps) {
             <ul className="space-y-3.5 text-xs text-slate-650 font-medium">
               {visa.requiredDocuments.map((doc, idx) => (
                 <li key={idx} className="flex gap-3 items-start leading-relaxed">
-                  <span className="w-5 h-5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 flex items-center justify-center flex-shrink-0 text-[10px] font-bold mt-0.5">
+                  <span className="w-5 h-5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 flex items-center justify-center shrink-0 text-[10px] font-bold mt-0.5">
                     {idx + 1}
                   </span>
                   <span className="pt-0.5 text-slate-750">{doc}</span>
@@ -135,7 +135,7 @@ export default async function VisaPage({ params }: PageProps) {
 
           {/* Advisory Box */}
           <div className="bg-slate-100/70 border border-slate-200 p-5 rounded-xl flex gap-3 text-xs leading-relaxed text-slate-500 font-light shadow-inner">
-            <ShieldAlert className="w-5 h-5 text-brand-red flex-shrink-0 mt-0.5" strokeWidth={1.5} />
+            <ShieldAlert className="w-5 h-5 text-brand-red shrink-0 mt-0.5" strokeWidth={1.5} />
             <div className="space-y-1">
               <h4 className="font-bold text-slate-800 uppercase text-[9px] tracking-wider">Embassy Disclaimer & Advisory</h4>
               <p>

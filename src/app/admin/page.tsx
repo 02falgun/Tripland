@@ -68,7 +68,11 @@ export default function AdminPage() {
 
   const handleUnlock = (e: React.FormEvent) => {
     e.preventDefault();
-    const adminKey = process.env.NEXT_PUBLIC_ADMIN_KEY || "tripland2026";
+    const adminKey = process.env.NEXT_PUBLIC_ADMIN_KEY;
+    if (!adminKey) {
+      setAuthError("Admin key not configured. Set NEXT_PUBLIC_ADMIN_KEY in .env.local");
+      return;
+    }
     if (passcode === adminKey) {
       setIsAuthenticated(true);
       sessionStorage.setItem("tripland_admin_session", "unlocked");
@@ -507,7 +511,7 @@ export default function AdminPage() {
         <div className="lg:col-span-4 space-y-6">
           <div className="bg-slate-900 text-slate-350 p-6 rounded border border-slate-800 shadow-sm space-y-6">
             <div className="flex items-start gap-2.5 bg-slate-800 p-4 rounded text-[11px] leading-relaxed border border-slate-700">
-              <ShieldAlert className="w-5 h-5 text-brand-gold flex-shrink-0" strokeWidth={1.5} />
+              <ShieldAlert className="w-5 h-5 text-brand-gold shrink-0" strokeWidth={1.5} />
               <div>
                 <h4 className="font-bold text-white uppercase tracking-wider mb-0.5">Commit Config JSON</h4>
                 <p className="font-light">

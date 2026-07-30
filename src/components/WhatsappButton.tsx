@@ -3,10 +3,11 @@
 import { useState, useEffect } from "react";
 import { MessageCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import settings from "../../data/siteSettings.json";
+import { useTravelStore } from "@/store/travelStore";
 
 export default function WhatsappButton() {
   const [isVisible, setIsVisible] = useState(false);
+  const siteSettings = useTravelStore((state) => state.siteSettings);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,8 +25,8 @@ export default function WhatsappButton() {
     const message = encodeURIComponent(
       "Hello TripLand! I am browsing your website and would like to inquire about your private curated luxury tours in Nepal."
     );
-    // Remove plus, space or other chars from settings.whatsappNumber for the URL format
-    const cleanedNumber = settings.whatsappNumber.replace(/[+\s\-()]/g, "");
+    // Remove plus, space or other chars from siteSettings.whatsappNumber for the URL format
+    const cleanedNumber = siteSettings.whatsappNumber.replace(/[+\s\-()]/g, "");
     window.open(`https://wa.me/${cleanedNumber}?text=${message}`, "_blank");
   };
 
