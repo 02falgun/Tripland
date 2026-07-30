@@ -71,11 +71,11 @@ export default async function BlogDetailPage({ params }: PageProps) {
             <span className="flex items-center gap-1.5">
               <User className="w-4 h-4 text-brand-blue" /> By {article.author}
             </span>
-            <span className="w-[1px] h-3.5 bg-slate-250"></span>
+            <span className="w-px h-3.5 bg-slate-250"></span>
             <span className="flex items-center gap-1.5">
               <Calendar className="w-4 h-4 text-brand-gold" /> Published {article.date}
             </span>
-            <span className="w-[1px] h-3.5 bg-slate-250"></span>
+            <span className="w-px h-3.5 bg-slate-250"></span>
             <span className="flex items-center gap-1.5">
               <Clock className="w-4 h-4 text-slate-400" /> 4 Min Read
             </span>
@@ -83,7 +83,7 @@ export default async function BlogDetailPage({ params }: PageProps) {
         </div>
 
         {/* Cover Image */}
-        <div className="relative h-64 sm:h-[450px] w-full rounded-2xl overflow-hidden border border-slate-200 shadow-md">
+        <div className="relative h-64 sm:h-112.5 w-full rounded-2xl overflow-hidden border border-slate-200 shadow-md">
           <Image
             src={article.coverImage}
             alt={article.title}
@@ -109,7 +109,7 @@ export default async function BlogDetailPage({ params }: PageProps) {
           </div>
           <Link
             href="/"
-            className="flex-shrink-0 px-4 py-2 bg-brand-blue hover:bg-brand-blue/90 text-white rounded text-[10px] font-bold uppercase tracking-widest flex items-center gap-1 shadow transition-colors"
+            className="shrink-0 px-4 py-2 bg-brand-blue hover:bg-brand-blue/90 text-white rounded text-[10px] font-bold uppercase tracking-widest flex items-center gap-1 shadow transition-colors"
           >
             Explore Packages <ChevronRight className="w-3.5 h-3.5" />
           </Link>

@@ -58,7 +58,7 @@ export default function AffiliateFlights() {
             variants={itemVariants}
             className="bg-white border border-slate-200/80 rounded-xl p-4 sm:p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex items-center justify-center group"
           >
-            <div className="relative h-14 w-full max-w-[130px]">
+            <div className="relative h-14 w-full max-w-32.5">
               <Image
                 src={airline.logo}
                 alt={airline.name}

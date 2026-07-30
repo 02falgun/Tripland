@@ -25,7 +25,9 @@ import {
   FileText
 } from "lucide-react";
 import HeroSearchWidget from "@/components/HeroSearchWidget";
+import HeroSlideshow from "@/components/HeroSlideshow";
 import AffiliateFlights from "@/components/AffiliateFlights";
+import heroImages from "../../data/heroImages.json";
 
 const visaImages: Record<string, string> = {
   "dubai-uae-visa": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop",
@@ -107,26 +109,29 @@ export default function Home() {
     <div className="w-full bg-[#f8fafc] text-slate-800 font-sans">
 
       {/* 100vh Full-Screen Cinematic Hero Section */}
-      <section className="relative h-[95vh] min-h-[650px] w-full flex items-center justify-center overflow-hidden text-white bg-slate-950">
-        {/* Cinematic Loop YouTube Video Background */}
-        <div className="absolute inset-0 w-full h-full pointer-events-none overflow-hidden opacity-65">
-          <iframe
-            src="https://www.youtube.com/embed/F02_MVdAqCk?autoplay=1&mute=1&loop=1&playlist=F02_MVdAqCk&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&autohide=1&playsinline=1&enablejsapi=1"
-            className="absolute top-1/2 left-1/2 w-[300vw] h-[168.75vw] min-h-[300vh] min-w-[177.77vh] -translate-x-1/2 -translate-y-1/2 object-cover aspect-video"
-            allow="autoplay; encrypted-media"
-            frameBorder="0"
-            title="Cinematic Travel Background Video"
-          ></iframe>
-        </div>
+      <section className="relative h-[95vh] min-h-162.5 w-full flex items-center justify-center overflow-hidden text-white bg-slate-950">
+        {/* Hero Image Slideshow Background */}
+        <HeroSlideshow images={heroImages} />
         {/* Linear dark gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-slate-950/30 to-slate-950 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-black/60 via-slate-950/30 to-slate-950 pointer-events-none"></div>
 
         <div className="max-w-7xl w-full mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10 pt-16">
           {/* Left Text */}
           <div className="lg:col-span-5 space-y-6 text-left">
-            <div className="inline-flex items-center gap-1.5 bg-brand-gold/20 text-brand-gold border border-brand-gold/30 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-sm animate-pulse">
-              <Star className="w-3.5 h-3.5 fill-current" />
-              18 Years of Trust & Commitment
+            <div className="flex items-center gap-3">
+              <div className="relative h-10.5 w-10.5 shrink-0">
+                <Image
+                  src="/images/badges/18yrs-logo.png"
+                  alt="18 Years Trust Badge"
+                  fill
+                  sizes="42px"
+                  className="object-contain"
+                />
+              </div>
+              <div className="inline-flex items-center gap-1.5 bg-brand-gold/20 text-brand-gold border border-brand-gold/30 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-sm animate-pulse">
+                <Star className="w-3.5 h-3.5 fill-current" />
+                18 Years of Trust &amp; Commitment
+              </div>
             </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[1.05] text-white uppercase flex flex-col">
               <span className="text-white"><BouncingText text="CHEAP AIR" /></span>
@@ -148,30 +153,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust & Accreditations Banner */}
+      {/* Trust &amp; Accreditations Banner */}
       <section className="bg-slate-100 py-10 px-8 border-y border-slate-200">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-around gap-8 text-slate-600">
           <div className="flex items-center gap-3">
-            <Award className="w-8 h-8 text-brand-blue flex-shrink-0" strokeWidth={1.5} />
+            <Award className="w-8 h-8 text-brand-blue shrink-0" strokeWidth={1.5} />
             <div>
               <h3 className="font-heading font-bold text-slate-800 text-sm uppercase">IATA Accredited</h3>
               <p className="text-[11px] text-slate-500">Official agent licensed for global flight ticketing.</p>
             </div>
           </div>
-          <div className="w-[1px] h-10 bg-slate-300 hidden md:block"></div>
+          <div className="w-px h-10 bg-slate-300 hidden md:block"></div>
           <div className="flex items-center gap-3">
-            <ShieldCheck className="w-8 h-8 text-brand-blue flex-shrink-0" strokeWidth={1.5} />
+            <ShieldCheck className="w-8 h-8 text-brand-blue shrink-0" strokeWidth={1.5} />
             <div>
               <h3 className="font-heading font-bold text-slate-800 text-sm uppercase">18 Years Commitment</h3>
               <p className="text-[11px] text-slate-500">Reliable agency service located in Kathmandu.</p>
             </div>
           </div>
-          <div className="w-[1px] h-10 bg-slate-300 hidden md:block"></div>
+          <div className="w-px h-10 bg-slate-300 hidden md:block"></div>
           <div className="flex items-center gap-3">
-            <CheckCircle2 className="w-8 h-8 text-brand-blue flex-shrink-0" strokeWidth={1.5} />
+            <CheckCircle2 className="w-8 h-8 text-brand-blue shrink-0" strokeWidth={1.5} />
             <div>
               <h3 className="font-heading font-bold text-slate-800 text-sm uppercase">99% Visa Approvals</h3>
-              <p className="text-[11px] text-slate-500">High success rates for Dubai, China, & Japan visas.</p>
+              <p className="text-[11px] text-slate-500">High success rates for Dubai, China, &amp; Japan visas.</p>
             </div>
           </div>
         </div>
@@ -196,19 +201,19 @@ export default function Home() {
           {[
             {
               title: "Flight Booking",
-              description: "Accredited GDS wholesale ticketing queues for domestic & international flights.",
+              description: "Accredited GDS wholesale ticketing queues for domestic &amp; international flights.",
               icon: Plane,
               link: "/flights",
             },
             {
               title: "Hotel Booking",
-              description: "Vetted international resort vouchers & accommodation reservation options.",
+              description: "Vetted international resort vouchers &amp; accommodation reservation options.",
               icon: Building,
               link: "/packages",
             },
             {
               title: "Tour Package",
-              description: "All-inclusive group departures & customized private outbound itineraries.",
+              description: "All-inclusive group departures &amp; customized private outbound itineraries.",
               icon: Compass,
               link: "/packages",
             },
@@ -290,7 +295,6 @@ export default function Home() {
                   <h4 className="font-heading text-lg font-black text-slate-950 uppercase group-hover:text-brand-blue transition-colors">{deal.route}</h4>
                   <span className="text-[11px] text-slate-450 font-semibold block mt-0.5">{deal.type} Flight | {deal.baggageAllowance}</span>
                 </div>
-              </div>
 
               <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
                 <div>
@@ -303,6 +307,7 @@ export default function Home() {
                 >
                   Book Now
                 </Link>
+              </div>
               </div>
             </div>
           ))}
@@ -324,7 +329,7 @@ export default function Home() {
                 International Tour Packages
               </h2>
               {/* Handwritten floating alert */}
-              <div className="absolute -top-10 right-4 sm:right-12 rotate-[-3deg] font-handwritten text-2xl text-brand-gold hidden md:flex items-center gap-1 select-none pointer-events-none drop-shadow">
+              <div className="absolute -top-10 right-4 sm:right-12 -rotate-3 font-handwritten text-2xl text-brand-gold hidden md:flex items-center gap-1 select-none pointer-events-none drop-shadow">
                 🌸 Peak Cherry Blossom blocks!
               </div>
             </div>
@@ -346,7 +351,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.05 }}
-                className="w-[280px] sm:w-[320px] flex-shrink-0 bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-500 flex flex-col justify-between snap-start relative group"
+                className="w-70 sm:w-80 shrink-0 bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-500 flex flex-col justify-between snap-start relative group"
               >
                 {/* Image */}
                 <div className="relative h-48 w-full overflow-hidden bg-slate-50">
@@ -363,7 +368,7 @@ export default function Home() {
                   </div>
                 </div>
                 {/* Body */}
-                <div className="p-5 flex flex-col flex-grow justify-between space-y-4">
+                  <div className="p-5 flex flex-col grow justify-between space-y-4">
                   <div className="space-y-2">
                     <h3 className="font-heading text-sm font-extrabold text-slate-900 uppercase tracking-wide text-left group-hover:text-brand-blue transition-colors line-clamp-1">
                       {pkg.title}
@@ -371,7 +376,7 @@ export default function Home() {
                     <ul className="space-y-1 text-[11px] text-slate-500 font-medium text-left">
                       {pkg.highlights.slice(0, 2).map((hl, i) => (
                         <li key={i} className="flex items-center gap-1.5 line-clamp-1">
-                          <span className="w-1.5 h-1.5 bg-brand-red rounded-full flex-shrink-0"></span>
+                          <span className="w-1.5 h-1.5 bg-brand-red rounded-full shrink-0"></span>
                           {hl}
                         </li>
                       ))}
@@ -457,7 +462,7 @@ export default function Home() {
               if (!activeVisa) return null;
               const visaCoverImage = visaImages[activeVisa.slug] || "https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1200&auto=format&fit=crop";
               return (
-                <div className="relative h-[480px] rounded-3xl overflow-hidden border border-slate-200/60 shadow-xl group">
+                <div className="relative h-120 rounded-3xl overflow-hidden border border-slate-200/60 shadow-xl group">
                   
                   {/* Animating morph image swap */}
                   <Image
@@ -498,7 +503,7 @@ export default function Home() {
                         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[11px] text-slate-200 font-semibold">
                           {activeVisa.requiredDocuments.slice(0, 4).map((doc, idx) => (
                             <li key={idx} className="flex gap-2 items-start leading-tight">
-                              <span className="w-4.5 h-4.5 rounded-full bg-white/15 text-white flex items-center justify-center flex-shrink-0 text-[9px] font-bold mt-0.5">
+                              <span className="w-4.5 h-4.5 rounded-full bg-white/15 text-white flex items-center justify-center shrink-0 text-[9px] font-bold mt-0.5">
                                 {idx + 1}
                               </span>
                               <span className="pt-0.5">{doc.length > 45 ? doc.slice(0, 45) + "..." : doc}</span>
@@ -506,7 +511,6 @@ export default function Home() {
                           ))}
                         </ul>
                       </div>
-                    </div>
 
                     <div className="pt-6 border-t border-white/10 flex items-center gap-4">
                       <Link
@@ -515,8 +519,8 @@ export default function Home() {
                       >
                         Verify Full Checklist
                       </Link>
-                      <Link
-                        href={`https://wa.me/9779801126300?text=Hello%20TripLand!%20I%20would%20like%20to%20apply%20for%20a%20${encodeURIComponent(activeVisa.country)}%20visa.`}
+<Link
+                        href={`https://wa.me/${siteSettings.whatsappNumber.replace(/[+\s\-()]/g, "")}?text=${encodeURIComponent(`Hello TripLand! I would like to apply for a ${activeVisa.country} visa.`)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-5 py-2.5 bg-[#25D366] hover:bg-[#20ba56] text-white rounded-lg text-[10px] font-bold uppercase tracking-wider transition-all flex items-center gap-1.5 cursor-pointer"
@@ -524,13 +528,12 @@ export default function Home() {
                         <PhoneCall className="w-3.5 h-3.5" /> WhatsApp Desk
                       </Link>
                     </div>
+                    </div>
                   </div>
-
                 </div>
               );
             })()}
           </div>
-
         </div>
       </section>
 
@@ -567,7 +570,7 @@ export default function Home() {
                 className="object-cover group-hover:scale-105 transition-transform duration-700 pointer-events-none"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 pointer-events-none">
+              <div className="absolute inset-0 bg-linear-to-t from-slate-950/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 pointer-events-none">
                 <div className="text-white text-left space-y-1">
                   <span className="text-[8px] font-bold text-brand-gold uppercase tracking-wider flex items-center gap-1">
                     <Camera className="w-3 h-3" /> Captured
@@ -592,7 +595,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Traveler Journals Section (Condé Nast Editorial Style) */}
+      {/* Traveler Journals Section */}
       <section className="py-24 px-8 max-w-7xl mx-auto relative border-t border-slate-200/60">
         <div className="text-center max-w-xl mx-auto mb-16 relative">
           <span className="text-[10px] font-extrabold tracking-widest text-brand-blue uppercase block mb-1">
@@ -622,7 +625,7 @@ export default function Home() {
                   className="object-cover group-hover:scale-[1.02] transition-transform duration-700 pointer-events-none"
                 />
               </div>
-              <div className="p-6 sm:p-8 flex flex-col justify-between flex-grow space-y-4">
+                <div className="p-6 sm:p-8 flex flex-col justify-between grow space-y-4">
                 <div className="space-y-2 text-left">
                   <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider block">
                     {article.date} &bull; By {article.author.split(" ")[0]}
@@ -667,7 +670,7 @@ export default function Home() {
           sizes="100vw"
           className="object-cover opacity-25 pointer-events-none"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/50 via-transparent to-slate-950 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-slate-950/50 via-transparent to-slate-950 pointer-events-none"></div>
         <div className="max-w-4xl mx-auto space-y-6 relative z-10">
           <h2 className="font-heading text-2xl md:text-4xl font-extrabold uppercase">
             Ready to book your flights or plan an escape?
@@ -677,13 +680,13 @@ export default function Home() {
           </p>
           <div className="flex justify-center gap-4 pt-4 flex-wrap">
             <Link
-              href="tel:9801126300"
+              href={`tel:${siteSettings.phoneNumbers[0]}`}
               className="px-6 py-3 bg-white text-brand-blue font-bold uppercase text-[10px] tracking-wider rounded shadow-lg hover:bg-slate-100 transition-colors"
             >
-              Call 9801126300
+              Call {siteSettings.phoneNumbers[0]}
             </Link>
             <Link
-              href="https://wa.me/9779801126300?text=Hello!%20I%20need%20assistance%20with%20flight%20ticketing."
+              href={`https://wa.me/${siteSettings.whatsappNumber.replace(/[+\s\-()]/g, "")}?text=${encodeURIComponent("Hello! I need assistance with flight ticketing.")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-brand-red text-white font-bold uppercase text-[10px] tracking-wider rounded shadow-lg hover:bg-brand-red/90 transition-colors"
@@ -755,7 +758,7 @@ function TestimonialsSection() {
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Background glow orb */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-blue/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-w-125 h-w-125 bg-brand-blue/5 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="max-w-4xl mx-auto px-8 relative z-10">
         <div className="text-center mb-12">
@@ -769,14 +772,14 @@ function TestimonialsSection() {
         </div>
 
         {/* Carousel Card */}
-        <div className="relative bg-white border border-slate-200/90 rounded-2xl shadow-xl p-8 md:p-12 min-h-[320px] flex flex-col justify-between">
+          <div className="relative bg-white border border-slate-200/90 rounded-2xl shadow-xl p-8 md:p-12 min-h-80 flex flex-col justify-between">
 
           {/* Big quotes icon */}
           <div className="absolute top-6 left-6 md:top-8 md:left-8 text-brand-gold/10 select-none">
             <Quote className="w-20 h-20 fill-current" stroke="none" />
           </div>
 
-          <div className="relative min-h-[140px] flex flex-col justify-center">
+          <div className="relative min-h-35 flex flex-col justify-center">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIdx}
@@ -795,7 +798,7 @@ function TestimonialsSection() {
 
                 {/* Quote */}
                 <blockquote className="text-base md:text-lg italic text-slate-800 leading-relaxed font-light font-sans text-left">
-                  "{current.quote}"
+                  &ldquo;{current.quote}&rdquo;
                 </blockquote>
 
                 {/* Service Tag */}
@@ -809,7 +812,7 @@ function TestimonialsSection() {
           {/* Bottom Row: Client info & controls */}
           <div className="mt-8 pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-6 relative z-10">
             {/* Author details */}
-            <div className="min-h-[50px] flex items-center">
+            <div className="min-h-12.5 flex items-center">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeIdx}
@@ -819,7 +822,7 @@ function TestimonialsSection() {
                   transition={{ duration: 0.25 }}
                   className="flex items-center gap-4"
                 >
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-brand-blue to-slate-900 text-white flex items-center justify-center font-black text-sm uppercase shadow-sm">
+                  <div className="w-12 h-12 rounded-full bg-linear-to-tr from-brand-blue to-slate-900 text-white flex items-center justify-center font-black text-sm uppercase shadow-sm">
                     {current.initials}
                   </div>
                   <div className="text-left leading-tight">
@@ -866,10 +869,8 @@ function TestimonialsSection() {
               </button>
             </div>
           </div>
-
         </div>
       </div>
     </section>
   );
 }
-

@@ -1,9 +1,10 @@
 [
-  { "id": "nepal-airlines", "name": "Nepal Airlines", "logo": "/images/airlines/nepal-airlines.svg" },
-  { "id": "qatar-airways", "name": "Qatar Airways", "logo": "/images/airlines/qatar-airways.svg" },
-  { "id": "etihad-airways", "name": "Etihad Airways", "logo": "/images/airlines/etihad-airways.svg" },
-  { "id": "turkish-airlines", "name": "Turkish Airlines", "logo": "/images/airlines/turkish-airlines.svg" },
-  { "id": "china-eastern", "name": "China Eastern", "logo": "/images/airlines/china-eastern.svg" },
-  { "id": "fly-dubai", "name": "flydubai", "logo": "/images/airlines/fly-dubai.svg" }
+  { "id": "china-eastern", "name": "China Eastern", "logo": "/images/airlines/china-eastern.jpg" },
+  { "id": "emirates", "name": "Emirates", "logo": "/images/airlines/emirates.jpg" },
+  { "id": "etihad", "name": "Etihad Airways", "logo": "/images/airlines/etihad.jpg" },
+  { "id": "nepal-airlines", "name": "Nepal Airlines", "logo": "/images/airlines/nepal-airlines.jpg" },
+  { "id": "oman-air", "name": "Oman Air", "logo": "/images/airlines/oman-air.jpg" },
+  { "id": "qatar-airways", "name": "Qatar Airways", "logo": "/images/airlines/qatar-airways.jpg" },
+  { "id": "turkish-airlines", "name": "Turkish Airlines", "logo": "/images/airlines/turkish.jpg" }
 ]
 

@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { Send, CheckCircle2, MessageSquareCode, MailCheck } from "lucide-react";
-import settings from "../../data/siteSettings.json";
+import { useTravelStore } from "@/store/travelStore";
 
 // Validation Schema
 const schema = z.object({
@@ -26,6 +26,7 @@ interface Props {
 export default function InquiryForm({ targetPackage }: Props) {
   const [success, setSuccess] = useState(false);
   const [method, setMethod] = useState<"whatsapp" | "email">("whatsapp");
+  const siteSettings = useTravelStore((state) => state.siteSettings);
 
   const {
     register,
@@ -53,12 +54,12 @@ export default function InquiryForm({ targetPackage }: Props) {
     const fullText = `${greeting}${tripDetails}${body}`;
 
     if (method === "whatsapp") {
-      const cleanedNumber = settings.whatsappNumber.replace(/[+\s\-()]/g, "");
+      const cleanedNumber = siteSettings.whatsappNumber.replace(/[+\s\-()]/g, "");
       const waUrl = `https://wa.me/${cleanedNumber}?text=${encodeURIComponent(fullText)}`;
       window.open(waUrl, "_blank");
     } else {
       const emailSubject = encodeURIComponent(targetPackage ? `Luxury Inquiry: ${targetPackage}` : "Custom Himalayan Luxury Inquiry");
-      const mailtoUrl = `mailto:${settings.contactEmail}?subject=${emailSubject}&body=${encodeURIComponent(fullText)}`;
+      const mailtoUrl = `mailto:${siteSettings.contactEmail}?subject=${emailSubject}&body=${encodeURIComponent(fullText)}`;
       window.open(mailtoUrl, "_blank");
     }
 

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, Plane, ShieldCheck, Phone } from "lucide-react";
+import { Menu, X, ShieldCheck, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTravelStore } from "@/store/travelStore";
 
@@ -38,16 +38,25 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 font-sans">
-      {/* Super Slim Top Accent Info (fades out slightly on scroll) */}
+{/* Super Slim Top Accent Info (fades out slightly on scroll) */}
       <div className={`transition-all duration-500 text-[10px] py-1.5 px-8 flex justify-between items-center bg-black/25 text-white/80 border-b border-white/5 ${
         isScrolled ? "h-0 py-0 opacity-0 overflow-hidden" : "h-auto opacity-100"
       }`}>
         <div className="flex items-center gap-3">
+          <div className="relative h-4.5 w-4.5 shrink-0">
+            <Image
+              src="/images/badges/18yrs-logo.png"
+              alt="18 Years"
+              fill
+              sizes="18px"
+              className="object-contain"
+            />
+          </div>
           <span className="flex items-center gap-1 text-brand-gold font-bold uppercase tracking-wider">
             <ShieldCheck className="w-3 h-3 fill-current" stroke="none" />
             18 Years Legacy
           </span>
-          <span className="w-[1px] h-2.5 bg-white/20"></span>
+          <span className="w-px h-2.5 bg-white/20"></span>
           <span className="font-semibold uppercase tracking-wider text-slate-300">IATA Accredited Agent</span>
         </div>
         <div className="flex items-center gap-2">
@@ -113,14 +122,14 @@ export default function Header() {
             >
               Console
             </Link>
-            <Link
-              href="https://wa.me/9779801126300?text=Hello%20TripLand%20Travels!%20I%20would%20like%20to%20inquire%20about%20flights%20and%20packages."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 bg-brand-red hover:bg-brand-red/90 text-white rounded text-[10px] font-bold uppercase tracking-widest shadow-md shadow-brand-red/20 hover:shadow-brand-red/40 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
-            >
-              Quick Quote
-            </Link>
+              <Link
+                href={`https://wa.me/977${siteSettings.whatsappNumber.replace(/[+\s\-()]/g, "")}?text=${encodeURIComponent("Hello TripLand Travels! I would like to inquire about flights and packages.")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 bg-brand-red hover:bg-brand-red/90 text-white rounded text-[10px] font-bold uppercase tracking-widest shadow-md shadow-brand-red/20 hover:shadow-brand-red/40 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
+              >
+                Quick Quote
+              </Link>
           </div>
 
           {/* Mobile menu trigger */}
@@ -164,7 +173,7 @@ export default function Header() {
                   </Link>
                 );
               })}
-              <div className="w-full h-[1px] bg-white/5 my-2"></div>
+              <div className="w-full h-px bg-white/5 my-2"></div>
               <Link
                 href="/admin"
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -173,7 +182,7 @@ export default function Header() {
                 Console (Admin)
               </Link>
               <Link
-                href="https://wa.me/9779801126300?text=Hello%20TripLand%20Travels!%20I%20would%20like%20to%20inquire%20about%20flights%2520and%2520packages."
+                href={`https://wa.me/977${siteSettings.whatsappNumber.replace(/[+\s\-()]/g, "")}?text=${encodeURIComponent("Hello TripLand Travels! I would like to inquire about flights and packages.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMobileMenuOpen(false)}

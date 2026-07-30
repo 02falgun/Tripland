@@ -76,7 +76,7 @@ export default function HotelsPage() {
           sizes="100vw"
           className="object-cover opacity-35 pointer-events-none"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-transparent to-slate-950 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-black/55 via-transparent to-slate-950 pointer-events-none"></div>
         <div className="max-w-4xl mx-auto relative z-10 space-y-3">
           <span className="text-[10px] font-extrabold tracking-widest uppercase text-brand-gold bg-slate-900 border border-slate-800 px-3.5 py-1.5 rounded-full inline-block">
             Curated Accommodations
@@ -126,7 +126,7 @@ export default function HotelsPage() {
                   </div>
                 </div>
 
-                <div className="p-5 flex flex-col flex-grow text-left">
+                <div className="p-5 flex flex-col grow text-left">
                   <h3 className="font-heading text-sm font-black text-slate-900 uppercase tracking-wide mb-1">
                     {hotel.name}
                   </h3>
@@ -150,7 +150,7 @@ export default function HotelsPage() {
                       />
                     ))}
                   </div>
-                  <p className="text-xs text-slate-500 font-light leading-relaxed mb-4 flex-grow">
+                  <p className="text-xs text-slate-500 font-light leading-relaxed mb-4 grow">
                     {hotel.description}
                   </p>
                   <button
@@ -167,7 +167,7 @@ export default function HotelsPage() {
         </div>
 
         {/* Right: Booking Form Card */}
-        <div className="lg:col-span-5 bg-slate-900 text-white p-6 sm:p-8 rounded-2xl border border-slate-800 shadow-xl relative overflow-hidden sticky top-32">
+        <div className="lg:col-span-5 bg-slate-900 text-white p-6 sm:p-8 rounded-2xl border border-slate-800 shadow-xl overflow-hidden sticky top-32">
           <div className="absolute top-0 right-0 w-32 h-32 bg-brand-blue/10 rounded-full blur-2xl pointer-events-none"></div>
 
           <div className="border-b border-white/10 pb-4 mb-6">
