@@ -1,23 +1,32 @@
-# TripLand Fixes — 18-Years Badge, Inbound/Outbound Split, Grayscale Logos
+# Price Masking Implementation Plan
 
-## Fix 1 — 18-Years Badge Size
-### Header.tsx (top bar)
-- [x] Increase badge wrapper from `h-4.5 w-4.5` → `h-7 w-7` (28px)
-- [x] Increase top bar `py-1.5` → `py-2.5` to accommodate larger badge
-### page.tsx (hero section)
-- [x] Increase badge wrapper from `h-10.5 w-10.5` → `h-16 w-16` (64px) on desktop
-- [x] Add responsive sizing: `h-12 w-12` on mobile (`sm:h-16 sm:w-16`)
+## Steps to Complete
 
-## Fix 2 — Packages Inbound/Outbound Split on Home Page
-- [x] Destructure `holidayPackages` from `useTravelStore()` in `page.tsx`
-- [x] Add Inbound/Outbound tab toggle to the packages section (same styling as holidays page)
-- [x] Replace `outboundPackages` carousel with data from `holidayPackages.inbound` / `holidayPackages.outbound`
-- [x] Keep "Explore All Packages" link to `/packages`
+### Step 1: ✅ Create a price masking utility function (`src/lib/maskPrice.ts`)
+- Function to mask numeric prices (e.g., `48500` → `"48xxx"`)
+- Function to mask string prices with currency (e.g., `"NPR 34,999"` → `"NPR 34,xxx"`)
+- Keep leading 1-2 significant digits, replace rest with `x`
 
-## Fix 3 — Grayscale Logos in Footer
-- [x] Remove `grayscale hover:grayscale-0` from "Associated With" Image in Footer.tsx
-- [x] Remove `grayscale hover:grayscale-0` from all "We Accept" payment Image elements in Footer.tsx
+### Step 2: ✅ Update JSON data files
+- [x] `data/flightDeals.json` — mask all `startingPrice` values
+- [x] `data/holidayPackages.json` — mask all `price` string values  
+- [x] `data/outboundPackages.json` — mask all non-zero `price` values (keep `0` as-is for "Price on Request")
 
-## Verification
-- [x] Build succeeds with `npm run build`
-- [x] All badges, packages, and logos render correctly
+### Step 3: ✅ Update TypeScript types (`src/types/index.ts`)
+- [x] `FlightDeal.startingPrice`: `number` → `string | number`
+- [x] `OutboundPackage.price`: `number` → `string | number`
+
+### Step 4: ✅ Update component display logic
+- [x] `src/app/page.tsx` — Home page flight deals & holiday packages
+- [x] `src/app/flights/page.tsx` — Flight deals tables
+- [x] `src/app/holidays/page.tsx` — Holiday package cards (uses `{pkg.price}` directly — no changes needed)
+- [x] `src/app/packages/page.tsx` — Outbound package listing
+- [x] `src/app/package/[slug]/page.tsx` — Package detail page + SEO metadata
+- [x] `src/app/admin/page.tsx` — Admin table displays & form
+
+### Step 5: ✅ Verify
+- [x] Build project — compiled successfully with no TypeScript errors
+- [x] No broken functionality — all 41 static pages generated successfully
+- [x] Currency prefixes preserved (NPR, USD, Rs.)
+- [x] `price: 0` still shows "Price on Request"
+

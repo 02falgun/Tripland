@@ -298,10 +298,10 @@ export default function Home() {
                   <span className="text-[11px] text-slate-450 font-semibold block mt-0.5">{deal.type} Flight | {deal.baggageAllowance}</span>
                 </div>
 
-              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                  <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
                 <div>
                   <span className="text-[9px] uppercase font-bold text-slate-400 block mb-0.5">Starting Price</span>
-                  <span className="text-lg font-extrabold text-brand-blue">Rs. {deal.startingPrice.toLocaleString()}</span>
+                  <span className="text-lg font-extrabold text-brand-blue">Rs. {deal.startingPrice}</span>
                 </div>
                 <Link
                   href={`/flights?route=${encodeURIComponent(deal.route)}`}

@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const pkg = packages.find((p) => p.slug === slug);
   if (!pkg) return {};
 
-  const pricingStr = pkg.price !== 0 ? `Rs. ${pkg.price.toLocaleString()}` : "Price on Request";
+  const pricingStr = pkg.price !== 0 ? `Rs. ${pkg.price}` : "Price on Request";
 
   return {
     title: `${pkg.title} Outbound Package | TripLand Travels`,
@@ -97,7 +97,7 @@ export default async function PackagePage({ params }: PageProps) {
                 {hasPrice ? (
                   <div className="flex items-baseline gap-1">
                     <span className="text-3xl font-extrabold text-brand-red font-heading">
-                      Rs. {pkg.price.toLocaleString()}
+                      Rs. {pkg.price}
                     </span>
                     <span className="text-[10px] font-bold text-slate-450 tracking-wider uppercase font-mono">
                       NPR / Person

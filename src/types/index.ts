@@ -3,7 +3,7 @@ export interface FlightDeal {
   airline: string;
   route: string;
   type: "Domestic" | "International";
-  startingPrice: number;
+  startingPrice: string | number;
   baggageAllowance: string;
   isFeatured: boolean;
 }
@@ -18,7 +18,7 @@ export interface OutboundPackage {
   id: string;
   title: string;
   slug: string;
-  price: number;
+  price: string | number;
   duration: string;
   fixedDepartureDates: string[];
   highlights: string[];
