@@ -149,15 +149,15 @@ export default function Footer() {
         <h3 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-5">
           Associated With
         </h3>
-        <div className="relative h-16 w-full max-w-2xl mx-auto overflow-hidden rounded-lg border border-white/5 bg-slate-800/30">
-          <Image
-            src="/images/footer/associated-with-iata.jpeg"
-            alt="Associated partners and affiliations"
-            fill
-            sizes="(max-width: 768px) 100vw, 600px"
-            className="object-contain p-2 grayscale hover:grayscale-0 transition-all duration-500"
-          />
-        </div>
+<div className="relative h-16 w-full max-w-2xl mx-auto overflow-hidden rounded-lg border border-white/5 bg-slate-800/30">
+            <Image
+              src="/images/footer/associated-with-iata.jpeg"
+              alt="Associated partners and affiliations"
+              fill
+              sizes="(max-width: 640px) 80vw, (max-width: 1024px) 320px, 360px"
+              className="object-contain p-2 transition-all duration-500"
+            />
+          </div>
       </div>
 
       {/* We Accept - Payment Methods Strip */}
@@ -167,13 +167,13 @@ export default function Footer() {
         </h3>
         <div className="flex items-center justify-center gap-8 flex-wrap">
           {/* Visa + eSewa + Khalti Combined */}
-          <div className="relative h-10 w-16 group cursor-pointer">
+<div className="relative h-10 w-16 group cursor-pointer">
             <Image
-              src="/images/payments/visa-esewa-khalti.jpg"
+              src="/images/payments/khalti.png"
               alt="Visa, eSewa &amp; Khalti"
               fill
               sizes="64px"
-              className="object-contain grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-110"
+              className="object-contain transition-all duration-300 group-hover:scale-110"
             />
           </div>
           {/* Connect IPS */}
@@ -183,7 +183,17 @@ export default function Footer() {
               alt="Connect IPS"
               fill
               sizes="64px"
-              className="object-contain grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-110"
+              className="object-contain transition-all duration-300 group-hover:scale-110"
+            />
+          </div>
+          {/* Esewa */}
+          <div className="relative h-10 w-16 group cursor-pointer">
+            <Image
+              src="/images/payments/esewa1.png"
+              alt="Esewa"
+              fill
+              sizes="64px"
+              className="object-contain transition-all duration-300 group-hover:scale-110"
             />
           </div>
           {/* Mastercard */}
@@ -193,7 +203,7 @@ export default function Footer() {
               alt="Mastercard"
               fill
               sizes="64px"
-              className="object-contain grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-110"
+              className="object-contain transition-all duration-300 group-hover:scale-110"
             />
           </div>
           {/* Banking */}
@@ -203,7 +213,7 @@ export default function Footer() {
               alt="Bank Transfer"
               fill
               sizes="64px"
-              className="object-contain grayscale hover:grayscale-0 transition-all duration-300 group-hover:scale-110"
+              className="object-contain transition-all duration-300 group-hover:scale-110"
             />
           </div>
           <span className="flex items-center gap-2 text-[11px] text-slate-400 font-light">

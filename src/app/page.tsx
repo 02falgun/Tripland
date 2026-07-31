@@ -22,7 +22,8 @@ import {
   Clock,
   Building,
   Compass,
-  FileText
+  FileText,
+  MapPin
 } from "lucide-react";
 import HeroSearchWidget from "@/components/HeroSearchWidget";
 import HeroSlideshow from "@/components/HeroSlideshow";
@@ -89,10 +90,11 @@ function BouncingText({ text }: { text: string }) {
 }
 
 export default function Home() {
-  const { flightDeals, outboundPackages, visaServices, siteSettings } = useTravelStore();
+  const { flightDeals, visaServices, siteSettings, holidayPackages } = useTravelStore();
   
   // State for dynamic Visa morphing
   const [hoveredVisaId, setHoveredVisaId] = useState<string>("");
+  const [holidayTab, setHolidayTab] = useState<"inbound" | "outbound">("inbound");
 
   // Load static gallery & blogs
   const gallery = getStaticGallery();
@@ -118,13 +120,13 @@ export default function Home() {
         <div className="max-w-7xl w-full mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10 pt-16">
           {/* Left Text */}
           <div className="lg:col-span-5 space-y-6 text-left">
-            <div className="flex items-center gap-3">
-              <div className="relative h-10.5 w-10.5 shrink-0">
+<div className="flex items-center gap-3">
+              <div className="relative h-12 w-12 sm:h-16 sm:w-16 shrink-0">
                 <Image
                   src="/images/badges/18yrs-logo.png"
                   alt="18 Years Trust Badge"
                   fill
-                  sizes="42px"
+                  sizes="(max-width: 640px) 48px, 64px"
                   className="object-contain"
                 />
               </div>
@@ -317,24 +319,20 @@ export default function Home() {
       {/* Affiliate Flights Section */}
       <AffiliateFlights />
 
-      {/* Outbound Fixed Departures Section */}
+      {/* Holiday Packages Section — Inbound / Outbound */}
       <section className="py-20 px-8 bg-slate-50 border-t border-b border-slate-200/50">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row items-stretch md:items-end justify-between mb-12 gap-4">
+          <div className="flex flex-col md:flex-row items-stretch md:items-end justify-between mb-8 gap-4">
             <div className="relative">
               <span className="text-[11px] font-extrabold tracking-widest text-brand-blue uppercase">
                 Fixed Departures 2026
               </span>
               <h2 className="font-heading text-2xl md:text-3xl font-black text-slate-900 uppercase mt-1">
-                International Tour Packages
+                Holiday Packages
               </h2>
-              {/* Handwritten floating alert */}
-              <div className="absolute -top-10 right-4 sm:right-12 -rotate-3 font-handwritten text-2xl text-brand-gold hidden md:flex items-center gap-1 select-none pointer-events-none drop-shadow">
-                🌸 Peak Cherry Blossom blocks!
-              </div>
             </div>
             <Link
-              href="/packages"
+              href="/holidays"
               className="inline-flex items-center gap-1.5 text-[10px] font-bold text-brand-blue uppercase hover:text-brand-red transition-colors group tracking-wider"
             >
               Explore All Packages
@@ -342,9 +340,35 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* Sasa-Inspired Horizontal snap departures carousel */}
+          {/* Inbound / Outbound Tabs */}
+          <div className="flex items-center gap-1.5 bg-white border border-slate-200 rounded-xl p-1 shadow-sm w-fit mx-auto mb-10">
+            <button
+              onClick={() => setHolidayTab("inbound")}
+              className={`px-5 py-2.5 rounded-lg text-[10px] font-bold uppercase tracking-wider cursor-pointer transition-all ${
+                holidayTab === "inbound"
+                  ? "bg-brand-blue text-white shadow-sm"
+                  : "text-slate-500 hover:text-slate-900"
+              }`}
+            >
+              <Plane className="w-3.5 h-3.5 inline mr-1.5" strokeWidth={2} />
+              Inbound (Domestic)
+            </button>
+            <button
+              onClick={() => setHolidayTab("outbound")}
+              className={`px-5 py-2.5 rounded-lg text-[10px] font-bold uppercase tracking-wider cursor-pointer transition-all ${
+                holidayTab === "outbound"
+                  ? "bg-brand-blue text-white shadow-sm"
+                  : "text-slate-500 hover:text-slate-900"
+              }`}
+            >
+              <Plane className="w-3.5 h-3.5 inline mr-1.5 rotate-45" strokeWidth={2} />
+              Outbound (International)
+            </button>
+          </div>
+
+          {/* Package Cards Carousel */}
           <div className="flex overflow-x-auto no-scrollbar gap-8 pb-8 scroll-smooth snap-x snap-mandatory px-2">
-            {outboundPackages.slice(0, 4).map((pkg, idx) => (
+            {(holidayTab === "inbound" ? holidayPackages.inbound : holidayPackages.outbound).slice(0, 4).map((pkg, idx) => (
               <motion.div
                 key={pkg.id}
                 initial={{ opacity: 0, y: 30 }}
@@ -356,7 +380,7 @@ export default function Home() {
                 {/* Image */}
                 <div className="relative h-48 w-full overflow-hidden bg-slate-50">
                   <Image
-                    src={pkg.heroImage}
+                    src={pkg.image}
                     alt={pkg.title}
                     fill
                     sizes="320px"
@@ -368,36 +392,32 @@ export default function Home() {
                   </div>
                 </div>
                 {/* Body */}
-                  <div className="p-5 flex flex-col grow justify-between space-y-4">
+                <div className="p-5 flex flex-col grow justify-between space-y-4">
                   <div className="space-y-2">
+                    <span className="flex items-center gap-1 text-[10px] font-semibold text-slate-400">
+                      <MapPin className="w-3 h-3 text-brand-gold" strokeWidth={1.5} />
+                      {pkg.location}
+                    </span>
                     <h3 className="font-heading text-sm font-extrabold text-slate-900 uppercase tracking-wide text-left group-hover:text-brand-blue transition-colors line-clamp-1">
                       {pkg.title}
                     </h3>
-                    <ul className="space-y-1 text-[11px] text-slate-500 font-medium text-left">
-                      {pkg.highlights.slice(0, 2).map((hl, i) => (
-                        <li key={i} className="flex items-center gap-1.5 line-clamp-1">
-                          <span className="w-1.5 h-1.5 bg-brand-red rounded-full shrink-0"></span>
-                          {hl}
-                        </li>
-                      ))}
-                    </ul>
                   </div>
                   
                   <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
                     <div className="text-left">
                       <span className="text-[9px] uppercase font-bold text-slate-400 block mb-0.5">Package Price</span>
-                      {pkg.price !== 0 ? (
-                        <span className="text-sm font-black text-brand-red">Rs. {pkg.price.toLocaleString()}</span>
-                      ) : (
-                        <span className="text-xs font-bold text-slate-550 uppercase tracking-wide">Price on Request</span>
-                      )}
+                      <span className="text-sm font-black text-brand-red">{pkg.price}</span>
                     </div>
-                    <Link
-                      href={`/package/${pkg.slug}`}
+                    <button
+                      onClick={() => {
+                        const number = siteSettings.whatsappNumber.replace(/[+\s\-()]/g, "");
+                        const text = encodeURIComponent(`*TRIPLAND ENQUIRY*\n\nInterested in: ${pkg.title} (${holidayTab === "inbound" ? "Inbound" : "Outbound"})`);
+                        window.open(`https://wa.me/${number}?text=${text}`, "_blank");
+                      }}
                       className="px-4 py-2 bg-brand-red hover:bg-brand-red/90 text-white rounded-lg text-[10px] font-bold uppercase tracking-wider shadow-sm transition-all duration-300"
                     >
-                      Apply Now
-                    </Link>
+                      Enquire
+                    </button>
                   </div>
                 </div>
               </motion.div>

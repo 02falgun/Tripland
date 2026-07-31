@@ -39,16 +39,16 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 font-sans">
 {/* Super Slim Top Accent Info (fades out slightly on scroll) */}
-      <div className={`transition-all duration-500 text-[10px] py-1.5 px-8 flex justify-between items-center bg-black/25 text-white/80 border-b border-white/5 ${
+<div className={`transition-all duration-500 text-[10px] py-2.5 px-8 flex justify-between items-center bg-black/25 text-white/80 border-b border-white/5 ${
         isScrolled ? "h-0 py-0 opacity-0 overflow-hidden" : "h-auto opacity-100"
       }`}>
         <div className="flex items-center gap-3">
-          <div className="relative h-4.5 w-4.5 shrink-0">
+          <div className="relative h-7 w-7 shrink-0">
             <Image
               src="/images/badges/18yrs-logo.png"
               alt="18 Years"
               fill
-              sizes="18px"
+              sizes="28px"
               className="object-contain"
             />
           </div>
