@@ -145,20 +145,17 @@ export default function Footer() {
       </div>
 
       {/* Associated With Section */}
-      <div className="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-brand-blue/20 text-center">
-        <h3 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-5">
-          Associated With
-        </h3>
-<div className="relative h-16 w-full max-w-2xl mx-auto overflow-hidden rounded-lg border border-white/5 bg-slate-800/30">
-            <Image
-              src="/images/footer/associated-with-iata.jpeg"
-              alt="Associated partners and affiliations"
-              fill
-              sizes="(max-width: 640px) 80vw, (max-width: 1024px) 320px, 360px"
-              className="object-contain p-2 transition-all duration-500"
-            />
-          </div>
-      </div>
+      <div className="rounded-xl border border-white/5 bg-slate-800/30 py-4">
+  <Image
+    src="/images/footer/associated-with-iata.jpeg"
+    alt="Associated partners and affiliations"
+    width={360}
+    height={90}
+    className="mx-auto h-auto"
+    sizes="360px"
+    priority
+  />
+</div>
 
       {/* We Accept - Payment Methods Strip */}
       <div className="max-w-7xl mx-auto px-8 mt-8 pt-6 border-t border-brand-blue/20 text-center">
