@@ -317,7 +317,7 @@ export default function PackagesPage() {
                         <span className="text-[9px] uppercase font-bold text-slate-400 block mb-0.5">Package Price</span>
                         {hasPrice ? (
                           <span className="text-base font-black text-brand-red font-heading">
-                            Rs. {(item as any).price?.toLocaleString()}
+                            Rs. {(item as any).price}
                           </span>
                         ) : (
                           <span className="text-xs font-bold text-slate-500 uppercase tracking-wide">

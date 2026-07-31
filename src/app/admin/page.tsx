@@ -36,13 +36,13 @@ export default function AdminPage() {
   const [airline, setAirline] = useState("");
   const [route, setRoute] = useState("");
   const [flightType, setFlightType] = useState<"Domestic" | "International">("International");
-  const [startingPrice, setStartingPrice] = useState(15000);
+  const [startingPrice, setStartingPrice] = useState<string | number>("48xxx");
   const [baggageAllowance, setBaggageAllowance] = useState("30kg + 7kg cabin");
 
   // Form Fields State (Packages)
   const [pkgTitle, setPkgTitle] = useState("");
   const [pkgSlug, setPkgSlug] = useState("");
-  const [pkgPrice, setPkgPrice] = useState(80000);
+  const [pkgPrice, setPkgPrice] = useState<string | number>(0);
   const [pkgDuration, setPkgDuration] = useState("5 Days");
   const [fixedDeparturesInput, setFixedDeparturesInput] = useState("");
   const [highlightsInput, setHighlightsInput] = useState("");
@@ -96,12 +96,12 @@ export default function AdminPage() {
       setAirline("");
       setRoute("");
       setFlightType("International");
-      setStartingPrice(18000);
+      setStartingPrice("48xxx");
       setBaggageAllowance("30kg + 7kg cabin");
     } else if (activeTab === "packages") {
       setPkgTitle("");
       setPkgSlug("");
-      setPkgPrice(95000);
+      setPkgPrice(0);
       setPkgDuration("5 Nights / 6 Days");
       setFixedDeparturesInput("2026-09-15, 2026-10-10");
       setHighlightsInput("Sightseeing tour, Bullet train, Mt. Fuji views");
@@ -192,7 +192,7 @@ export default function AdminPage() {
         airline,
         route,
         type: flightType,
-        startingPrice: Number(startingPrice),
+        startingPrice,
         baggageAllowance,
         isFeatured: true
       };
@@ -212,7 +212,7 @@ export default function AdminPage() {
         id: editMode === "edit" ? selectedId : `pkg-${Date.now()}`,
         title: pkgTitle,
         slug: pkgSlug || pkgTitle.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, ""),
-        price: Number(pkgPrice),
+        price: pkgPrice,
         duration: pkgDuration,
         fixedDepartureDates,
         highlights,
@@ -425,7 +425,7 @@ export default function AdminPage() {
                           </td>
                           <td className="py-4 text-[10px] uppercase font-bold">{deal.type}</td>
                           <td className="py-4">{deal.baggageAllowance}</td>
-                          <td className="py-4 font-bold text-brand-blue">Rs. {deal.startingPrice.toLocaleString()}</td>
+                          <td className="py-4 font-bold text-brand-blue">Rs. {deal.startingPrice}</td>
                           <td className="py-4 text-center">
                             <div className="flex justify-center gap-1.5">
                               <button onClick={() => handleOpenEdit("flights", deal)} className="p-1.5 hover:bg-slate-50 text-slate-500 hover:text-brand-blue cursor-pointer" title="Edit"><Edit2 className="w-4 h-4" /></button>
@@ -457,7 +457,7 @@ export default function AdminPage() {
                             <span className="text-[10px] text-slate-400 font-mono mt-0.5 block">{pkg.slug}</span>
                           </td>
                           <td className="py-4">{pkg.duration}</td>
-                          <td className="py-4 font-bold text-brand-red">Rs. {pkg.price.toLocaleString()}</td>
+                          <td className="py-4 font-bold text-brand-red">Rs. {pkg.price}</td>
                           <td className="py-4 text-center">
                             <div className="flex justify-center gap-1.5">
                               <button onClick={() => handleOpenEdit("packages", pkg)} className="p-1.5 hover:bg-slate-50 text-slate-500 hover:text-brand-blue cursor-pointer" title="Edit"><Edit2 className="w-4 h-4" /></button>
@@ -646,10 +646,10 @@ export default function AdminPage() {
                   <div className="col-span-2">
                     <label className="text-[10px] font-bold uppercase text-slate-500 block mb-1">Starting Price (NPR)</label>
                     <input
-                      type="number"
+                      type="text"
                       required
                       value={startingPrice}
-                      onChange={(e) => setStartingPrice(Number(e.target.value))}
+                      onChange={(e) => setStartingPrice(e.target.value)}
                       className="w-full px-3 py-2 border border-slate-200 rounded focus:outline-none focus:border-brand-blue"
                     />
                   </div>
@@ -672,10 +672,10 @@ export default function AdminPage() {
                   <div>
                     <label className="text-[10px] font-bold uppercase text-slate-500 block mb-1">Pricing Fare (NPR)</label>
                     <input
-                      type="number"
+                      type="text"
                       required
                       value={pkgPrice}
-                      onChange={(e) => setPkgPrice(Number(e.target.value))}
+                      onChange={(e) => setPkgPrice(e.target.value)}
                       className="w-full px-3 py-2 border border-slate-200 rounded focus:outline-none focus:border-brand-blue"
                     />
                   </div>

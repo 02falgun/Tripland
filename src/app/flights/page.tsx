@@ -242,7 +242,7 @@ function FlightsContent() {
                 </div>
                 <div className="text-right">
                   <span className="text-[9px] text-slate-400 block font-semibold uppercase">From</span>
-                  <span className="font-extrabold text-brand-blue text-sm">Rs. {deal.startingPrice.toLocaleString()}</span>
+                  <span className="font-extrabold text-brand-blue text-sm">Rs. {deal.startingPrice}</span>
                 </div>
               </div>
             ))}
@@ -263,7 +263,7 @@ function FlightsContent() {
                 </div>
                 <div className="text-right">
                   <span className="text-[9px] text-slate-400 block font-semibold uppercase">From</span>
-                  <span className="font-extrabold text-brand-blue text-sm">Rs. {deal.startingPrice.toLocaleString()}</span>
+                  <span className="font-extrabold text-brand-blue text-sm">Rs. {deal.startingPrice}</span>
                 </div>
               </div>
             ))}
